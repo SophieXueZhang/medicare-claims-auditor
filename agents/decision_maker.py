@@ -1,6 +1,6 @@
 """
-Decision制定agent - 基于真实Medicareaudit结果制定最终Decision
-综合考虑coverage状态、riskEvaluating、cost合规性等因素
+Decision Making Agent - Based on Real Medicare Audit Results for Final Decisions
+Comprehensively considers coverage status, risk assessment, cost compliance and other factors
 """
 
 from typing import Dict, Any
@@ -8,54 +8,54 @@ from datetime import datetime
 
 class DecisionMaker:
     """
-    Decision制定agent
-    基于PolicyChecker的Medicareaudit结果制定最终claimsDecision
+    Decision Making Agent
+    Based on PolicyChecker's Medicare audit results to make final claims decisions
     """
     
     def __init__(self):
-        # Decision权重配置
+        # Decision weight configuration
         self.decision_weights = {
-            "coverage_status": 0.40,    # coverage状态权重
-            "risk_level": 0.25,         # risk等级权重
-            "cost_compliance": 0.20,    # cost合规权重
-            "special_requirements": 0.15 # 特殊要求权重
+            "coverage_status": 0.40,    # Coverage status weight
+            "risk_level": 0.25,         # Risk level weight
+            "cost_compliance": 0.20,    # Cost compliance weight
+            "special_requirements": 0.15 # Special requirements weight
         }
         
-        # Decision阈值
+        # Decision thresholds
         self.decision_thresholds = {
-            "auto_approve": 0.80,       # 自动approval阈值
-            "manual_review": 0.50,      # 人工audit阈值
-            "auto_deny": 0.20          # 自动denial阈值
+            "auto_approve": 0.80,       # Auto-approval threshold
+            "manual_review": 0.50,      # Manual review threshold
+            "auto_deny": 0.20          # Auto-denial threshold
         }
     
     def make_decision(self, extracted_info: Dict[str, Any], policy_result: Dict[str, Any]) -> Dict[str, Any]:
         """
-        基于Medicareaudit结果制定最终Decision
+        Make final decision based on Medicare audit results
         
         Args:
-            extracted_info: 提取的claims信息
-            policy_result: PolicyChecker的audit结果
+            extracted_info: Extracted claims information
+            policy_result: PolicyChecker's audit results
             
         Returns:
-            最终Decision结果
+            Final decision result
         """
-        # 获取基本信息
+        # Get basic information
         patient = extracted_info.get('patient', 'Unknown')
         cost = extracted_info.get('cost', 0)
         
-        # CalculatingDecision分数
+        # Calculate decision score
         decision_score = self._calculate_decision_score(policy_result)
         
-        # 确定Decision
+        # Determine decision
         decision_type = self._determine_decision_type(decision_score, policy_result)
         
-        # GeneratingDecisionReason
+        # Generate decision reason
         reason = self._generate_decision_reason(policy_result, decision_score)
         
-        # CalculatingConfidence
+        # Calculate confidence
         confidence = self._calculate_confidence(policy_result, decision_score)
         
-        # Generating推荐行动
+        # Generate recommended actions
         recommendations = self._generate_recommendations(policy_result, decision_type)
         
         return {
@@ -85,33 +85,33 @@ class DecisionMaker:
         }
     
     def _calculate_decision_score(self, policy_result: Dict[str, Any]) -> float:
-        """Calculating综合Decision分数"""
+        """Calculate comprehensive decision score"""
         score = 0.0
         
-        # 1. coverage状态分数
+        # 1. Coverage status score
         coverage_status = policy_result.get('coverage_status', {}).get('status', 'UNKNOWN')
         coverage_score = self._get_coverage_score(coverage_status)
         score += coverage_score * self.decision_weights["coverage_status"]
         
-        # 2. risk等级分数
+        # 2. Risk level score
         risk_level = policy_result.get('risk_level', {}).get('level', 'MEDIUM')
         risk_score = self._get_risk_score(risk_level)
         score += risk_score * self.decision_weights["risk_level"]
         
-        # 3. cost合规分数
+        # 3. Cost compliance score
         cost_compliance = policy_result.get('cost_compliance', {})
         cost_score = self._get_cost_score(cost_compliance)
         score += cost_score * self.decision_weights["cost_compliance"]
         
-        # 4. 特殊要求分数
+        # 4. Special requirements score
         special_requirements = policy_result.get('special_requirements', {})
         requirements_score = self._get_requirements_score(special_requirements)
         score += requirements_score * self.decision_weights["special_requirements"]
         
-        return max(0.0, min(1.0, score))  # 确保分数在0-1之间
+        return max(0.0, min(1.0, score))  # Ensure score is between 0-1
     
     def _get_coverage_score(self, coverage_status: str) -> float:
-        """根据coverage状态Calculating分数"""
+        """Calculate score based on coverage status"""
         status_scores = {
             "COVERED": 1.0,
             "CONDITIONAL": 0.7,
@@ -122,7 +122,7 @@ class DecisionMaker:
         return status_scores.get(coverage_status, 0.3)
     
     def _get_risk_score(self, risk_level: str) -> float:
-        """根据risk等级Calculating分数"""
+        """Calculate score based on risk level"""
         risk_scores = {
             "LOW": 1.0,
             "MEDIUM": 0.6,
@@ -131,7 +131,7 @@ class DecisionMaker:
         return risk_scores.get(risk_level, 0.6)
     
     def _get_cost_score(self, cost_compliance: Dict[str, Any]) -> float:
-        """根据cost合规性Calculating分数"""
+        """Calculate score based on cost compliance"""
         if not cost_compliance.get('compliant', True):
             return 0.0
         
@@ -144,7 +144,7 @@ class DecisionMaker:
             return 1.0
     
     def _get_requirements_score(self, special_requirements: Dict[str, Any]) -> float:
-        """根据特殊要求合规性Calculating分数"""
+        """Calculate score based on special requirements compliance"""
         if not special_requirements.get('compliant', True):
             return 0.0
         
@@ -157,20 +157,20 @@ class DecisionMaker:
             return 1.0
     
     def _determine_decision_type(self, decision_score: float, policy_result: Dict[str, Any]) -> str:
-        """根据分数和policy结果确定Decision类型"""
+        """Determine decision type based on score and policy results"""
         
-        # CheckingPolicyChecker的建议Decision
+        # Check PolicyChecker's recommended decision
         policy_decision = policy_result.get('final_decision', {}).get('decision', 'REQUIRES_REVIEW')
         
-        # 如果PolicyChecker明确denial，直接denial
+        # If PolicyChecker explicitly denies, deny directly
         if policy_decision == "DENIED":
             return "DENIED"
         
-        # 如果是高risk或需要人工audit
+        # If high risk or requires manual review
         if policy_result.get('risk_level', {}).get('requires_manual_review', False):
             return "REQUIRES_REVIEW"
         
-        # 基于分数Decision
+        # Decision based on score
         if decision_score >= self.decision_thresholds["auto_approve"]:
             return "APPROVED"
         elif decision_score >= self.decision_thresholds["manual_review"]:
@@ -179,46 +179,46 @@ class DecisionMaker:
             return "DENIED"
     
     def _generate_decision_reason(self, policy_result: Dict[str, Any], decision_score: float) -> str:
-        """GeneratingDecisionReason"""
+        """Generate decision reason"""
         coverage_status = policy_result.get('coverage_status', {})
         risk_level = policy_result.get('risk_level', {})
         cost_compliance = policy_result.get('cost_compliance', {})
         
         reasons = []
         
-        # 添加coverage状态Reason
+        # Add coverage status reason
         if coverage_status.get('status') == 'COVERED':
-            reasons.append(f"服务在Medicarecoverage范围内 ({coverage_status.get('source', '')})")
+            reasons.append(f"Service within Medicare coverage ({coverage_status.get('source', '')})")
         elif coverage_status.get('status') == 'CONDITIONAL':
-            reasons.append(f"有条件coverage，需满足特定要求")
+            reasons.append(f"Conditional coverage, must meet specific requirements")
         elif coverage_status.get('status') == 'EXCLUDED':
-            reasons.append(f"服务被Medicare排除")
+            reasons.append(f"Service excluded by Medicare")
         
-        # 添加riskEvaluatingReason
+        # Add risk assessment reason
         risk_factors = risk_level.get('factors', [])
         if risk_factors:
-            reasons.append(f"risk因子: {', '.join(risk_factors[:2])}")
+            reasons.append(f"Risk factors: {', '.join(risk_factors[:2])}")
         
-        # 添加cost相关Reason
+        # Add cost-related reason
         warnings = cost_compliance.get('warnings', [])
         if warnings:
-            reasons.append(f"cost警告: {warnings[0]}")
+            reasons.append(f"Cost warning: {warnings[0]}")
         
-        # 添加综合分数
+        # Add comprehensive score
         reasons.append(f"Comprehensive score: {decision_score:.2f}")
         
         return " | ".join(reasons)
     
     def _calculate_confidence(self, policy_result: Dict[str, Any], decision_score: float) -> float:
-        """CalculatingDecisionConfidence"""
+        """Calculate decision confidence"""
         base_confidence = decision_score
         
-        # 如果有明确的Medicarecoverage决定，提高Confidence
+        # If there's a clear Medicare coverage decision, increase confidence
         coverage_status = policy_result.get('coverage_status', {}).get('status', '')
         if coverage_status in ['COVERED', 'EXCLUDED']:
             base_confidence += 0.1
         
-        # 如果riskEvaluating清晰，提高Confidence
+        # If risk assessment is clear, increase confidence
         risk_level = policy_result.get('risk_level', {}).get('level', '')
         if risk_level in ['LOW', 'HIGH']:
             base_confidence += 0.05
@@ -226,29 +226,29 @@ class DecisionMaker:
         return max(0.0, min(1.0, base_confidence))
     
     def _generate_recommendations(self, policy_result: Dict[str, Any], decision_type: str) -> list:
-        """Generating推荐行动"""
+        """Generate recommended actions"""
         recommendations = []
         
         if decision_type == "APPROVED":
-            recommendations.append("approvalclaims申请")
-            recommendations.append("按Medicare标准支付")
+            recommendations.append("Approve claims application")
+            recommendations.append("Process payment according to Medicare standards")
             
         elif decision_type == "DENIED":
             coverage_reason = policy_result.get('coverage_status', {}).get('reason', '')
-            recommendations.append(f"denialclaims: {coverage_reason}")
-            recommendations.append("向patient解释denial原因")
+            recommendations.append(f"Deny claim: {coverage_reason}")
+            recommendations.append("Explain denial reason to patient")
             
         elif decision_type == "REQUIRES_REVIEW":
-            recommendations.append("提交人工audit")
+            recommendations.append("Submit for manual review")
             special_req = policy_result.get('special_requirements', {})
             if special_req.get('prior_authorization'):
-                recommendations.append("Validating事先授权文件")
+                recommendations.append("Verify prior authorization documentation")
             if special_req.get('physician_certification'):
-                recommendations.append("要求医生认证文件")
+                recommendations.append("Request physician certification documents")
         
-        # 添加risk相关建议
+        # Add risk-related recommendations
         risk_level = policy_result.get('risk_level', {}).get('level', '')
         if risk_level == "HIGH":
-            recommendations.append("高riskcases，建议委员会audit")
+            recommendations.append("High-risk case, recommend committee review")
         
         return recommendations 

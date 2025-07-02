@@ -1,5 +1,5 @@
 """
-agent包 - 包含所有的AIagent类
+Agent Package - Contains all AI agent classes
 """
 
 __version__ = "1.0.0"
