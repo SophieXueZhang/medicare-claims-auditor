@@ -1,0 +1,34 @@
+
+Medicare保险政策审核规则生成报告
+=====================================
+
+数据源统计:
+- NCD规则数量: 352
+- HCPCS代码数量: 1767
+- 福利类别数量: 78
+
+覆盖规则统计:
+- 完全覆盖项目: 79
+- 有条件覆盖项目: 209
+- 排除项目: 64
+
+主要福利类别:
+- No Benefit Category
+- Ambulance Services
+- Ambulatory Surgical Center Facility Services
+- Antigens
+- Artificial Legs, Arms, and Eyes
+- Audiology Services
+- Blood Clotting Factors for Hemophilia Patients
+- Bone Mass Measurement
+- Certified Nurse-Midwife Services
+- Certified Registered Nurse Anesthetist Services
+
+费用限制规则:
+- 年度免赔额: $1600
+- 共同保险率: 20.0%
+- 物理治疗年限制: 36次
+
+特殊要求:
+- 需要事先授权的项目: 4项
+- 需要医生认证的项目: 4项

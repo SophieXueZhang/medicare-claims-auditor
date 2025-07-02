@@ -108,4 +108,7 @@ Thumbs.db
 
 # Project specific
 data/audit_results.json
-data/mimic_claims.json 
+data/mimic_claims.json # 大文件排除
+data/insurance policy/*.mdb
+data/insurance policy/*/*.mdb
+*.mdb

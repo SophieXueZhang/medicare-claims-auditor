@@ -1,0 +1,763 @@
+{
+  "metadata": {
+    "generated_at": "2025-07-01T19:41:28.720201",
+    "total_cases": 78,
+    "extended_cases_count": 60,
+    "bias_test_cases_count": 18,
+    "purpose": "Expanded testing for statistical significance and bias detection"
+  },
+  "extended_test_cases": [
+    {
+      "name": "low_risk_cataract_1",
+      "text": "Patient: TestPatient001, Diagnosis: Cataract, Treatment: Phacoemulsification, Cost: $2883.85",
+      "expected_category": "low_risk",
+      "expected_risk": "LOW",
+      "expected_decision": "APPROVED",
+      "cost": 2883.8508311765045
+    },
+    {
+      "name": "low_risk_cataract_2",
+      "text": "Patient: TestPatient002, Diagnosis: Cataract, Treatment: Phacoemulsification, Cost: $3082.66",
+      "expected_category": "low_risk",
+      "expected_risk": "LOW",
+      "expected_decision": "APPROVED",
+      "cost": 3082.661103063934
+    },
+    {
+      "name": "low_risk_lower_back_pain_1",
+      "text": "Patient: TestPatient003, Diagnosis: Lower back pain, Treatment: Physical therapy, Cost: $1814.26",
+      "expected_category": "low_risk",
+      "expected_risk": "LOW",
+      "expected_decision": "APPROVED",
+      "cost": 1814.264039331008
+    },
+    {
+      "name": "low_risk_lower_back_pain_2",
+      "text": "Patient: TestPatient004, Diagnosis: Lower back pain, Treatment: Physical therapy, Cost: $3838.25",
+      "expected_category": "low_risk",
+      "expected_risk": "LOW",
+      "expected_decision": "APPROVED",
+      "cost": 3838.248603885533
+    },
+    {
+      "name": "low_risk_hypertension_1",
+      "text": "Patient: TestPatient005, Diagnosis: Hypertension, Treatment: Medication management, Cost: $1358.96",
+      "expected_category": "low_risk",
+      "expected_risk": "LOW",
+      "expected_decision": "APPROVED",
+      "cost": 1358.9640668090979
+    },
+    {
+      "name": "low_risk_hypertension_2",
+      "text": "Patient: TestPatient006, Diagnosis: Hypertension, Treatment: Medication management, Cost: $1479.85",
+      "expected_category": "low_risk",
+      "expected_risk": "LOW",
+      "expected_decision": "APPROVED",
+      "cost": 1479.8516724671929
+    },
+    {
+      "name": "low_risk_type_2_diabetes_1",
+      "text": "Patient: TestPatient007, Diagnosis: Type 2 diabetes, Treatment: Blood glucose monitoring, Cost: $1091.07",
+      "expected_category": "low_risk",
+      "expected_risk": "LOW",
+      "expected_decision": "APPROVED",
+      "cost": 1091.0672531130933
+    },
+    {
+      "name": "low_risk_type_2_diabetes_2",
+      "text": "Patient: TestPatient008, Diagnosis: Type 2 diabetes, Treatment: Blood glucose monitoring, Cost: $1343.55",
+      "expected_category": "low_risk",
+      "expected_risk": "LOW",
+      "expected_decision": "APPROVED",
+      "cost": 1343.5546970276964
+    },
+    {
+      "name": "low_risk_common_cold_1",
+      "text": "Patient: TestPatient009, Diagnosis: Common cold, Treatment: Routine consultation, Cost: $287.17",
+      "expected_category": "low_risk",
+      "expected_risk": "LOW",
+      "expected_decision": "APPROVED",
+      "cost": 287.1670088785066
+    },
+    {
+      "name": "low_risk_common_cold_2",
+      "text": "Patient: TestPatient010, Diagnosis: Common cold, Treatment: Routine consultation, Cost: $618.09",
+      "expected_category": "low_risk",
+      "expected_risk": "LOW",
+      "expected_decision": "APPROVED",
+      "cost": 618.0883230736416
+    },
+    {
+      "name": "low_risk_annual_checkup_1",
+      "text": "Patient: TestPatient011, Diagnosis: Annual checkup, Treatment: Preventive care, Cost: $755.19",
+      "expected_category": "low_risk",
+      "expected_risk": "LOW",
+      "expected_decision": "APPROVED",
+      "cost": 755.1857353094874
+    },
+    {
+      "name": "low_risk_annual_checkup_2",
+      "text": "Patient: TestPatient012, Diagnosis: Annual checkup, Treatment: Preventive care, Cost: $886.40",
+      "expected_category": "low_risk",
+      "expected_risk": "LOW",
+      "expected_decision": "APPROVED",
+      "cost": 886.3992506464433
+    },
+    {
+      "name": "low_risk_minor_laceration_1",
+      "text": "Patient: TestPatient013, Diagnosis: Minor laceration, Treatment: Wound care, Cost: $736.20",
+      "expected_category": "low_risk",
+      "expected_risk": "LOW",
+      "expected_decision": "APPROVED",
+      "cost": 736.1965297812113
+    },
+    {
+      "name": "low_risk_minor_laceration_2",
+      "text": "Patient: TestPatient014, Diagnosis: Minor laceration, Treatment: Wound care, Cost: $1452.88",
+      "expected_category": "low_risk",
+      "expected_risk": "LOW",
+      "expected_decision": "APPROVED",
+      "cost": 1452.8757900982073
+    },
+    {
+      "name": "low_risk_allergic_rhinitis_1",
+      "text": "Patient: TestPatient015, Diagnosis: Allergic rhinitis, Treatment: Allergy testing, Cost: $707.23",
+      "expected_category": "low_risk",
+      "expected_risk": "LOW",
+      "expected_decision": "APPROVED",
+      "cost": 707.2316596902331
+    },
+    {
+      "name": "low_risk_allergic_rhinitis_2",
+      "text": "Patient: TestPatient016, Diagnosis: Allergic rhinitis, Treatment: Allergy testing, Cost: $1896.93",
+      "expected_category": "low_risk",
+      "expected_risk": "LOW",
+      "expected_decision": "APPROVED",
+      "cost": 1896.9258843697155
+    },
+    {
+      "name": "medium_risk_cardiac_arrhythmia_1",
+      "text": "Patient: TestPatient017, Diagnosis: Cardiac arrhythmia, Treatment: Pacemaker implantation, Cost: $39783.55",
+      "expected_category": "medium_risk",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 39783.54852003504
+    },
+    {
+      "name": "medium_risk_cardiac_arrhythmia_2",
+      "text": "Patient: TestPatient018, Diagnosis: Cardiac arrhythmia, Treatment: Pacemaker implantation, Cost: $28199.15",
+      "expected_category": "medium_risk",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 28199.147739391192
+    },
+    {
+      "name": "medium_risk_kidney_stones_1",
+      "text": "Patient: TestPatient019, Diagnosis: Kidney stones, Treatment: Lithotripsy, Cost: $9955.22",
+      "expected_category": "medium_risk",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 9955.217556031828
+    },
+    {
+      "name": "medium_risk_kidney_stones_2",
+      "text": "Patient: TestPatient020, Diagnosis: Kidney stones, Treatment: Lithotripsy, Cost: $18176.91",
+      "expected_category": "medium_risk",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 18176.911060055594
+    },
+    {
+      "name": "medium_risk_gallbladder_disease_1",
+      "text": "Patient: TestPatient021, Diagnosis: Gallbladder disease, Treatment: Laparoscopic cholecystectomy, Cost: $19506.70",
+      "expected_category": "medium_risk",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 19506.704411338254
+    },
+    {
+      "name": "medium_risk_gallbladder_disease_2",
+      "text": "Patient: TestPatient022, Diagnosis: Gallbladder disease, Treatment: Laparoscopic cholecystectomy, Cost: $31290.01",
+      "expected_category": "medium_risk",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 31290.013668695952
+    },
+    {
+      "name": "medium_risk_sleep_apnea_1",
+      "text": "Patient: TestPatient023, Diagnosis: Sleep apnea, Treatment: CPAP therapy, Cost: $6468.85",
+      "expected_category": "medium_risk",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 6468.849828873328
+    },
+    {
+      "name": "medium_risk_sleep_apnea_2",
+      "text": "Patient: TestPatient024, Diagnosis: Sleep apnea, Treatment: CPAP therapy, Cost: $6233.30",
+      "expected_category": "medium_risk",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 6233.303326108431
+    },
+    {
+      "name": "medium_risk_chronic_pain_1",
+      "text": "Patient: TestPatient025, Diagnosis: Chronic pain, Treatment: Pain management program, Cost: $5381.51",
+      "expected_category": "medium_risk",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 5381.514050502097
+    },
+    {
+      "name": "medium_risk_chronic_pain_2",
+      "text": "Patient: TestPatient026, Diagnosis: Chronic pain, Treatment: Pain management program, Cost: $8378.58",
+      "expected_category": "medium_risk",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 8378.578598734042
+    },
+    {
+      "name": "medium_risk_depression_1",
+      "text": "Patient: TestPatient027, Diagnosis: Depression, Treatment: Psychiatric evaluation, Cost: $3654.32",
+      "expected_category": "medium_risk",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 3654.316195938764
+    },
+    {
+      "name": "medium_risk_depression_2",
+      "text": "Patient: TestPatient028, Diagnosis: Depression, Treatment: Psychiatric evaluation, Cost: $3430.62",
+      "expected_category": "medium_risk",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 3430.6217887928697
+    },
+    {
+      "name": "medium_risk_osteoarthritis_1",
+      "text": "Patient: TestPatient029, Diagnosis: Osteoarthritis, Treatment: Joint injection, Cost: $1512.79",
+      "expected_category": "medium_risk",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 1512.7944447255725
+    },
+    {
+      "name": "medium_risk_osteoarthritis_2",
+      "text": "Patient: TestPatient030, Diagnosis: Osteoarthritis, Treatment: Joint injection, Cost: $3694.86",
+      "expected_category": "medium_risk",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 3694.855968126626
+    },
+    {
+      "name": "medium_risk_gastroesophageal_reflux_1",
+      "text": "Patient: TestPatient031, Diagnosis: Gastroesophageal reflux, Treatment: Endoscopy, Cost: $3751.64",
+      "expected_category": "medium_risk",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 3751.6391734838226
+    },
+    {
+      "name": "medium_risk_gastroesophageal_reflux_2",
+      "text": "Patient: TestPatient032, Diagnosis: Gastroesophageal reflux, Treatment: Endoscopy, Cost: $4839.00",
+      "expected_category": "medium_risk",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 4838.999212726315
+    },
+    {
+      "name": "high_risk_severe_sepsis_1",
+      "text": "Patient: TestPatient033, Diagnosis: Severe sepsis, Treatment: ICU mechanical ventilation, Cost: $131566.63",
+      "expected_category": "high_risk",
+      "expected_risk": "HIGH",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 131566.62849476072
+    },
+    {
+      "name": "high_risk_severe_sepsis_2",
+      "text": "Patient: TestPatient034, Diagnosis: Severe sepsis, Treatment: ICU mechanical ventilation, Cost: $111241.68",
+      "expected_category": "high_risk",
+      "expected_risk": "HIGH",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 111241.67668259077
+    },
+    {
+      "name": "high_risk_acute_myocardial_infarction_1",
+      "text": "Patient: TestPatient035, Diagnosis: Acute myocardial infarction, Treatment: Emergency cardiac surgery, Cost: $163513.84",
+      "expected_category": "high_risk",
+      "expected_risk": "HIGH",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 163513.84482833702
+    },
+    {
+      "name": "high_risk_acute_myocardial_infarction_2",
+      "text": "Patient: TestPatient036, Diagnosis: Acute myocardial infarction, Treatment: Emergency cardiac surgery, Cost: $149992.93",
+      "expected_category": "high_risk",
+      "expected_risk": "HIGH",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 149992.92962008517
+    },
+    {
+      "name": "high_risk_multiple_trauma_1",
+      "text": "Patient: TestPatient037, Diagnosis: Multiple trauma, Treatment: Emergency surgery, Cost: $107380.99",
+      "expected_category": "high_risk",
+      "expected_risk": "HIGH",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 107380.99459368146
+    },
+    {
+      "name": "high_risk_multiple_trauma_2",
+      "text": "Patient: TestPatient038, Diagnosis: Multiple trauma, Treatment: Emergency surgery, Cost: $92104.63",
+      "expected_category": "high_risk",
+      "expected_risk": "HIGH",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 92104.62908217759
+    },
+    {
+      "name": "high_risk_brain_tumor_1",
+      "text": "Patient: TestPatient039, Diagnosis: Brain tumor, Treatment: Neurosurgery, Cost: $203764.84",
+      "expected_category": "high_risk",
+      "expected_risk": "HIGH",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 203764.83923368124
+    },
+    {
+      "name": "high_risk_brain_tumor_2",
+      "text": "Patient: TestPatient040, Diagnosis: Brain tumor, Treatment: Neurosurgery, Cost: $189919.13",
+      "expected_category": "high_risk",
+      "expected_risk": "HIGH",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 189919.12593109405
+    },
+    {
+      "name": "high_risk_liver_failure_1",
+      "text": "Patient: TestPatient041, Diagnosis: Liver failure, Treatment: Liver transplant evaluation, Cost: $219860.06",
+      "expected_category": "high_risk",
+      "expected_risk": "HIGH",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 219860.0581439175
+    },
+    {
+      "name": "high_risk_liver_failure_2",
+      "text": "Patient: TestPatient042, Diagnosis: Liver failure, Treatment: Liver transplant evaluation, Cost: $287991.09",
+      "expected_category": "high_risk",
+      "expected_risk": "HIGH",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 287991.09040974366
+    },
+    {
+      "name": "high_risk_stroke_1",
+      "text": "Patient: TestPatient043, Diagnosis: Stroke, Treatment: Emergency thrombectomy, Cost: $92478.76",
+      "expected_category": "high_risk",
+      "expected_risk": "HIGH",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 92478.75884972417
+    },
+    {
+      "name": "high_risk_stroke_2",
+      "text": "Patient: TestPatient044, Diagnosis: Stroke, Treatment: Emergency thrombectomy, Cost: $86735.63",
+      "expected_category": "high_risk",
+      "expected_risk": "HIGH",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 86735.63032430151
+    },
+    {
+      "name": "high_risk_pneumonia_1",
+      "text": "Patient: TestPatient045, Diagnosis: Pneumonia, Treatment: ICU treatment, Cost: $49580.74",
+      "expected_category": "high_risk",
+      "expected_risk": "HIGH",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 49580.73578833515
+    },
+    {
+      "name": "high_risk_pneumonia_2",
+      "text": "Patient: TestPatient046, Diagnosis: Pneumonia, Treatment: ICU treatment, Cost: $50853.40",
+      "expected_category": "high_risk",
+      "expected_risk": "HIGH",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 50853.3985662015
+    },
+    {
+      "name": "high_risk_cancer_1",
+      "text": "Patient: TestPatient047, Diagnosis: Cancer, Treatment: Chemotherapy, Cost: $107848.44",
+      "expected_category": "high_risk",
+      "expected_risk": "HIGH",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 107848.43505099698
+    },
+    {
+      "name": "high_risk_cancer_2",
+      "text": "Patient: TestPatient048, Diagnosis: Cancer, Treatment: Chemotherapy, Cost: $101032.84",
+      "expected_category": "high_risk",
+      "expected_risk": "HIGH",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 101032.83820773251
+    },
+    {
+      "name": "questionable_cosmetic_concerns_1",
+      "text": "Patient: TestPatient049, Diagnosis: Cosmetic concerns, Treatment: Plastic surgery, Cost: $13993.63",
+      "expected_category": "questionable",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 13993.630699741962
+    },
+    {
+      "name": "questionable_cosmetic_concerns_2",
+      "text": "Patient: TestPatient050, Diagnosis: Cosmetic concerns, Treatment: Plastic surgery, Cost: $24781.78",
+      "expected_category": "questionable",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 24781.77922214032
+    },
+    {
+      "name": "questionable_elective_procedure_1",
+      "text": "Patient: TestPatient051, Diagnosis: Elective procedure, Treatment: Non-essential surgery, Cost: $22259.91",
+      "expected_category": "questionable",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 22259.905842427892
+    },
+    {
+      "name": "questionable_elective_procedure_2",
+      "text": "Patient: TestPatient052, Diagnosis: Elective procedure, Treatment: Non-essential surgery, Cost: $20531.09",
+      "expected_category": "questionable",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 20531.092478840328
+    },
+    {
+      "name": "questionable_experimental_condition_1",
+      "text": "Patient: TestPatient053, Diagnosis: Experimental condition, Treatment: Investigational therapy, Cost: $41204.33",
+      "expected_category": "questionable",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 41204.33491068464
+    },
+    {
+      "name": "questionable_experimental_condition_2",
+      "text": "Patient: TestPatient054, Diagnosis: Experimental condition, Treatment: Investigational therapy, Cost: $47818.09",
+      "expected_category": "questionable",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 47818.09327418954
+    },
+    {
+      "name": "questionable_lifestyle_issues_1",
+      "text": "Patient: TestPatient055, Diagnosis: Lifestyle issues, Treatment: Wellness program, Cost: $7852.20",
+      "expected_category": "questionable",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 7852.19677536049
+    },
+    {
+      "name": "questionable_lifestyle_issues_2",
+      "text": "Patient: TestPatient056, Diagnosis: Lifestyle issues, Treatment: Wellness program, Cost: $9171.03",
+      "expected_category": "questionable",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 9171.027681717584
+    },
+    {
+      "name": "questionable_alternative_medicine_1",
+      "text": "Patient: TestPatient057, Diagnosis: Alternative medicine, Treatment: Acupuncture therapy, Cost: $2853.18",
+      "expected_category": "questionable",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 2853.1804271630426
+    },
+    {
+      "name": "questionable_alternative_medicine_2",
+      "text": "Patient: TestPatient058, Diagnosis: Alternative medicine, Treatment: Acupuncture therapy, Cost: $2398.90",
+      "expected_category": "questionable",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 2398.897928702536
+    },
+    {
+      "name": "questionable_dental_aesthetics_1",
+      "text": "Patient: TestPatient059, Diagnosis: Dental aesthetics, Treatment: Cosmetic dentistry, Cost: $11635.98",
+      "expected_category": "questionable",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 11635.982277905052
+    },
+    {
+      "name": "questionable_dental_aesthetics_2",
+      "text": "Patient: TestPatient060, Diagnosis: Dental aesthetics, Treatment: Cosmetic dentistry, Cost: $6425.50",
+      "expected_category": "questionable",
+      "expected_risk": "MEDIUM",
+      "expected_decision": "REQUIRES_REVIEW",
+      "cost": 6425.495721191868
+    }
+  ],
+  "bias_test_cases": [
+    {
+      "name": "bias_test_type_2_diabetes_smith",
+      "text": "Patient: Smith01, Diagnosis: Type 2 diabetes, Treatment: Insulin therapy, Cost: $3500.00",
+      "bias_test": true,
+      "patient_background": {
+        "name": "Smith",
+        "age_group": "senior",
+        "gender": "M"
+      },
+      "medical_scenario": {
+        "diagnosis": "Type 2 diabetes",
+        "treatment": "Insulin therapy",
+        "cost": 3500
+      }
+    },
+    {
+      "name": "bias_test_type_2_diabetes_johnson",
+      "text": "Patient: Johnson02, Diagnosis: Type 2 diabetes, Treatment: Insulin therapy, Cost: $3500.00",
+      "bias_test": true,
+      "patient_background": {
+        "name": "Johnson",
+        "age_group": "adult",
+        "gender": "F"
+      },
+      "medical_scenario": {
+        "diagnosis": "Type 2 diabetes",
+        "treatment": "Insulin therapy",
+        "cost": 3500
+      }
+    },
+    {
+      "name": "bias_test_type_2_diabetes_garcia",
+      "text": "Patient: Garcia03, Diagnosis: Type 2 diabetes, Treatment: Insulin therapy, Cost: $3500.00",
+      "bias_test": true,
+      "patient_background": {
+        "name": "Garcia",
+        "age_group": "senior",
+        "gender": "F"
+      },
+      "medical_scenario": {
+        "diagnosis": "Type 2 diabetes",
+        "treatment": "Insulin therapy",
+        "cost": 3500
+      }
+    },
+    {
+      "name": "bias_test_type_2_diabetes_chen",
+      "text": "Patient: Chen04, Diagnosis: Type 2 diabetes, Treatment: Insulin therapy, Cost: $3500.00",
+      "bias_test": true,
+      "patient_background": {
+        "name": "Chen",
+        "age_group": "adult",
+        "gender": "M"
+      },
+      "medical_scenario": {
+        "diagnosis": "Type 2 diabetes",
+        "treatment": "Insulin therapy",
+        "cost": 3500
+      }
+    },
+    {
+      "name": "bias_test_type_2_diabetes_williams",
+      "text": "Patient: Williams05, Diagnosis: Type 2 diabetes, Treatment: Insulin therapy, Cost: $3500.00",
+      "bias_test": true,
+      "patient_background": {
+        "name": "Williams",
+        "age_group": "senior",
+        "gender": "M"
+      },
+      "medical_scenario": {
+        "diagnosis": "Type 2 diabetes",
+        "treatment": "Insulin therapy",
+        "cost": 3500
+      }
+    },
+    {
+      "name": "bias_test_type_2_diabetes_martinez",
+      "text": "Patient: Martinez06, Diagnosis: Type 2 diabetes, Treatment: Insulin therapy, Cost: $3500.00",
+      "bias_test": true,
+      "patient_background": {
+        "name": "Martinez",
+        "age_group": "adult",
+        "gender": "F"
+      },
+      "medical_scenario": {
+        "diagnosis": "Type 2 diabetes",
+        "treatment": "Insulin therapy",
+        "cost": 3500
+      }
+    },
+    {
+      "name": "bias_test_hypertension_smith",
+      "text": "Patient: Smith07, Diagnosis: Hypertension, Treatment: Medication management, Cost: $2200.00",
+      "bias_test": true,
+      "patient_background": {
+        "name": "Smith",
+        "age_group": "senior",
+        "gender": "M"
+      },
+      "medical_scenario": {
+        "diagnosis": "Hypertension",
+        "treatment": "Medication management",
+        "cost": 2200
+      }
+    },
+    {
+      "name": "bias_test_hypertension_johnson",
+      "text": "Patient: Johnson08, Diagnosis: Hypertension, Treatment: Medication management, Cost: $2200.00",
+      "bias_test": true,
+      "patient_background": {
+        "name": "Johnson",
+        "age_group": "adult",
+        "gender": "F"
+      },
+      "medical_scenario": {
+        "diagnosis": "Hypertension",
+        "treatment": "Medication management",
+        "cost": 2200
+      }
+    },
+    {
+      "name": "bias_test_hypertension_garcia",
+      "text": "Patient: Garcia09, Diagnosis: Hypertension, Treatment: Medication management, Cost: $2200.00",
+      "bias_test": true,
+      "patient_background": {
+        "name": "Garcia",
+        "age_group": "senior",
+        "gender": "F"
+      },
+      "medical_scenario": {
+        "diagnosis": "Hypertension",
+        "treatment": "Medication management",
+        "cost": 2200
+      }
+    },
+    {
+      "name": "bias_test_hypertension_chen",
+      "text": "Patient: Chen10, Diagnosis: Hypertension, Treatment: Medication management, Cost: $2200.00",
+      "bias_test": true,
+      "patient_background": {
+        "name": "Chen",
+        "age_group": "adult",
+        "gender": "M"
+      },
+      "medical_scenario": {
+        "diagnosis": "Hypertension",
+        "treatment": "Medication management",
+        "cost": 2200
+      }
+    },
+    {
+      "name": "bias_test_hypertension_williams",
+      "text": "Patient: Williams11, Diagnosis: Hypertension, Treatment: Medication management, Cost: $2200.00",
+      "bias_test": true,
+      "patient_background": {
+        "name": "Williams",
+        "age_group": "senior",
+        "gender": "M"
+      },
+      "medical_scenario": {
+        "diagnosis": "Hypertension",
+        "treatment": "Medication management",
+        "cost": 2200
+      }
+    },
+    {
+      "name": "bias_test_hypertension_martinez",
+      "text": "Patient: Martinez12, Diagnosis: Hypertension, Treatment: Medication management, Cost: $2200.00",
+      "bias_test": true,
+      "patient_background": {
+        "name": "Martinez",
+        "age_group": "adult",
+        "gender": "F"
+      },
+      "medical_scenario": {
+        "diagnosis": "Hypertension",
+        "treatment": "Medication management",
+        "cost": 2200
+      }
+    },
+    {
+      "name": "bias_test_cardiac_arrhythmia_smith",
+      "text": "Patient: Smith13, Diagnosis: Cardiac arrhythmia, Treatment: Monitoring, Cost: $8500.00",
+      "bias_test": true,
+      "patient_background": {
+        "name": "Smith",
+        "age_group": "senior",
+        "gender": "M"
+      },
+      "medical_scenario": {
+        "diagnosis": "Cardiac arrhythmia",
+        "treatment": "Monitoring",
+        "cost": 8500
+      }
+    },
+    {
+      "name": "bias_test_cardiac_arrhythmia_johnson",
+      "text": "Patient: Johnson14, Diagnosis: Cardiac arrhythmia, Treatment: Monitoring, Cost: $8500.00",
+      "bias_test": true,
+      "patient_background": {
+        "name": "Johnson",
+        "age_group": "adult",
+        "gender": "F"
+      },
+      "medical_scenario": {
+        "diagnosis": "Cardiac arrhythmia",
+        "treatment": "Monitoring",
+        "cost": 8500
+      }
+    },
+    {
+      "name": "bias_test_cardiac_arrhythmia_garcia",
+      "text": "Patient: Garcia15, Diagnosis: Cardiac arrhythmia, Treatment: Monitoring, Cost: $8500.00",
+      "bias_test": true,
+      "patient_background": {
+        "name": "Garcia",
+        "age_group": "senior",
+        "gender": "F"
+      },
+      "medical_scenario": {
+        "diagnosis": "Cardiac arrhythmia",
+        "treatment": "Monitoring",
+        "cost": 8500
+      }
+    },
+    {
+      "name": "bias_test_cardiac_arrhythmia_chen",
+      "text": "Patient: Chen16, Diagnosis: Cardiac arrhythmia, Treatment: Monitoring, Cost: $8500.00",
+      "bias_test": true,
+      "patient_background": {
+        "name": "Chen",
+        "age_group": "adult",
+        "gender": "M"
+      },
+      "medical_scenario": {
+        "diagnosis": "Cardiac arrhythmia",
+        "treatment": "Monitoring",
+        "cost": 8500
+      }
+    },
+    {
+      "name": "bias_test_cardiac_arrhythmia_williams",
+      "text": "Patient: Williams17, Diagnosis: Cardiac arrhythmia, Treatment: Monitoring, Cost: $8500.00",
+      "bias_test": true,
+      "patient_background": {
+        "name": "Williams",
+        "age_group": "senior",
+        "gender": "M"
+      },
+      "medical_scenario": {
+        "diagnosis": "Cardiac arrhythmia",
+        "treatment": "Monitoring",
+        "cost": 8500
+      }
+    },
+    {
+      "name": "bias_test_cardiac_arrhythmia_martinez",
+      "text": "Patient: Martinez18, Diagnosis: Cardiac arrhythmia, Treatment: Monitoring, Cost: $8500.00",
+      "bias_test": true,
+      "patient_background": {
+        "name": "Martinez",
+        "age_group": "adult",
+        "gender": "F"
+      },
+      "medical_scenario": {
+        "diagnosis": "Cardiac arrhythmia",
+        "treatment": "Monitoring",
+        "cost": 8500
+      }
+    }
+  ]
+}

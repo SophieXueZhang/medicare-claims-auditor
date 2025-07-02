@@ -138,4 +138,37 @@ class ClaimExtractor:
         elif amount > 50000:
             return "Medium Risk" if not self._is_chinese_text(diagnosis + procedure) else "中风险"
         else:
-            return "Low Risk" if not self._is_chinese_text(diagnosis + procedure) else "低风险" 
+            return "Low Risk" if not self._is_chinese_text(diagnosis + procedure) else "低风险"
+    
+    def extract_claim_info(self, text: str) -> Dict[str, Any]:
+        """
+        提取理赔信息的主要方法（与新系统兼容）
+        
+        Args:
+            text: 理赔申请文本
+            
+        Returns:
+            标准化的理赔信息字典
+        """
+        # 使用现有的extract方法
+        raw_info = self.extract(text)
+        
+        # 转换为新系统期望的格式
+        standardized_info = {
+            "patient": raw_info.get("patient_name", "Unknown"),
+            "diagnosis": raw_info.get("diagnosis", "Unknown"),
+            "treatment": raw_info.get("procedure", "Unknown"),  # treatment替代procedure
+            "cost": self._parse_cost(raw_info.get("amount", "0")),
+            "risk_level": raw_info.get("risk_level", "Medium Risk")
+        }
+        
+        return standardized_info
+    
+    def _parse_cost(self, amount_str: str) -> float:
+        """解析费用字符串为浮点数"""
+        try:
+            # 移除货币符号和逗号
+            cleaned_amount = re.sub(r'[,$￥元]', '', str(amount_str))
+            return float(cleaned_amount)
+        except (ValueError, TypeError):
+            return 0.0 

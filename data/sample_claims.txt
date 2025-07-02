@@ -1,14 +1,303 @@
-# 示例理赔申请数据
+# Real MIMIC-III Claims Data
+# Generated from real ICU patient records
 
-## 正常理赔案例
-患者：张三，诊断：膝关节炎，治疗：膝关节置换手术，费用：45000元
-患者：李丽，诊断：白内障，治疗：白内障手术，费用：8000元
-患者：王强，诊断：阑尾炎，治疗：阑尾炎手术，费用：12000元
+## Claim 1
+```json
+{
+  "patient": "MIMIC_43748_121860",
+  "diagnosis": "Acute on chronic combined systolic and diastolic heart failure",
+  "procedure": "Venous catheterization, not elsewhere classified",
+  "cost": 7203.47
+}
+```
 
-## 超额理赔案例  
-患者：李四，诊断：心脏病，治疗：心脏搭桥手术，费用：250000元
-患者：赵六，诊断：脑肿瘤，治疗：脑部手术，费用：300000元
+Patient: MIMIC_43748_121860, Diagnosis: Acute on chronic combined systolic and diastolic heart failure, Treatment: Venous catheterization, not elsewhere classified, Cost: $7203.47
 
-## 排除条款案例
-患者：王五，诊断：外貌不满，治疗：美容手术，费用：30000元
-患者：陈七，诊断：健康体检，治疗：非必要检查，费用：5000元 
+## Claim 2
+```json
+{
+  "patient": "MIMIC_10038_111115",
+  "diagnosis": "Infection and inflammatory reaction due to other internal orthopedic device, implant, and graft",
+  "procedure": "Arthrocentesis",
+  "cost": 9815.35
+}
+```
+
+Patient: MIMIC_10038_111115, Diagnosis: Infection and inflammatory reaction due to other internal orthopedic device, implant, and graft, Treatment: Arthrocentesis, Cost: $9815.35
+
+## Claim 3
+```json
+{
+  "patient": "MIMIC_10124_182664",
+  "diagnosis": "Closed fracture of intertrochanteric section of neck of femur",
+  "procedure": "Open reduction of fracture with internal fixation, femur",
+  "cost": 12268.42
+}
+```
+
+Patient: MIMIC_10124_182664, Diagnosis: Closed fracture of intertrochanteric section of neck of femur, Treatment: Open reduction of fracture with internal fixation, femur, Cost: $12268.42
+
+## Claim 4
+```json
+{
+  "patient": "MIMIC_42430_100969",
+  "diagnosis": "Cerebral embolism with cerebral infarction",
+  "procedure": "Insertion of endotracheal tube",
+  "cost": 38442.18
+}
+```
+
+Patient: MIMIC_42430_100969, Diagnosis: Cerebral embolism with cerebral infarction, Treatment: Insertion of endotracheal tube, Cost: $38442.18
+
+## Claim 5
+```json
+{
+  "patient": "MIMIC_43870_142633",
+  "diagnosis": "Cerebral artery occlusion, unspecified with cerebral infarction",
+  "procedure": "Venous catheterization, not elsewhere classified",
+  "cost": 25268.68
+}
+```
+
+Patient: MIMIC_43870_142633, Diagnosis: Cerebral artery occlusion, unspecified with cerebral infarction, Treatment: Venous catheterization, not elsewhere classified, Cost: $25268.68
+
+## Claim 6
+```json
+{
+  "patient": "MIMIC_41976_152032",
+  "diagnosis": "Pneumonia, organism unspecified",
+  "procedure": "Venous catheterization, not elsewhere classified",
+  "cost": 21620.68
+}
+```
+
+Patient: MIMIC_41976_152032, Diagnosis: Pneumonia, organism unspecified, Treatment: Venous catheterization, not elsewhere classified, Cost: $21620.68
+
+## Claim 7
+```json
+{
+  "patient": "MIMIC_43927_110958",
+  "diagnosis": "Coronary atherosclerosis of native coronary artery",
+  "procedure": "(Aorto)coronary bypass of two coronary arteries",
+  "cost": 54434.5
+}
+```
+
+Patient: MIMIC_43927_110958, Diagnosis: Coronary atherosclerosis of native coronary artery, Treatment: (Aorto)coronary bypass of two coronary arteries, Cost: $54434.5
+
+## Claim 8
+```json
+{
+  "patient": "MIMIC_10043_168674",
+  "diagnosis": "Acute respiratory failure",
+  "procedure": "Continuous invasive mechanical ventilation for less than 96 consecutive hours",
+  "cost": 38453.7
+}
+```
+
+Patient: MIMIC_10043_168674, Diagnosis: Acute respiratory failure, Treatment: Continuous invasive mechanical ventilation for less than 96 consecutive hours, Cost: $38453.7
+
+## Claim 9
+```json
+{
+  "patient": "MIMIC_41976_173269",
+  "diagnosis": "Methicillin resistant Staphylococcus aureus septicemia",
+  "procedure": "Arterial catheterization",
+  "cost": 13265.51
+}
+```
+
+Patient: MIMIC_41976_173269, Diagnosis: Methicillin resistant Staphylococcus aureus septicemia, Treatment: Arterial catheterization, Cost: $13265.51
+
+## Claim 10
+```json
+{
+  "patient": "MIMIC_41914_101361",
+  "diagnosis": "Ventilator associated pneumonia",
+  "procedure": "Continuous invasive mechanical ventilation for 96 consecutive hours or more",
+  "cost": 20688.45
+}
+```
+
+Patient: MIMIC_41914_101361, Diagnosis: Ventilator associated pneumonia, Treatment: Continuous invasive mechanical ventilation for 96 consecutive hours or more, Cost: $20688.45
+
+## Claim 11
+```json
+{
+  "patient": "MIMIC_10102_164869",
+  "diagnosis": "Chronic myeloid leukemia, without mention of having achieved remission",
+  "procedure": "Transfusion of packed cells",
+  "cost": 7135.2
+}
+```
+
+Patient: MIMIC_10102_164869, Diagnosis: Chronic myeloid leukemia, without mention of having achieved remission, Treatment: Transfusion of packed cells, Cost: $7135.2
+
+## Claim 12
+```json
+{
+  "patient": "MIMIC_10035_110244",
+  "diagnosis": "Occlusion and stenosis of carotid artery without mention of cerebral infarction",
+  "procedure": "Angioplasty of other non-coronary vessel(s)",
+  "cost": 63217.41
+}
+```
+
+Patient: MIMIC_10035_110244, Diagnosis: Occlusion and stenosis of carotid artery without mention of cerebral infarction, Treatment: Angioplasty of other non-coronary vessel(s), Cost: $63217.41
+
+## Claim 13
+```json
+{
+  "patient": "MIMIC_42292_138503",
+  "diagnosis": "Open wound of finger(s), without mention of complication",
+  "procedure": "Alcohol detoxification",
+  "cost": 4549.4
+}
+```
+
+Patient: MIMIC_42292_138503, Diagnosis: Open wound of finger(s), without mention of complication, Treatment: Alcohol detoxification, Cost: $4549.4
+
+## Claim 14
+```json
+{
+  "patient": "MIMIC_10119_157466",
+  "diagnosis": "Acute cholecystitis",
+  "procedure": "Cholecystectomy",
+  "cost": 7167.32
+}
+```
+
+Patient: MIMIC_10119_157466, Diagnosis: Acute cholecystitis, Treatment: Cholecystectomy, Cost: $7167.32
+
+## Claim 15
+```json
+{
+  "patient": "MIMIC_10112_188574",
+  "diagnosis": "Ventricular fibrillation",
+  "procedure": "Flexible sigmoidoscopy",
+  "cost": 5765.16
+}
+```
+
+Patient: MIMIC_10112_188574, Diagnosis: Ventricular fibrillation, Treatment: Flexible sigmoidoscopy, Cost: $5765.16
+
+## Claim 16
+```json
+{
+  "patient": "MIMIC_10069_146672",
+  "diagnosis": "Epilepsy, unspecified, with intractable epilepsy",
+  "procedure": "Parenteral infusion of concentrated nutritional substances",
+  "cost": 8005.1
+}
+```
+
+Patient: MIMIC_10069_146672, Diagnosis: Epilepsy, unspecified, with intractable epilepsy, Treatment: Parenteral infusion of concentrated nutritional substances, Cost: $8005.1
+
+## Claim 17
+```json
+{
+  "patient": "MIMIC_41795_138132",
+  "diagnosis": "Acute respiratory failure",
+  "procedure": "Continuous invasive mechanical ventilation for 96 consecutive hours or more",
+  "cost": 21548.55
+}
+```
+
+Patient: MIMIC_41795_138132, Diagnosis: Acute respiratory failure, Treatment: Continuous invasive mechanical ventilation for 96 consecutive hours or more, Cost: $21548.55
+
+## Claim 18
+```json
+{
+  "patient": "MIMIC_10040_157839",
+  "diagnosis": "Unspecified hypertensive heart disease with heart failure",
+  "procedure": "ICD9: 3601",
+  "cost": 13160.64
+}
+```
+
+Patient: MIMIC_10040_157839, Diagnosis: Unspecified hypertensive heart disease with heart failure, Treatment: ICD9: 3601, Cost: $13160.64
+
+## Claim 19
+```json
+{
+  "patient": "MIMIC_41976_145024",
+  "diagnosis": "Mechanical complication of gastrostomy",
+  "procedure": "Replacement of tracheostomy tube",
+  "cost": 4116.82
+}
+```
+
+Patient: MIMIC_41976_145024, Diagnosis: Mechanical complication of gastrostomy, Treatment: Replacement of tracheostomy tube, Cost: $4116.82
+
+## Claim 20
+```json
+{
+  "patient": "MIMIC_42231_171878",
+  "diagnosis": "Malignant neoplasm of kidney, except pelvis",
+  "procedure": "Nephroureterectomy",
+  "cost": 25770.77
+}
+```
+
+Patient: MIMIC_42231_171878, Diagnosis: Malignant neoplasm of kidney, except pelvis, Treatment: Nephroureterectomy, Cost: $25770.77
+
+## Claim 21
+```json
+{
+  "patient": "MIMIC_42281_195911",
+  "diagnosis": "Cirrhosis of liver without mention of alcohol",
+  "procedure": "Endoscopic excision or destruction of lesion or tissue of esophagus",
+  "cost": 13509.42
+}
+```
+
+Patient: MIMIC_42281_195911, Diagnosis: Cirrhosis of liver without mention of alcohol, Treatment: Endoscopic excision or destruction of lesion or tissue of esophagus, Cost: $13509.42
+
+## Claim 22
+```json
+{
+  "patient": "MIMIC_10061_145203",
+  "diagnosis": "Congestive heart failure, unspecified",
+  "procedure": "Combined right and left heart cardiac catheterization",
+  "cost": 29770.45
+}
+```
+
+Patient: MIMIC_10061_145203, Diagnosis: Congestive heart failure, unspecified, Treatment: Combined right and left heart cardiac catheterization, Cost: $29770.45
+
+## Claim 23
+```json
+{
+  "patient": "MIMIC_42367_139932",
+  "diagnosis": "Subdural hemorrhage following injury without mention of open intracranial wound, with prolonged [more than 24 hours] loss of consciousness without return to pre-existing conscious level",
+  "procedure": "Incision of cerebral meninges",
+  "cost": 55694.19
+}
+```
+
+Patient: MIMIC_42367_139932, Diagnosis: Subdural hemorrhage following injury without mention of open intracranial wound, with prolonged [more than 24 hours] loss of consciousness without return to pre-existing conscious level, Treatment: Incision of cerebral meninges, Cost: $55694.19
+
+## Claim 24
+```json
+{
+  "patient": "MIMIC_44154_174245",
+  "diagnosis": "Unspecified septicemia",
+  "procedure": "Continuous invasive mechanical ventilation for less than 96 consecutive hours",
+  "cost": 33658.35
+}
+```
+
+Patient: MIMIC_44154_174245, Diagnosis: Unspecified septicemia, Treatment: Continuous invasive mechanical ventilation for less than 96 consecutive hours, Cost: $33658.35
+
+## Claim 25
+```json
+{
+  "patient": "MIMIC_10011_105331",
+  "diagnosis": "Acute and subacute necrosis of liver",
+  "procedure": "Parenteral infusion of concentrated nutritional substances",
+  "cost": 8613.9
+}
+```
+
+Patient: MIMIC_10011_105331, Diagnosis: Acute and subacute necrosis of liver, Treatment: Parenteral infusion of concentrated nutritional substances, Cost: $8613.9
+

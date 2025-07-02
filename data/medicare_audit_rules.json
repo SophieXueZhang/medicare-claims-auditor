@@ -1,0 +1,4691 @@
+{
+  "metadata": {
+    "source": "Medicare NCD/LCD Database",
+    "generated_date": "2025-07-01T19:14:46.449278",
+    "ncd_count": 352,
+    "hcpcs_count": 1767,
+    "benefit_categories": 78
+  },
+  "coverage_rules": {
+    "covered": [
+      {
+        "source": "NCD_9",
+        "title": "Phaco-Emulsification Procedure - Cataract Extraction",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p> in view of recommendations of authoritative sources in the field of ophthalmology, the subject technique is viewed as an accepted procedure for removal of cataracts. accordingly, program reimburse..."
+      },
+      {
+        "source": "NCD_28",
+        "title": "Treatment of Drug Abuse (Chemical Dependency)",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>accordingly, when it is medically necessary for a patient to receive detoxification and/or rehabilitation for drug substance abuse as a hospital inpatient, coverage for care in that setting is avai..."
+      },
+      {
+        "source": "NCD_29",
+        "title": "Treatment of Alcoholism and Drug Abuse in a Freestanding Clinic",
+        "condition": [
+          "mental health"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p> coverage is available for alcoholism or drug abuse treatment services (such as drug therapy, psychotherapy, and patient education) that are provided incident to a physician's professional service ..."
+      },
+      {
+        "source": "NCD_30",
+        "title": "Chemical Aversion Therapy for Treatment of Alcoholism",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>available evidence indicates that chemical aversion therapy may be an effective component of certain alcoholism treatment programs, particularly as part of multi-modality treatment programs which i..."
+      },
+      {
+        "source": "NCD_32",
+        "title": "Diagnosis and Treatment of Impotence",
+        "condition": [
+          "mental health"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p> program payment may be made for diagnosis and treatment of sexual impotence.&#160; since causes and, therefore, appropriate treatment vary, if abuse is suspected it may be necessary to request doc..."
+      },
+      {
+        "source": "NCD_44",
+        "title": "Blood Platelet Transfusions",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "dialysis",
+          "transplant"
+        ],
+        "notes": "<p> blood platelet transplants are safe and effective for the correction of thrombocytopenia and other blood defects. it is covered under medicare when treatment is reasonable and necessary for the in..."
+      },
+      {
+        "source": "NCD_52",
+        "title": "Therapeutic Embolization",
+        "condition": [
+          "cancer",
+          "kidney"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p> therapeutic embolization is covered when done for hemorrhage, and for other conditions amenable to treatment by the procedure, when reasonable and necessary for the individual patient. renal embol..."
+      },
+      {
+        "source": "NCD_59",
+        "title": "Withdrawal Treatments for Narcotic Addictions",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>withdrawal is an accepted treatment for narcotic addiction, and part b payment can be made for these services if they are provided by the physician directly or under his personal supervision and if..."
+      },
+      {
+        "source": "NCD_76",
+        "title": "Fluidized Therapy Dry Heat for Certain Musculoskeletal Disorders",
+        "condition": [],
+        "procedure": [
+          "therapy"
+        ],
+        "notes": "<p> use of fluidized therapy dry heat is covered as an acceptable alternative to other heat therapy modalities in the treatment of acute or subacute traumatic or nontraumatic musculoskeletal disorders..."
+      },
+      {
+        "source": "NCD_77",
+        "title": "Electroencephalographic Monitoring During Surgical Procedures Involving the Cerebral Vasculature",
+        "condition": [
+          "stroke"
+        ],
+        "procedure": [
+          "surgery",
+          "imaging",
+          "monitoring"
+        ],
+        "notes": "<p> <strong> cim 35-57</strong></p> \n \n<p> electroencephalographic (eeg) monitoring is a safe and reliable technique for the assessment of gross cerebral blood flow during general anesthesia and is co..."
+      },
+      {
+        "source": "NCD_79",
+        "title": "Thoracic Duct Drainage (TDD) in Renal Transplants",
+        "condition": [
+          "kidney"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "transplant"
+        ],
+        "notes": "<p>  tdd is performed on an inpatient basis, and the inpatient stay is covered for patients admitted for treatment in advance of a kidney transplant as well as for those receiving it post-transplant.&..."
+      },
+      {
+        "source": "NCD_81",
+        "title": "Endoscopy",
+        "condition": [],
+        "procedure": [],
+        "notes": "<p> endoscopic procedures are covered when reasonable and necessary for the individual patient.</p>"
+      },
+      {
+        "source": "NCD_84",
+        "title": "Invasive Intracranial Pressure Monitoring",
+        "condition": [],
+        "procedure": [
+          "monitoring"
+        ],
+        "notes": "<p> it is a covered procedure when reasonable and necessary for the individual patient.</p>"
+      },
+      {
+        "source": "NCD_92",
+        "title": "Closed-Loop Blood Glucose Control Device (CBGCD)",
+        "condition": [
+          "diabetes"
+        ],
+        "procedure": [
+          "imaging",
+          "device"
+        ],
+        "notes": "<p> use of the cbgcd is covered for short-term management of insulin dependent diabetics in crisis situations, in a hospital inpatient setting, and only under the direction of specially trained medica..."
+      },
+      {
+        "source": "NCD_93",
+        "title": "Nonselective (Random) Transfusions and Living Related Donor Specific Transfusions (DST) in Kidney Transplantation",
+        "condition": [
+          "kidney"
+        ],
+        "procedure": [
+          "imaging",
+          "dialysis",
+          "transplant"
+        ],
+        "notes": "<p> these pretransplant transfusions are covered under medicare without a specific limitation on the number of transfusions, subject to the normal medicare blood deductible provisions. where blood is ..."
+      },
+      {
+        "source": "NCD_95",
+        "title": "Injection Sclerotherapy for Esophageal Variceal Bleeding",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "injection"
+        ],
+        "notes": "<p> this procedure is covered under medicare.</p>"
+      },
+      {
+        "source": "NCD_104",
+        "title": "Diagnostic Endocardial Electrical Stimulation (Pacing)",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p> diagnostic endocardial electrical stimulation (ees), also called programmed electrical stimulation of the heart, is covered under medicare when used for patients with severe cardiac arrhythmias.</..."
+      },
+      {
+        "source": "NCD_106",
+        "title": "Treatment of Kidney Stones",
+        "condition": [
+          "kidney"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p> in addition to the traditional surgical/endoscopic techniques for the treatment of kidney stones, the following lithotripsy techniques are also covered for services rendered on or after march l5, ..."
+      },
+      {
+        "source": "NCD_116",
+        "title": "Laparoscopic Cholecystectomy",
+        "condition": [],
+        "procedure": [
+          "surgery",
+          "imaging"
+        ],
+        "notes": "<p>laparoscopic cholecystectomy is a covered surgical procedure in which a diseased gall bladder is removed through the use of instruments introduced via cannulae, with vision of the operative field m..."
+      },
+      {
+        "source": "NCD_120",
+        "title": "Transmyocardial Revascularization (TMR)",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>  cms&#160;therefore covers tmr as a late or last resort for patients with severe (canadian cardiovascular society classification classes iii or iv) angina (stable or unstable), which has been foun..."
+      },
+      {
+        "source": "NCD_129",
+        "title": "Treatment of Actinic Keratosis",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>effective for services performed on and after november 26, 2001, medicare covers the destruction of actinic keratoses without restrictions based on lesion or patient characteristics.</p>"
+      },
+      {
+        "source": "NCD_133",
+        "title": "Insulin Syringe",
+        "condition": [
+          "diabetes"
+        ],
+        "procedure": [
+          "imaging",
+          "injection"
+        ],
+        "notes": "<p> medical supplies are covered under &#167;1861(s)(2)(a) of the act only when they are furnished incident to a physician's professional services. to be covered under this provision an insulin syring..."
+      },
+      {
+        "source": "NCD_136",
+        "title": "Hydrophilic Contact Lens For Corneal Bandage",
+        "condition": [],
+        "procedure": [
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>payment may be made under &sect;1861(s)(2) of the social security act for a hydrophilic contact lens approved by the food and drug administration (fda) and used as a supply incident to a physician..."
+      },
+      {
+        "source": "NCD_138",
+        "title": "Autogenous Epidural Blood Graft",
+        "condition": [],
+        "procedure": [
+          "imaging",
+          "transplant"
+        ],
+        "notes": "<p> autogenous epidural blood grafts are considered a safe and effective remedy for severe headaches that may occur after performance of spinal anesthesia, spinal taps or myelograms, and are covered.<..."
+      },
+      {
+        "source": "NCD_139",
+        "title": "Porcine Skin and Gradient Pressure Dressings",
+        "condition": [
+          "arthritis",
+          "wound"
+        ],
+        "procedure": [
+          "imaging",
+          "transplant"
+        ],
+        "notes": "<p> porcine (pig) skin dressings are covered, if reasonable and necessary for the individual patient as an occlusive dressing for burns, donor sites of a homograft, and decubiti and other ulcers.</p>\r..."
+      },
+      {
+        "source": "NCD_141",
+        "title": "Certain Drugs Distributed by the National Cancer Institute",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p> a physician is eligible to receive group c drugs from the divison of cancer treatment only if the following requirements are met:</p>\n\n<ul> \n<li> a physician must be registered with the nci as an ..."
+      },
+      {
+        "source": "NCD_144",
+        "title": "Granulocyte Transfusions",
+        "condition": [
+          "infection"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "dialysis"
+        ],
+        "notes": "<p>granulocyte transfusions to patients suffering from severe infection and granulocytopenia are a covered service under medicare. granulocytopenia is usually identified as fewer than 500 granulocytes..."
+      },
+      {
+        "source": "NCD_145",
+        "title": "Transcutaneous Electrical Nerve Stimulation (TENS) for Acute Post-Operative Pain",
+        "condition": [
+          "pain"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>the use of transcutaneous electrical nerve stimulation (tens) for the relief of acute post-operative pain is covered under medicare. tens may be covered whether used as an adjunct to the use of dru..."
+      },
+      {
+        "source": "NCD_147",
+        "title": "Scalp Hypothermia During Chemotherapy to Prevent Hair Loss",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "device"
+        ],
+        "notes": "<p> while ice-filled bags or bandages or other devices used for scalp hypothermia during chemotherapy may be covered as supplies of the kind commonly furnished without a separate charge, no separate c..."
+      },
+      {
+        "source": "NCD_148",
+        "title": "Lymphocyte Immune Globulin, Anti-Thymocyte Globulin (Equine)",
+        "condition": [
+          "kidney"
+        ],
+        "procedure": [
+          "imaging",
+          "transplant"
+        ],
+        "notes": "<p>  the fda has approved one lymphocyte immune globulin preparation for marketing, lymphocyte immune globulin, anti-thymocyte globulin (equine). this drug is indicated for the management of allograft..."
+      },
+      {
+        "source": "NCD_154",
+        "title": "Blood Transfusions",
+        "condition": [],
+        "procedure": [
+          "surgery",
+          "imaging",
+          "dialysis"
+        ],
+        "notes": "<p><strong>b.  policy governing transfusions</p> </strong>\n \n<p> for medicare coverage purposes, it is important to distinguish between a transfusion itself and preoperative blood services; e.g., coll..."
+      },
+      {
+        "source": "NCD_156",
+        "title": "Intravenous Iron Therapy",
+        "condition": [
+          "kidney"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "injection",
+          "dialysis"
+        ],
+        "notes": "<p>   effective december 1, 2000, medicare covers sodium ferric gluconate complex in sucrose injection as a first line treatment of iron deficiency anemia when furnished intravenously to patients unde..."
+      },
+      {
+        "source": "NCD_158",
+        "title": "Intravenous Immune Globulin for the Treatment of Autoimmune Mucocutaneous Blistering Diseases",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "biopsy"
+        ],
+        "notes": "<p>   effective october 1, 2002, ivig is covered for the treatment of biopsy-proven (1) pemphigus vulgaris, (2) pemphigus foliaceus, (3) bullous pemphigoid, (4) mucous membrane pemphigoid (a.k.a., cic..."
+      },
+      {
+        "source": "NCD_172",
+        "title": "Gastrophotography",
+        "condition": [
+          "wound"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p> gastrophotography is an accepted procedure for diagnosis and treatment of gastrointestinal disorders. the photographic record provided by this procedure is often necessary for consultation and/or ..."
+      },
+      {
+        "source": "NCD_173",
+        "title": "Vabra Aspirator",
+        "condition": [],
+        "procedure": [
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p> program payment cannot be made for the aspirator or the related diagnostic services when furnished in connection with the examination of an asymptomatic patient. payment for routine physical check..."
+      },
+      {
+        "source": "NCD_183",
+        "title": "Pronouncement of Death",
+        "condition": [],
+        "procedure": [],
+        "notes": "<p> reasonable and necessary medical services rendered up to and including pronouncement of death by a physician are covered diagnostic or therapeutic services.</p>"
+      },
+      {
+        "source": "NCD_188",
+        "title": "Histocompatibility Testing",
+        "condition": [
+          "kidney"
+        ],
+        "procedure": [
+          "screening",
+          "imaging",
+          "injection",
+          "dialysis",
+          "transplant"
+        ],
+        "notes": "<p> this testing is safe and effective when it is performed on patients:</p>\n\n<div style=\"margin-left: 1cm;\"><p>a. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in preparation for a kidney transplant;</p>\n<p>b.&nbsp;..."
+      },
+      {
+        "source": "NCD_191",
+        "title": "Esophageal Manometry",
+        "condition": [],
+        "procedure": [],
+        "notes": "<p>  esophageal manometry is covered under medicare where it is determined to be reasonable and necessary for the individual patient.</p>"
+      },
+      {
+        "source": "NCD_192",
+        "title": "Speech-Language Pathology Services for the Treatment of Dysphagia",
+        "condition": [],
+        "procedure": [
+          "therapy"
+        ],
+        "notes": "<p>   speech-language pathology services are covered under medicare for the treatment of dysphagia, regardless of the presence of a communication disability.</p>"
+      },
+      {
+        "source": "NCD_194",
+        "title": "Dental Examination Prior to Kidney Transplantation",
+        "condition": [
+          "kidney",
+          "infection"
+        ],
+        "procedure": [
+          "surgery",
+          "screening",
+          "imaging",
+          "transplant"
+        ],
+        "notes": "<p> despite the \"dental services exclusion\" in &#167;1862(a)(12) of the act (see the <a href=\"https://www.cms.gov/regulations-and-guidance/guidance/manuals/internet-only-manuals-ioms-items/cms012673\">..."
+      },
+      {
+        "source": "NCD_195",
+        "title": "Xenon Scan - RETIRED",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>220.7 - xenon scan (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>effective december 18, 2014, ncd 220.7 is retired.</p>"
+      },
+      {
+        "source": "NCD_199",
+        "title": "Nuclear Radiology Procedure - RETIRED",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>220.8 - nuclear radiology procedure (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23) </strong></p>\n<p>effective december 18, 2014, ncd 220.8 is re..."
+      },
+      {
+        "source": "NCD_200",
+        "title": "Evoked Response Tests",
+        "condition": [
+          "stroke"
+        ],
+        "procedure": [
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p>  evoked response tests, including brain stem evoked response and visual evoked response tests, are generally accepted as safe and effective diagnostic tools. program payment may be made for these ..."
+      },
+      {
+        "source": "NCD_202",
+        "title": "Uroflowmetric Evaluations",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p> uroflowmetric evaluations (also referred to as urodynamic voiding or urodynamic flow studies) are covered under medicare for diagnosing various urological dysfunctions, including bladder outlet ob..."
+      },
+      {
+        "source": "NCD_206",
+        "title": "Corset Used as Hernia Support",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p> a hernia support (whether in the form of a corset or truss) which meets the definition of a brace is covered under part b under &#167;1861(s)(9) of the act.</p>"
+      },
+      {
+        "source": "NCD_207",
+        "title": "Sykes Hernia Control",
+        "condition": [],
+        "procedure": [
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>  based on professional advice, it has been determined that the sykes hernia control (a spring-type, u-shaped, strapless truss) is not functionally more beneficial than a conventional truss. make p..."
+      },
+      {
+        "source": "NCD_208",
+        "title": "Prosthetic Shoe",
+        "condition": [
+          "arthritis"
+        ],
+        "procedure": [
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>  a prosthetic shoe (a device used when all or a substantial portion of the front part of the foot is missing) can be covered as a terminal device; i.e., a structural supplement replacing a totally..."
+      },
+      {
+        "source": "NCD_212",
+        "title": "Noninvasive Tests of Carotid Function",
+        "condition": [],
+        "procedure": [
+          "screening",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>  it is important to note that the names of these tests are not standardized. following are some of the acceptable tests, recognizing that this list is not inclusive and that local medical consulta..."
+      },
+      {
+        "source": "NCD_214",
+        "title": "Telephone Transmission of EEGs",
+        "condition": [],
+        "procedure": [
+          "surgery",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p>  telephone transmission of eegs is covered as a physician's service or as incident to a physician's service when reasonable and necessary for the individual patient, under appropriate circumstance..."
+      },
+      {
+        "source": "NCD_215",
+        "title": "Ambulatory EEG Monitoring - RETIRED",
+        "condition": [],
+        "procedure": [
+          "imaging",
+          "monitoring"
+        ],
+        "notes": "<p><strong>160.22  ambulatory eeg monitoring (retired)<br>\n<em>(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p></em>\n<p><em>effective january 1, 2023, ncd 16..."
+      },
+      {
+        "source": "NCD_216",
+        "title": "Stereotaxic Depth Electrode Implantation",
+        "condition": [],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging",
+          "injection",
+          "device"
+        ],
+        "notes": "<p> stereotaxic depth electrode implantation prior to surgical treatment of focal epilepsy for patients who are unresponsive to anticonvulsant medications has been found both safe and effective for di..."
+      },
+      {
+        "source": "NCD_220",
+        "title": "Self-Contained Pacemaker Monitors",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "imaging",
+          "device",
+          "monitoring"
+        ],
+        "notes": "<p>  self-contained pacemaker monitors are accepted devices for monitoring cardiac pacemakers. accordingly, program payment may be made for the rental or purchase of either of the following pacemaker ..."
+      },
+      {
+        "source": "NCD_247",
+        "title": "Tracheostomy Speaking Valve",
+        "condition": [],
+        "procedure": [
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>a trachea tube has been determined to satisfy the definition of a prosthetic device, and the tracheostomy speaking valve is an add on to the trachea tube which may be considered a medically necessa..."
+      },
+      {
+        "source": "NCD_255",
+        "title": "Digital Subtraction Angiography",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p>medicare administrative contractors should be alert to possible increases in utilization of dsa over conventional angiographic procedures, as well as to the fact that ordinarily patients should not..."
+      },
+      {
+        "source": "NCD_260",
+        "title": "Portable Hand-Held X-Ray Instrument",
+        "condition": [],
+        "procedure": [
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>  the use of the portable hand-held x-ray instrument as an imaging device is covered under medicare. it should be reimbursed as part of the physician's professional service, and no additional charg..."
+      },
+      {
+        "source": "NCD_261",
+        "title": "Computer Enhanced Perimetry",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p> it is a covered service when used in assessing visual fields in patients with glaucoma or other neuropathologic defects.</p>"
+      },
+      {
+        "source": "NCD_271",
+        "title": "Single Photon Emission Computed Tomography  (SPECT)",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p> frequency limitations: medicare administrative contractor discretion.</p>\r\n\r\n<p>in the case of myocardial viability, fdg positron emission tomography (pet) may be used following a spect that was f..."
+      },
+      {
+        "source": "NCD_272",
+        "title": "Percutaneous Image-Guided Breast Biopsy",
+        "condition": [],
+        "procedure": [
+          "imaging",
+          "biopsy"
+        ],
+        "notes": "<strong><p>a. non-palpable breast lesions</p></strong>   \r\n   \r\n<p>   effective january 1, 2003, medicare covers percutaneous image-guided breast biopsy using stereotactic or ultrasound imaging for a ..."
+      },
+      {
+        "source": "NCD_273",
+        "title": "Transcutaneous Electrical Nerve Stimulators (TENS) - RETIRED",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>280.13 - transcutaneous electrical nerve stimulators (tens) (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>please note section 2..."
+      },
+      {
+        "source": "NCD_291",
+        "title": "Anti-Cancer Chemotherapy for Colorectal Cancer",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<br><strong><p>b. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nationally covered indications</p></strong>\r\n\r\n<p>pursuant to this national coverage determination (ncd), the off-label use of clinical items and servic..."
+      },
+      {
+        "source": "NCD_330",
+        "title": "Sleep Testing for Obstructive Sleep Apnea (OSA)",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p><strong>   b. nationally covered indications</strong></p>\n\n<p>effective for claims with dates of service on and after march 3, 2009, the centers for medicare &amp; medicaid services finds that the ..."
+      },
+      {
+        "source": "NCD_338",
+        "title": "Dermal Injections for the Treatment of Facial Lipodystrophy Syndrome (LDS)",
+        "condition": [
+          "mental health"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "injection"
+        ],
+        "notes": "<p>  <strong>   b. nationally covered indications</strong></p>  \r\n  \r\n<p>   effective for claims with dates of service on and after march 23, 2010, dermal injections for lds are only reasonable and ne..."
+      },
+      {
+        "source": "NCD_340",
+        "title": "The Pritikin Program",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>   <strong>    b. nationally covered indications</strong></p>\n\n<p> effective for claims with dates of service on and after august 12, 2010, the pritikin program meets the intensive cardiac rehabili..."
+      },
+      {
+        "source": "NCD_341",
+        "title": "Ornish Program for Reversing Heart Disease",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>  <strong>  b. nationally covered indications</strong></p>\n\n<p>effective for claims with dates of service on and after august 12, 2010, the ornish program for reversing heart disease meets the inte..."
+      },
+      {
+        "source": "NCD_342",
+        "title": "Counseling to Prevent Tobacco Use",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p>     <strong>   b. nationally covered indications</strong></p>  \n  \n<p>     effective for claims with dates of service on or after august 25, 2010, cms will cover tobacco cessation counseling for o..."
+      },
+      {
+        "source": "NCD_344",
+        "title": "Autologous Cellular Immunotherapy Treatment",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<strong>   <p> b. nationally covered indications</p></strong>\n<p> effective for services performed on or after june 30, 2011, the centers for medicare and medicaid services (cms) proposes that the evi..."
+      },
+      {
+        "source": "NCD_345",
+        "title": "Transtelephonic Monitoring of Cardiac Pacemakers",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "surgery",
+          "screening",
+          "imaging",
+          "device",
+          "monitoring"
+        ],
+        "notes": "<p>  <strong>  b. definition of transtelephonic monitoring</strong></p>\r\n\r\n<p>  in order for transtelephonic monitoring services to be covered, the services must consist of the following elements:</p>..."
+      },
+      {
+        "source": "NCD_352",
+        "title": "Screening for Sexually Transmitted Infections (STIs) and High-Intensity Behavioral Counseling (HIBC) to Prevent STIs",
+        "condition": [
+          "infection",
+          "pregnancy"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</strong></p>\n\n<p>cms has determined that the evidence is adequate to conclude that screening for chlamydia, gonorrhea, syphilis, and hepatitis b, as well a..."
+      },
+      {
+        "source": "NCD_353",
+        "title": "Intensive Behavioral Therapy for Obesity",
+        "condition": [
+          "obesity"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<strong> <p> b. nationally covered indications</p></strong>\n\n<p> effective for claims with dates of service on or after november 29, 2011, cms covers intensive behavioral therapy for obesity, defined ..."
+      },
+      {
+        "source": "NCD_362",
+        "title": "Benson-Henry Institute Cardiac Wellness Program",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<strong><p>b. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nationally covered indications</p></strong>\n\n<p>effective for claims with dates of service on and after may 6, 2014, the benson-henry institute cardiac well..."
+      },
+      {
+        "source": "NCD_369",
+        "title": "Screening for Hepatitis B Virus (HBV) Infection",
+        "condition": [
+          "infection",
+          "pregnancy"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "injection"
+        ],
+        "notes": "<p><strong><em>b</em>. nationally covered indications</strong></p>\n\n<p>effective for services performed on or after september 28, 2016, cms has determined that the evidence is sufficient to cover scre..."
+      },
+      {
+        "source": "NCD_371",
+        "title": "Supervised Exercise Therapy (SET) for Symptomatic Peripheral Artery Disease (PAD)",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</strong></p>\r\n<p>effective for services performed on or after may 25, 2017, the centers for medicare & medicaid services has determined that the evidence i..."
+      },
+      {
+        "source": "NCD_373",
+        "title": "Acupuncture for Chronic Lower Back Pain (cLBP)",
+        "condition": [
+          "pregnancy",
+          "pain"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</p></strong>\n\n<p>effective for services performed on or after january 21, 2020, cms will cover acupuncture for medicare patients with chronic lower back pa..."
+      },
+      {
+        "source": "NCD_374",
+        "title": "Chimeric Antigen Receptor (CAR) T-cell Therapy",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p><strong>b. &nbsp;&nbsp;&nbsp;nationally covered indications</strong></p>\n\n<p>effective for services performed on or after august 7, 2019, the centers for medicare & medicaid services (cms) covers a..."
+      },
+      {
+        "source": "NCD_376",
+        "title": "Seat Elevation Equipment (Power Operated) on Power Wheelchairs",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</strong></p>\n\t\n<p>effective for services performed on or after may 16, 2023, power seat elevation equipment is reasonable and necessary for individuals usi..."
+      },
+      {
+        "source": "NCD_377",
+        "title": "Pre-Exposure Prophylaxis (PrEP) for Human Immunodeficiency Virus (HIV) Prevention",
+        "condition": [],
+        "procedure": [
+          "screening",
+          "imaging",
+          "injection"
+        ],
+        "notes": "<font color=\"ff0000\"><strong>b. nationally covered indications</strong></p></font>\n\n<p><font color=\"ff0000\"><em>effective for claims with dates of service on or after september 30, 2024, cms covers pr..."
+      },
+      {
+        "source": "NCD_378",
+        "title": "Implantable Pulmonary Artery Pressure Sensors for Heart Failure Management",
+        "condition": [
+          "heart",
+          "kidney",
+          "lung",
+          "stroke"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "injection",
+          "device",
+          "biopsy",
+          "monitoring"
+        ],
+        "notes": "<p><strong><font color=\"#ff0000\"><em>b. nationally covered indications</strong></font></p></em>\n<p><em><font color=\"#ff0000\">the centers for medicare & medicaid services (cms) covers implantable pulmo..."
+      },
+      {
+        "source": "HCPCS_DME",
+        "title": "Durable Medical Equipment",
+        "condition": [
+          "chronic illness",
+          "disability"
+        ],
+        "procedure": [
+          "equipment",
+          "device"
+        ],
+        "hcpcs_codes": [
+          "E0953",
+          "E0955",
+          "E0956",
+          "E0957",
+          "E0960",
+          "E0966",
+          "E0992",
+          "E1028",
+          "E1033",
+          "E1034",
+          "E2231",
+          "E2291",
+          "E2292",
+          "E2293",
+          "E2294",
+          "E2601",
+          "E2602",
+          "E2603",
+          "E2604",
+          "E2605",
+          "E2606",
+          "E2607",
+          "E2608",
+          "E2609",
+          "E2610",
+          "E2611",
+          "E2612",
+          "E2613",
+          "E2614",
+          "E2615",
+          "E2616",
+          "E2617",
+          "E2619",
+          "E2620",
+          "E2621",
+          "E2622",
+          "E2623",
+          "E2624",
+          "E2625",
+          "E0565",
+          "E0570",
+          "E0572",
+          "E0574",
+          "E0575",
+          "E0580",
+          "E0585",
+          "E1372",
+          "E0485",
+          "E0486",
+          "E1399"
+        ],
+        "notes": "Coverage for medically necessary durable medical equipment"
+      },
+      {
+        "source": "HCPCS_DRUGS",
+        "title": "Injectable Drugs and Biologicals",
+        "condition": [
+          "various medical conditions"
+        ],
+        "procedure": [
+          "injection",
+          "infusion"
+        ],
+        "hcpcs_codes": [
+          "J2545",
+          "J7604",
+          "J7605",
+          "J7606",
+          "J7607",
+          "J7608",
+          "J7609",
+          "J7610",
+          "J7611",
+          "J7612",
+          "J7613",
+          "J7614",
+          "J7615",
+          "J7620",
+          "J7622",
+          "J7624",
+          "J7626",
+          "J7627",
+          "J7628",
+          "J7629",
+          "J7631",
+          "J7632",
+          "J7634",
+          "J7635",
+          "J7636",
+          "J7637",
+          "J7638",
+          "J7639",
+          "J7640",
+          "J7641",
+          "J7642",
+          "J7643",
+          "J7644",
+          "J7645",
+          "J7647",
+          "J7650",
+          "J7657",
+          "J7660",
+          "J7667",
+          "J7669",
+          "J7670",
+          "J7676",
+          "J7677",
+          "J7680",
+          "J7681",
+          "J7682",
+          "J7683",
+          "J7684",
+          "J7685",
+          "J7686"
+        ],
+        "notes": "Coverage for FDA-approved injectable medications"
+      }
+    ],
+    "conditional": [
+      {
+        "source": "NCD_1",
+        "title": "Routine Costs in Clinical Trials",
+        "condition": [],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "device",
+          "monitoring"
+        ],
+        "notes": "<p>effective for items and services furnished on or after july 9, 2007, medicare covers the routine costs of qualifying clinical trials, as such costs are defined below, as well as reasonable and nece..."
+      },
+      {
+        "source": "NCD_3",
+        "title": "Manipulation",
+        "condition": [
+          "lung"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<strong><p> a.  manipulation of the rib cage</p></strong>\n\n<p> manual manipulation of the rib cage contributes to the treatment of respiratory conditions such as bronchitis, emphysema, and asthma as p..."
+      },
+      {
+        "source": "NCD_8",
+        "title": "Carotid Body Resection/Carotid Body Denervation",
+        "condition": [
+          "cancer",
+          "heart",
+          "lung"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>    carotid body resection is occasionally used to relieve pulmonary symptoms, including asthma, but has been shown to lack general acceptance of the professional medical community. in addition, co..."
+      },
+      {
+        "source": "NCD_12",
+        "title": "Hyperbaric Oxygen Therapy",
+        "condition": [
+          "diabetes",
+          "lung",
+          "stroke",
+          "wound",
+          "infection"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging",
+          "transplant"
+        ],
+        "notes": "<p>   <strong>   a. covered conditions</strong></p>     \n     \n<p>   program reimbursement for hbo therapy will be limited to that which is administered in a chamber (including the one man unit) and i..."
+      },
+      {
+        "source": "NCD_13",
+        "title": "Sterilization",
+        "condition": [
+          "cancer",
+          "pregnancy"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<strong><p> a. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nationally covered conditions</p></strong>\r\n\r\n<ul> \r\n<li>payment may be made only where sterilization is a necessary part of the treatment of an illness or..."
+      },
+      {
+        "source": "NCD_16",
+        "title": "Consultations with a Beneficiary's Family and Associates",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>  in certain types of medical conditions, including when a patient is withdrawn and uncommunicative due to a mental disorder or comatose, the physician may contact relatives and close associates to..."
+      },
+      {
+        "source": "NCD_17",
+        "title": "Postural Drainage Procedures and Pulmonary Exercises",
+        "condition": [
+          "lung"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p> in most cases, postural drainage procedures and pulmonary exercises can be carried out safely and effectively by nursing personnel. however, in some cases patients may have acute or severe pulmona..."
+      },
+      {
+        "source": "NCD_18",
+        "title": "Vitrectomy",
+        "condition": [],
+        "procedure": [
+          "surgery",
+          "imaging"
+        ],
+        "notes": "<p>   <strong>   cim - 35-16</strong></p>  \n  \n<p>   vitrectomy may be considered reasonable and necessary for the following conditions: vitreous loss incident to cataract surgery, vitreous opacities ..."
+      },
+      {
+        "source": "NCD_19",
+        "title": "Induced Lesions of Nerve Tracts",
+        "condition": [
+          "cancer",
+          "arthritis",
+          "pain"
+        ],
+        "procedure": [
+          "surgery",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>surgically induced lesions of nerve tracts which involve destruction of nerve tissue are primarily indicated for controlling the chronic or acute pain arising from conditions such as terminal cance..."
+      },
+      {
+        "source": "NCD_23",
+        "title": "Inpatient Hospital Pain Rehabilitation Programs",
+        "condition": [
+          "pain"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>  since pain rehabilitation programs of a lesser scope than that described above would raise a question as to whether the program could be provided in a less intensive setting than on an inpatient ..."
+      },
+      {
+        "source": "NCD_24",
+        "title": "Outpatient Hospital Pain Rehabilitation Programs",
+        "condition": [
+          "pain"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>coverage of services furnished under outpatient hospital pain rehabilitation programs, including services furnished in group settings under individualized plans of treatment, is available if the pa..."
+      },
+      {
+        "source": "NCD_25",
+        "title": "Urine Culture, Bacterial",
+        "condition": [
+          "diabetes",
+          "kidney",
+          "infection",
+          "pregnancy",
+          "pain"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "transplant",
+          "biopsy"
+        ],
+        "notes": "<p>indications</p>    \n    \n<ol start=\"1\">           \n<li>       a patient's urinalysis is abnormal suggesting urinary tract infection, for example, abnormal microscopic (hematuria, pyuria, bacteriuri..."
+      },
+      {
+        "source": "NCD_26",
+        "title": "Inpatient Hospital Stays for Treatment of Alcoholism",
+        "condition": [
+          "mental health"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<strong><p>a. inpatient hospital stay for alcohol detoxification</p></strong>\r\n<p>many hospitals provide detoxification services during the more acute stages of alcoholism or alcohol withdrawal. when ..."
+      },
+      {
+        "source": "NCD_27",
+        "title": "Outpatient Hospital Services for Treatment of Alcoholism",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p> coverage is available for both diagnostic and therapeutic services furnished for the treatment of alcoholism by the hospital to outpatients subject to the same rules applicable to outpatient hospi..."
+      },
+      {
+        "source": "NCD_36",
+        "title": "Cardiac Rehabilitation Programs - RETIRED",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p><strong>20.10 - cardiac rehabilitation programs (retired)<br> (rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation:04-10-23)</strong></p>\n<p>this section of the ncd manual was repeale..."
+      },
+      {
+        "source": "NCD_38",
+        "title": "Treatment of Obesity",
+        "condition": [
+          "obesity"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>please note section 40.5 has been removed from the ncd manual and incorporated into ncd <a href=\"https://www.cms.gov/medicare-coverage-database/details/ncd-details.aspx?ncdid=57&ncdver=5&docid=100...."
+      },
+      {
+        "source": "NCD_41",
+        "title": "Biofeedback Therapy",
+        "condition": [],
+        "procedure": [
+          "therapy"
+        ],
+        "notes": "<p> biofeedback therapy is covered under medicare only when it is reasonable and necessary for the individual patient for muscle re-education of specific muscle groups or for treating pathological mus..."
+      },
+      {
+        "source": "NCD_42",
+        "title": "Biofeedback Therapy for the Treatment of Urinary Incontinence",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>   this policy applies to biofeedback therapy rendered by a practitioner in an office or other facility setting.</p>\r\n\r\n<p>   biofeedback is covered for the treatment of stress and/or urge incontin..."
+      },
+      {
+        "source": "NCD_46",
+        "title": "Human Immunodeficiency Virus (HIV) Testing (Prognosis Including Monitoring)",
+        "condition": [
+          "infection"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "monitoring"
+        ],
+        "notes": "<p>indications</p>    \n    \n<ol start=\"1\">    \n<li>a plasma hiv rna baseline level may be medically necessary in any patient with confirmed hiv infection.</li>    \n<li>regular periodic measurement of ..."
+      },
+      {
+        "source": "NCD_47",
+        "title": "Treatment of Decubitus Ulcers",
+        "condition": [
+          "wound"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p> hydrotherapy (whirlpool) treatment for decubitus ulcers is a covered service under medicare for patients when treatment is reasonable and necessary.</p>\r\n\r\n<p> some other methods of treating decub..."
+      },
+      {
+        "source": "NCD_48",
+        "title": "Vertebral Artery Surgery",
+        "condition": [
+          "diabetes",
+          "stroke",
+          "pain"
+        ],
+        "procedure": [
+          "surgery",
+          "imaging"
+        ],
+        "notes": "<p> these procedures can be medically reasonable and necessary, but only if each of the following conditions is met:</p>\r\n\r\n<ul> \r\n<li> symptoms of vertebral artery obstruction exist;</li>\r\n\r\n<li> oth..."
+      },
+      {
+        "source": "NCD_53",
+        "title": "Human Immunodeficiency Virus (HIV) Testing (Diagnosis)",
+        "condition": [
+          "infection",
+          "obesity"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "biopsy"
+        ],
+        "notes": "<p> <strong>indications</strong></p>    \n    \n<p> diagnostic testing to establish hiv infection may be indicated when there is a strong clinical suspicion supported by one or more of the following cli..."
+      },
+      {
+        "source": "NCD_54",
+        "title": "Extracranial-Intracranial (EC-IC) Arterial Bypass Surgery",
+        "condition": [
+          "stroke"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p> extracranial-intracranial (ec-ic) arterial bypass surgery is not a covered procedure when it is performed as a treatment for ischemic cerebrovascular disease of the carotid or middle cerebral arte..."
+      },
+      {
+        "source": "NCD_55",
+        "title": "Ultrafiltration, Hemoperfusion and Hemofiltration",
+        "condition": [
+          "diabetes",
+          "heart",
+          "kidney",
+          "hypertension"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "dialysis"
+        ],
+        "notes": "<strong><p>b.  hemoperfusion</p></strong>\r\n\r\n<p> this is a process which removes substances from the blood using a charcoal or resin artificial kidney. when used in the treatment of life threatening d..."
+      },
+      {
+        "source": "NCD_56",
+        "title": "Intraocular Photography",
+        "condition": [
+          "diabetes"
+        ],
+        "procedure": [],
+        "notes": "<p> intraocular photography is covered when used for the diagnosis of such conditions as macular degeneration, retinal neoplasms, choroid disturbances and diabetic retinopathy, or to identify glaucoma..."
+      },
+      {
+        "source": "NCD_57",
+        "title": "Bariatric Surgery for Treatment of Co-Morbid Conditions Related to Morbid Obesity",
+        "condition": [
+          "diabetes",
+          "heart",
+          "lung",
+          "obesity",
+          "hypertension"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "monitoring"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</strong></p>   \n \n<p>effective for services performed on and after february 21, 2006, open and laparoscopic roux-en-y gastric bypass (rygbp), open and lapa..."
+      },
+      {
+        "source": "NCD_58",
+        "title": "Diathermy Treatment",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>high energy pulsed wave diathermy machines have been found to produce some degree of therapeutic benefit for essentially the same conditions and to the same extent as standard diathermy. accordingl..."
+      },
+      {
+        "source": "NCD_60",
+        "title": "Use of Visual Tests Prior to and General Anesthesia during Cataract Surgery",
+        "condition": [],
+        "procedure": [
+          "surgery",
+          "screening",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p><strong>a. pre-surgery evaluations</strong></p>\r\n\r\n<p> cataract surgery with an intraocular lens (iol) implant is a high volume medicare procedure. along with the surgery, a substantial number of p..."
+      },
+      {
+        "source": "NCD_61",
+        "title": "Blood Counts",
+        "condition": [
+          "cancer",
+          "heart",
+          "kidney",
+          "lung",
+          "stroke",
+          "arthritis",
+          "wound",
+          "infection",
+          "pregnancy",
+          "pain",
+          "obesity",
+          "hypertension"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "dialysis"
+        ],
+        "notes": "<p><strong>indications</strong></p>     \n     \n<p>indications for a cbc or hemogram include red cell, platelet, and white cell disorders. examples of these indications are enumerated individually belo..."
+      },
+      {
+        "source": "NCD_62",
+        "title": "Cardiac Catheterization Performed in Other than a Hospital Setting - RETIRED",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>20.25 - cardiac catheterization performed in other than a hospital setting (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation:04-10-23)</strong></p>\n<p>this se..."
+      },
+      {
+        "source": "NCD_63",
+        "title": "Assessing Patient's Suitability for Electrical Nerve Stimulation Therapy",
+        "condition": [
+          "pain"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>  electrical nerve stimulation is an accepted modality for assessing a patient's suitability for ongoing treatment with a transcutaneous or an implanted nerve stimulator.</p> \r\n \r\n<p>  accordingly,..."
+      },
+      {
+        "source": "NCD_64",
+        "title": "Breast Reconstruction Following Mastectomy",
+        "condition": [],
+        "procedure": [
+          "surgery",
+          "imaging"
+        ],
+        "notes": "<p> reconstruction of the affected and the contralateral unaffected breast following a medically necessary mastectomy is considered a relatively safe and effective noncosmetic procedure. accordingly, ..."
+      },
+      {
+        "source": "NCD_65",
+        "title": "Osteogenic Stimulators",
+        "condition": [
+          "cancer",
+          "fracture"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p><strong>   electrical osteogenic stimulators</strong></p>\r\n\r\n<p><strong>   b. nationally covered indications</strong></p>\r\n\r\n<ol>   \r\n<li>   noninvasive stimulator<br><br>the noninvasive stimulator..."
+      },
+      {
+        "source": "NCD_66",
+        "title": "Hyperthermia for Treatment of Cancer",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p> local hyperthermia is covered under medicare when used in connection with radiation therapy for the treatment of primary or metastatic cutaneous or subcutaneous superficial malignancies. it is not..."
+      },
+      {
+        "source": "NCD_69",
+        "title": "Laser Procedures",
+        "condition": [],
+        "procedure": [
+          "surgery",
+          "imaging"
+        ],
+        "notes": "<p> medicare recognizes the use of lasers for many medical indications. procedures performed with lasers are sometimes used in place of more conventional techniques. in the absence of a specific nonco..."
+      },
+      {
+        "source": "NCD_70",
+        "title": "Adult Liver Transplantation",
+        "condition": [
+          "cancer",
+          "lung"
+        ],
+        "procedure": [
+          "imaging",
+          "transplant"
+        ],
+        "notes": "<br><strong><p>b. nationally covered indications</p></strong>      \n \n<p>effective july 15, 1996, adult liver transplantation when performed on beneficiaries with end- stage liver disease other than h..."
+      },
+      {
+        "source": "NCD_71",
+        "title": "Pediatric Liver Transplantation",
+        "condition": [
+          "cancer",
+          "arthritis"
+        ],
+        "procedure": [
+          "imaging",
+          "transplant"
+        ],
+        "notes": "<p> liver transplantation is covered for children (under age 18) with extrahepatic biliary atresia or any other form of end stage liver disease, except that coverage is not provided for children with ..."
+      },
+      {
+        "source": "NCD_74",
+        "title": "Partial Thromboplastin Time (PTT)",
+        "condition": [
+          "kidney",
+          "infection"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "monitoring"
+        ],
+        "notes": "<p><strong>indications</strong></p>  \n    \n<ol start=\"1\">    \n<li>the ptt is most commonly used to quantitate the effect of therapeutic unfractionated heparin and to regulate its dosing. except during..."
+      },
+      {
+        "source": "NCD_80",
+        "title": "Prothrombin Time (PT)",
+        "condition": [
+          "kidney",
+          "lung",
+          "infection"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "injection",
+          "transplant",
+          "monitoring"
+        ],
+        "notes": "<strong><p> indications</p>    </strong>\n    \n<ol start=\"1\">     \n<li> a pt may be used to assess patients taking warfarin. the prothrombin time is generally not useful in monitoring patients receivin..."
+      },
+      {
+        "source": "NCD_82",
+        "title": "Apheresis (Therapeutic Pheresis)",
+        "condition": [
+          "kidney",
+          "lung"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<br><strong><p>b.  indications</p></strong>\n\n<p>  apheresis is covered for the following indications:</p>\n\n<ul>  \n<li>  plasma exchange for acquired myasthenia gravis;</li>\n\n<li>  leukapheresis in the..."
+      },
+      {
+        "source": "NCD_88",
+        "title": "Treatment of Psoriasis",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p> psoriasis is a chronic skin disease, for which several conventional methods of treatment have been recognized as covered. these include topical application of steroids or other drugs; ultraviolet ..."
+      },
+      {
+        "source": "NCD_89",
+        "title": "Melodic Intonation Therapy",
+        "condition": [],
+        "procedure": [
+          "therapy"
+        ],
+        "notes": "<p> melodic intonation therapy is a covered service only for nonfluent aphasic patients unresponsive to conventional therapy, and only when the conditions for coverage of speech pathology services are..."
+      },
+      {
+        "source": "NCD_90",
+        "title": "Serum Iron Studies",
+        "condition": [
+          "diabetes",
+          "heart",
+          "kidney",
+          "infection"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "dialysis",
+          "monitoring"
+        ],
+        "notes": "<strong><p>indications</p>    </strong>\n    \n<ol start=\"1\">    \n<li>ferritin, iron and either iron binding capacity or transferrin are useful in the differential diagnosis of iron deficiency, anemia, ..."
+      },
+      {
+        "source": "NCD_91",
+        "title": "Implantation of  Anti-Gastroesophageal Reflux Device - RETIRED",
+        "condition": [],
+        "procedure": [
+          "screening",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p><strong>100.9 - implantation of anti-gastroesophageal reflux device (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</p></strong>\n<p>effective january 1, ..."
+      },
+      {
+        "source": "NCD_96",
+        "title": "Collagen Crosslinks, any Method",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<strong><p>indications</p>    </strong> \n    \n<p>generally speaking, collagen crosslink testing is useful mostly in \"fast losers\" of bone. the age when these bone markers can help direct therapy is of..."
+      },
+      {
+        "source": "NCD_97",
+        "title": "External Counterpulsation (ECP) Therapy for Severe Angina",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p><strong>  b. nationally covered indications</strong></p>  \n  \n<p>  effective for services performed on or after july 1, 1999, coverage is provided for the use of ecp for patients who have been diag..."
+      },
+      {
+        "source": "NCD_98",
+        "title": "Blood Glucose Testing",
+        "condition": [
+          "diabetes",
+          "wound",
+          "infection",
+          "obesity"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "injection",
+          "monitoring"
+        ],
+        "notes": "<strong><p>indications</p>    </strong> \n     \n<p>blood glucose values are often necessary for the management of patients with diabetes mellitus, where hyperglycemia and hypoglycemia are often present..."
+      },
+      {
+        "source": "NCD_99",
+        "title": "Intraoperative Ventricular Mapping",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p> the intraoperative ventricular mapping procedure is covered under medicare only for the uses and medical conditions described below:</p>\n\n<ul> \n<li> localize accessory pathways associated with the..."
+      },
+      {
+        "source": "NCD_100",
+        "title": "Glycated Hemoglobin/Glycated Protein",
+        "condition": [
+          "diabetes"
+        ],
+        "procedure": [
+          "screening",
+          "imaging",
+          "monitoring"
+        ],
+        "notes": "<strong><p>indications</p>    </strong> \n    \n<p>glycated hemoglobin/protein testing is widely accepted as medically necessary for the management and control of diabetes. it is also valuable to assess..."
+      },
+      {
+        "source": "NCD_101",
+        "title": "Thyroid Testing",
+        "condition": [
+          "cancer",
+          "heart",
+          "mental health"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p><strong>indications</strong></p>    \n    \n<p>thyroid function tests are used to define hyper function, euthyroidism, or hypofunction of thyroid disease. thyroid testing may be reasonable and necess..."
+      },
+      {
+        "source": "NCD_102",
+        "title": "Lipid Testing",
+        "condition": [
+          "diabetes",
+          "heart",
+          "kidney",
+          "arthritis",
+          "pain"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "monitoring"
+        ],
+        "notes": "<strong><p>indications</p>    </strong> \n    \n<p>the medical community recognizes lipid testing as appropriate for evaluating atherosclerotic cardiovascular disease. conditions in which lipid testing ..."
+      },
+      {
+        "source": "NCD_103",
+        "title": "Digoxin Therapeutic Drug Assay",
+        "condition": [
+          "heart",
+          "kidney"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "injection",
+          "monitoring"
+        ],
+        "notes": "<p>indications</p>    \n    \n<p>digoxin levels may be performed to monitor drug levels of individuals receiving digoxin therapy because the margin of safety between side effects and toxicity is narrow ..."
+      },
+      {
+        "source": "NCD_105",
+        "title": "Anesthesia in Cardiac Pacemaker Surgery",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "surgery",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>the use of general or monitored anesthesia during transvenous cardiac pacemaker surgery may be reasonable and necessary and therefore covered under medicare only if adequate documentation of  medic..."
+      },
+      {
+        "source": "NCD_107",
+        "title": "Pancreas Transplants",
+        "condition": [
+          "diabetes",
+          "kidney"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging",
+          "transplant"
+        ],
+        "notes": "<p><strong>  b. nationally covered indications</strong></p>\r\n\r\n<p>effective for services performed on or after july 1, 1999, whole organ pancreas transplantation  is nationally covered by medicare whe..."
+      },
+      {
+        "source": "NCD_108",
+        "title": "24-Hour Ambulatory Esophageal pH Monitoring",
+        "condition": [],
+        "procedure": [
+          "screening",
+          "imaging",
+          "monitoring"
+        ],
+        "notes": "<p>       twenty-four hour ambulatory ph monitoring is covered by medicare for patients who are suspected of having gastric reflux, but only if the patient presents diagnostic problems associated with..."
+      },
+      {
+        "source": "NCD_110",
+        "title": "Implantable Cardioverter Defibrillators (ICDs)",
+        "condition": [
+          "cancer",
+          "heart",
+          "kidney",
+          "stroke"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "device",
+          "transplant"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</p></strong>\n\n<p>effective for services performed on or after february 15, 2018 cms has determined that the evidence is sufficient to conclude that the use..."
+      },
+      {
+        "source": "NCD_112",
+        "title": "Heart Transplants",
+        "condition": [
+          "heart",
+          "arthritis"
+        ],
+        "procedure": [
+          "imaging",
+          "device",
+          "transplant"
+        ],
+        "notes": "<p><strong>a. general</strong></p>  \n  \n<p>cardiac transplantation is covered under medicare when performed in a facility which is approved by medicare as meeting institutional coverage criteria. (see..."
+      },
+      {
+        "source": "NCD_113",
+        "title": "Extracorporeal Photopheresis",
+        "condition": [
+          "heart",
+          "lung"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "transplant"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</strong></p>    \n\n<p>the centers for medicare & medicaid services has determined that extracorporeal photopheresis is reasonable and necessary under §1862(..."
+      },
+      {
+        "source": "NCD_115",
+        "title": "Extracorporeal Immunoadsorption (ECI) Using Protein A Columns (RETIRED)",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>20.5 - extracorporeal immunoadsorption (eci) using protein a columns (retired)</strong><br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation:04-10-23)</p>\n<p>effective jan..."
+      },
+      {
+        "source": "NCD_118",
+        "title": "Carcinoembryonic Antigen",
+        "condition": [
+          "cancer",
+          "lung"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "monitoring"
+        ],
+        "notes": "<strong><p>indications</p>    </strong>   \n     \n<p>       cea may be medically necessary for follow-up of patients with colorectal carcinoma. it would however only be medically necessary at treatment..."
+      },
+      {
+        "source": "NCD_119",
+        "title": "Lung Volume Reduction Surgery (Reduction Pneumoplasty)",
+        "condition": [
+          "heart",
+          "lung",
+          "arthritis"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "transplant"
+        ],
+        "notes": "<strong><p>b. nationally covered indications</p> </strong>\n \n<p>effective for services performed on or after january 1, 2004 medicare will only consider lvrs reasonable and necessary when all of the f..."
+      },
+      {
+        "source": "NCD_121",
+        "title": "Alpha-fetoprotein",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "screening"
+        ],
+        "notes": "<p>indications</p>\n\n<p>afp is useful for the diagnosis of hepatocellular carcinoma in high-risk patients (such as alcoholic cirrhosis, cirrhosis of viral etiology, hemochromatosis, and alpha 1-antitry..."
+      },
+      {
+        "source": "NCD_125",
+        "title": "Human Chorionic Gonadotropin",
+        "condition": [
+          "hypertension"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "monitoring"
+        ],
+        "notes": "<p>human chorionic gonadotropin (hcg) is useful for monitoring and diagnosis of germ cell neoplasms of the ovary, testis, mediastinum, retroperitoneum, and central nervous system. in addition, hcg is ..."
+      },
+      {
+        "source": "NCD_127",
+        "title": "Abortion",
+        "condition": [
+          "pregnancy"
+        ],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p>   <strong>   cim 35-99</strong></p> \n \n<p>   abortions are not covered medicare procedures except:</p> \n \n<ol type=\"1\">    \n<li>   if the pregnancy is the result of an act of rape or incest; or</l..."
+      },
+      {
+        "source": "NCD_128",
+        "title": "Photodynamic Therapy",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p> <strong> ocular photodynamic therapy (opt)</strong></p>   \n   \n<p>ocular photodynamic therapy (opt) is used in the treatment of ophthalmologic diseases. opt is only covered when used in conjunctio..."
+      },
+      {
+        "source": "NCD_130",
+        "title": "Tumor Antigen by Immunoassay - CA 125",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "monitoring"
+        ],
+        "notes": "<strong><p>    indications</p> </strong>  \n    \n<p>    ca 125 is a high molecular weight serum tumor marker elevated in 80% of patients who present with epithelial ovarian carcinoma. it is also elevat..."
+      },
+      {
+        "source": "NCD_131",
+        "title": "Electrical Stimulation (ES) and Electromagnetic Therapy for the Treatment of Wounds",
+        "condition": [
+          "diabetes",
+          "wound",
+          "infection"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<strong><p>a. nationally covered indications</p></strong>\n\n<p>    the use of es and electromagnetic therapy for the treatment of wounds are considered adjunctive therapies, and will only be covered fo..."
+      },
+      {
+        "source": "NCD_132",
+        "title": "L-Dopa",
+        "condition": [
+          "heart",
+          "mental health"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<strong><p>  a. part a payment for l-dopa and associated inpatient hospital services</p></strong>\r\n\r\n<p>  a hospital stay and related ancillary services for the administration of l-dopa are covered if..."
+      },
+      {
+        "source": "NCD_134",
+        "title": "Tumor Antigen by Immunoassay - CA 15-3/CA 27.29",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "monitoring"
+        ],
+        "notes": "<strong><p>    indications</p> </strong>   \n    \n<p>multiple tumor markers are available for monitoring the response of certain malignancies to therapy and assessing whether residual tumor exists post..."
+      },
+      {
+        "source": "NCD_140",
+        "title": "Physician's Office within an Institution Coverage of Services and Supplies Incident to a Physician's Services",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p>in order to accurately apply the criteria in the <a href=\"https://www.cms.gov/regulations-and-guidance/guidance/manuals/internet-only-manuals-ioms-items/cms012673\">medicare benefit policy manual</a..."
+      },
+      {
+        "source": "NCD_142",
+        "title": "Tumor Antigen by Immunoassay - CA 19-9",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "monitoring"
+        ],
+        "notes": "<strong><p>    indications</p> </strong> \n     \n<p>multiple tumor markers are available for monitoring the response of certain malignancies to therapy and assessing whether residual tumor exists post-..."
+      },
+      {
+        "source": "NCD_149",
+        "title": "Dimethyl Sulfoxide (DMSO)",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>  the food and drug administration has determined that the only purpose for which dmso is safe and effective for humans is in the treatment of the bladder condition, interstitial cystitis. therefor..."
+      },
+      {
+        "source": "NCD_150",
+        "title": "Anti-Inhibitor Coagulant Complex (AICC)",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p>  anti-inhibitor coagulant complex, aicc, is a drug used to treat hemophilia in patients with factor viii inhibitor antibodies. aicc has been shown to be safe and effective and has medicare coverag..."
+      },
+      {
+        "source": "NCD_151",
+        "title": "Supplies Used in the Delivery of Transcutaneous Electrical Nerve Stimulation (TENS) and Neuromuscular Electrical Stimulation (NMES)",
+        "condition": [
+          "pain"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>a form-fitting conductive garment (and medically necessary related supplies) may be covered under the program only when:</p>\r\n\r\n<p>1. it has received permission or approval for marketing by the foo..."
+      },
+      {
+        "source": "NCD_152",
+        "title": "Prostate Specific Antigen",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<strong><p>    indications</p> </strong>     \n    \n<p>psa is of proven value in differentiating benign from malignant disease in men with lower urinary tract signs and symptoms (e.g., hematuria, slow ..."
+      },
+      {
+        "source": "NCD_153",
+        "title": "Gamma Glutamyl Transferase",
+        "condition": [
+          "diabetes",
+          "infection",
+          "hypertension"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "injection",
+          "transplant",
+          "monitoring"
+        ],
+        "notes": "<strong><p>    indications</p> </strong>  \n    \n<ol start=\"1\">    \n<li>to provide information about known or suspected hepatobiliary disease, for example:     \n    \n<ol type=\"a\" start=\"1\">    \n<li>fol..."
+      },
+      {
+        "source": "NCD_157",
+        "title": "Photosensitive Drugs",
+        "condition": [],
+        "procedure": [],
+        "notes": "<p> </p>"
+      },
+      {
+        "source": "NCD_159",
+        "title": "Levocarnitine for use in the Treatment of Carnitine Deficiency in ESRD Patients",
+        "condition": [
+          "kidney"
+        ],
+        "procedure": [
+          "therapy",
+          "dialysis"
+        ],
+        "notes": "<p>   intravenous levocarnitine, for one of the following indications, will only be covered for those esrd patients who have been on dialysis for a minimum of three months. </p>\n\n<p>patients must have..."
+      },
+      {
+        "source": "NCD_160",
+        "title": "Cardiac Pacemaker Evaluation Services",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "screening",
+          "imaging",
+          "device",
+          "monitoring"
+        ],
+        "notes": "<p><strong>note:</strong> these new guidelines are limited to lithium battery-powered pacemakers, because mercury-zinc battery-powered pacemakers are no longer being manufactured and virtually all hav..."
+      },
+      {
+        "source": "NCD_162",
+        "title": "HIS Bundle Study",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>  medicare coverage of the procedure would be limited to selected patients: those with complex ongoing acute arrhythmias, those with intermittent or permanent heart block in whom pacemaker implanta..."
+      },
+      {
+        "source": "NCD_163",
+        "title": "Gravlee Jet Washer",
+        "condition": [],
+        "procedure": [
+          "screening",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>  the use of this device is indicated where the patient exhibits clinical symptoms or signs suggestive of endometrial disease, such as irregular or heavy vaginal bleeding.</p>\r\n\r\n<p>  program payme..."
+      },
+      {
+        "source": "NCD_165",
+        "title": "Plethysmography",
+        "condition": [],
+        "procedure": [
+          "screening",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p> medicare coverage is extended to those procedures listed in category i below when used for the accepted medical indications mentioned above. the procedures in category ii are still considered expe..."
+      },
+      {
+        "source": "NCD_166",
+        "title": "Hepatitis Panel/Acute Hepatitis Panel",
+        "condition": [
+          "infection"
+        ],
+        "procedure": [
+          "screening",
+          "imaging",
+          "transplant"
+        ],
+        "notes": "<strong><p>    indications</p> </strong> \n    \n<ol start=\"1\">    \n<li>to detect viral hepatitis infection when there are abnormal liver function test results, with or without signs or symptoms of hepa..."
+      },
+      {
+        "source": "NCD_167",
+        "title": "Fecal Occult Blood Test",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "screening",
+          "imaging"
+        ],
+        "notes": "<strong><p>    indications</p> </strong>  \n    \n<ol start=\"1\">    \n<li>to evaluate known or suspected alimentary tract conditions that might cause bleeding into the intestinal tract.</li>    \n    \n<li..."
+      },
+      {
+        "source": "NCD_169",
+        "title": "Home Use of Oxygen",
+        "condition": [
+          "heart",
+          "lung",
+          "hypertension"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</p></strong>\n<p>oxygen therapy and oxygen equipment is covered in the home for acute or chronic conditions, short- or long- term, when the patient exhibits..."
+      },
+      {
+        "source": "NCD_170",
+        "title": "Consultation Services Rendered by a Podiatrist in a Skilled Nursing Facility",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p> consultation services rendered by a podiatrist in a skilled nursing facility are covered if the services are reasonable and necessary and do not come within any of the specific statutory exclusion..."
+      },
+      {
+        "source": "NCD_171",
+        "title": "Services Provided for the Diagnosis and Treatment of Diabetic Sensory Neuropathy with Loss of Protective Sensation (aka Diabetic Peripheral Neuropathy)",
+        "condition": [
+          "diabetes",
+          "kidney",
+          "wound"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p>   diabetic sensory neuropathy with lops is a localized illness of the feet and falls within the regulation's exception to the general exclusionary rule (see 42&#160;cfr&#160;&#167;411.15(l)(1)(i))..."
+      },
+      {
+        "source": "NCD_175",
+        "title": "Neuromuscular Electrical Stimulation (NMES)",
+        "condition": [
+          "cancer",
+          "heart",
+          "stroke",
+          "arthritis",
+          "fracture"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>  treatment of muscle atrophy</p>\r\n\r\n<p>  coverage of nmes to treat muscle atrophy is limited to the treatment of disuse atrophy where nerve supply to the muscle is intact, including brain, spinal ..."
+      },
+      {
+        "source": "NCD_176",
+        "title": "Computed Tomography",
+        "condition": [],
+        "procedure": [
+          "screening",
+          "imaging"
+        ],
+        "notes": "<strong><p>b. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; determining whether a ct scan is reasonable and necessary</p></strong>\r\n\r\n<p>sufficient information must be provided with claims to differentiate ct scans ..."
+      },
+      {
+        "source": "NCD_177",
+        "title": "Magnetic Resonance Imaging",
+        "condition": [
+          "cancer",
+          "heart",
+          "kidney",
+          "lung",
+          "stroke",
+          "infection",
+          "fracture",
+          "pregnancy"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "device",
+          "monitoring"
+        ],
+        "notes": "<strong><p>b. &nbsp;&nbsp;nationally covered mri and mra indications</p></strong> \n\n<strong>  <p>  1. &nbsp;&nbsp;mri</p></strong> \n \n<p>  although several uses of mri are still considered investigati..."
+      },
+      {
+        "source": "NCD_178",
+        "title": "Magnetic Resonance Angiography - RETIRED",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>220.3- magnetic resonance angiography (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>please note section 220.3 has been removed ..."
+      },
+      {
+        "source": "NCD_179",
+        "title": "Electrocardiographic Services",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging",
+          "device",
+          "monitoring"
+        ],
+        "notes": "<strong><p>b. nationally covered indications</p></strong>\r\n\r\n<p>the following indications are covered nationally unless otherwise indicated:</p>\r\n\r\n<ol start=\"1\">\r\n<li><p>computer analysis of ekgs whe..."
+      },
+      {
+        "source": "NCD_180",
+        "title": "Hemorheograph",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p> program payment may be made only for those services employing the hemorheograph which are performed for preoperative and postoperative diagnostic evaluation of suspected peripheral artery disease...."
+      },
+      {
+        "source": "NCD_181",
+        "title": "Laboratory Tests - CRD Patients",
+        "condition": [
+          "kidney"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "dialysis",
+          "biopsy"
+        ],
+        "notes": "<p> laboratory tests are essential to monitor the progress of crd patients. the following list and frequencies of tests constitute the level and types of routine laboratory tests that are covered. bil..."
+      },
+      {
+        "source": "NCD_182",
+        "title": "Electron Microscope - RETIRED",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>190.4  electron microscope (retired)<br>\n<em>(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p></em>\n<p>effective december 18, 2014, ncd 190.4 is re..."
+      },
+      {
+        "source": "NCD_184",
+        "title": "Diagnostic Pap Smears",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p>  <strong>  cim 50-20, cim 50-20.1</strong></p>\r\n\r\n<p>  a diagnostic pap smear and related medically necessary services are covered under medicare part b when ordered by a physician under one of th..."
+      },
+      {
+        "source": "NCD_185",
+        "title": "Screening Pap Smears and Pelvic Examinations for Early Detection of Cervical or Vaginal Cancer",
+        "condition": [
+          "cancer",
+          "infection",
+          "pregnancy"
+        ],
+        "procedure": [
+          "screening",
+          "imaging",
+          "biopsy"
+        ],
+        "notes": "<strong><p>screening pap smear</p></strong>  \r\n\r\n<p>a screening pap smear and related medically necessary services provided to a woman for the early detection of cervical cancer (including collection ..."
+      },
+      {
+        "source": "NCD_186",
+        "title": "Mammograms",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p> a diagnostic mammography is a covered service if it is ordered by a doctor of medicine or osteopathy as defined in &#167;1861(r)(1) of the act.&#160;</p>   \n   \n<p> payment may not be made for a s..."
+      },
+      {
+        "source": "NCD_187",
+        "title": "Challenge Ingestion Food Testing",
+        "condition": [
+          "lung",
+          "arthritis",
+          "mental health"
+        ],
+        "procedure": [
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p>   this procedure is covered when it is used on an outpatient basis if it is reasonable and necessary for the individual patient.</p>\r\n\r\n<p>   challenge ingestion food testing has not been proven t..."
+      },
+      {
+        "source": "NCD_190",
+        "title": "Durable Medical Equipment Reference List",
+        "condition": [
+          "heart",
+          "lung",
+          "arthritis",
+          "wound",
+          "infection"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging",
+          "injection",
+          "device",
+          "monitoring"
+        ],
+        "notes": "<p align=\"center\"> <strong> durable medical equipment reference list</strong></p>\n\n<p> </p>\n\n<table cellspacing=\"10\"> \n<tbody> \n<tr valign=\"center\">\n<th width=\"25%\" scope=\"row\">item</th>\n<th valign=\"c..."
+      },
+      {
+        "source": "NCD_193",
+        "title": "Water Purification and Softening Systems Used in Conjunction with Home Dialysis",
+        "condition": [
+          "kidney"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "dialysis"
+        ],
+        "notes": "<strong><p>  a.  water purification systems</p></strong>\n\n<p>  water used for home dialysis should be chemically free of heavy trace metals and/or organic contaminants which could be hazardous to the ..."
+      },
+      {
+        "source": "NCD_196",
+        "title": "Hospital and Skilled Nursing Facility Admission Diagnostic Procedures",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "biopsy"
+        ],
+        "notes": "<p>these instructions describe the application of the reasonable and necessary payment exclusion to diagnostic procedures, such as chest x-rays, urinalysis, etc. provided to patients upon admission to..."
+      },
+      {
+        "source": "NCD_198",
+        "title": "Cytogenetic Studies",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "screening"
+        ],
+        "notes": "<p> medicare covers these tests when they are reasonable and necessary for the diagnosis or treatment of  the following conditions:</p>  \n  \n<ul>   \n<li> genetic disorders (e.g., mongolism) in a fetus..."
+      },
+      {
+        "source": "NCD_201",
+        "title": "Percutaneous Transluminal Angioplasty (PTA)",
+        "condition": [
+          "kidney",
+          "stroke"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging",
+          "device",
+          "dialysis",
+          "transplant",
+          "monitoring"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</strong></p>\n\n<p>the pta is covered when used under the following conditions:</p>\n\n<p><strong>1. treatment of atherosclerotic obstructive lesions</strong><..."
+      },
+      {
+        "source": "NCD_203",
+        "title": "Ultrafiltration Monitor",
+        "condition": [
+          "kidney"
+        ],
+        "procedure": [
+          "device",
+          "dialysis",
+          "monitoring"
+        ],
+        "notes": "<p>covered</p>\r\n\r\n<p> ultrafiltration and ultrafiltration monitoring as a component of hemodialysis has an established and critical role in maintaining the well-being of esrd patients and is a covered..."
+      },
+      {
+        "source": "NCD_204",
+        "title": "Obsolete or Unreliable Diagnostic Tests",
+        "condition": [
+          "cancer",
+          "heart"
+        ],
+        "procedure": [
+          "screening",
+          "imaging"
+        ],
+        "notes": "<strong><p> a. diagnostic tests</p></strong>\r\n\r\n<p>  do not routinely pay for the following diagnostic tests because they are obsolete and have been replaced by more advanced procedures. the listed te..."
+      },
+      {
+        "source": "NCD_205",
+        "title": "Sweat Test",
+        "condition": [],
+        "procedure": [
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p> the sweat test is an important diagnostic tool in cystic fibrosis and may be covered when used for that purpose. usage of the sweat test as a predictor of efficacy of sympathectomy in peripheral v..."
+      },
+      {
+        "source": "NCD_209",
+        "title": "Home Health Visits to a Blind Diabetic",
+        "condition": [
+          "diabetes"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "injection"
+        ],
+        "notes": "<p>to qualify for home health benefits, a blind diabetic must be confined to his home, under the care of a physician, and in need of either skilled nursing services on an intermittent basis or physica..."
+      },
+      {
+        "source": "NCD_210",
+        "title": "Home Health Nurses' Visits to Patients Requiring Heparin Injection",
+        "condition": [
+          "lung",
+          "pregnancy"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "injection"
+        ],
+        "notes": "<p> medicare payment may be made for several visits by the home health nurse to teach the patient or the caring person to give subcutaneous injections of low dose heparin if it is prescribed by a phys..."
+      },
+      {
+        "source": "NCD_211",
+        "title": "Positron Emission Tomography (PET) Scans - RETIRED",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>220.6 - positron emission tomography (pet) scans (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>effective january 1, 2022, the c..."
+      },
+      {
+        "source": "NCD_213",
+        "title": "Endothelial Cell Photography",
+        "condition": [],
+        "procedure": [
+          "surgery",
+          "screening",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p> endothelial cell photography is a covered procedure under medicare when reasonable and necessary for patients who meet one or more of the following criteria:</p>\r\n\r\n<ul> \r\n<li> have slit lamp evid..."
+      },
+      {
+        "source": "NCD_219",
+        "title": "Mobility Assistive Equipment (MAE)",
+        "condition": [],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging",
+          "injection",
+          "device"
+        ],
+        "notes": "<p>  <strong>b. nationally covered indications</strong></p>\n\n<p>effective may 5, 2005, cms finds that the evidence is adequate to determine that mae is reasonable and necessary for beneficiaries who h..."
+      },
+      {
+        "source": "NCD_221",
+        "title": "Seat Lift",
+        "condition": [
+          "arthritis"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>   reimbursement may be made for the rental or purchase of a medically necessary seat lift when prescribed by a physician for a patient with severe arthritis of the hip or knee and patients with mu..."
+      },
+      {
+        "source": "NCD_222",
+        "title": "Home Blood Glucose Monitors",
+        "condition": [
+          "diabetes"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "device",
+          "monitoring"
+        ],
+        "notes": "<p>  blood glucose monitors are meter devices that read color changes produced on specially treated reagent strips by glucose concentrations in the patient&#8217;s blood. the patient, using a disposab..."
+      },
+      {
+        "source": "NCD_223",
+        "title": "Infusion Pumps",
+        "condition": [
+          "cancer",
+          "diabetes",
+          "kidney",
+          "lung",
+          "infection",
+          "pain"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "injection",
+          "device"
+        ],
+        "notes": "<strong> <p> b. nationally covered indications</p></strong>\r\n\r\n<p> the following indications for treatment using infusion pumps are covered under medicare:</p>\r\n\r\n<strong><p>1.  external infusion pump..."
+      },
+      {
+        "source": "NCD_225",
+        "title": "Pneumatic Compression Devices",
+        "condition": [
+          "wound"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging",
+          "device",
+          "monitoring"
+        ],
+        "notes": "<p>    pneumatic devices are covered for the treatment of lymphedema or for the treatment of chronic venous insufficiency with venous stasis ulcers.</p>\r\n\r\n<p><strong>lymphedema</strong></p>\r\n\r\n<p>   ..."
+      },
+      {
+        "source": "NCD_226",
+        "title": "Continuous Positive Airway Pressure (CPAP) Therapy For Obstructive Sleep Apnea (OSA)",
+        "condition": [
+          "heart",
+          "lung",
+          "stroke",
+          "hypertension"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "device",
+          "monitoring"
+        ],
+        "notes": "<p><strong>b.&#160;&#160;&#160;nationally covered indications</strong></p> \r\n \r\n<p>effective for claims with dates of service on and after march 13, 2008, the centers for medicare &amp; medicaid servi..."
+      },
+      {
+        "source": "NCD_227",
+        "title": "Hospital Beds",
+        "condition": [
+          "heart",
+          "lung",
+          "stroke",
+          "arthritis",
+          "infection",
+          "fracture",
+          "pain"
+        ],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<strong><p> a.  general requirements for coverage of hospital beds</p></strong>\r\n\r\n<p> a physician's prescription and such additional documentation as the medicare administrative contractor (mac) medi..."
+      },
+      {
+        "source": "NCD_228",
+        "title": "Air-Fluidized Bed",
+        "condition": [
+          "lung",
+          "wound",
+          "infection"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p> air fluidized beds are covered for services rendered on or after: july 30, 1990.</p> \n \n<p> medicare payment for home use of the air-fluidized bed for treatment of pressure sores can be made if su..."
+      },
+      {
+        "source": "NCD_230",
+        "title": "Vagus Nerve Stimulation (VNS)",
+        "condition": [
+          "mental health"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "injection",
+          "device"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</p></strong>\n<p>effective for services performed on or after july 1, 1999, vns is reasonable and necessary for patients with medically refractory partial o..."
+      },
+      {
+        "source": "NCD_231",
+        "title": "Non-Implantable Pelvic Floor Electrical Stimulator",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>     pelvic floor electrical stimulation with a non-implantable stimulator is covered for the treatment of stress and/or urge urinary incontinence in cognitively intact patients who have failed a d..."
+      },
+      {
+        "source": "NCD_233",
+        "title": "Hydrophilic Contact Lenses",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>hydrophilic contact lenses are eyeglasses within the meaning of the exclusion in &sect;1862(a)(7) of the social security act and are not covered when used in the treatment of non-diseased eyes with..."
+      },
+      {
+        "source": "NCD_235",
+        "title": "Scleral Shell",
+        "condition": [],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p> a scleral shell fits over the entire exposed surface of the eye as opposed to a corneal contact lens which covers only the central non-white area encompassing the pupil and iris. where an eye has ..."
+      },
+      {
+        "source": "NCD_236",
+        "title": "Carotid Sinus Nerve Stimulator - RETIRED",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>160.6  carotid sinus nerve stimulator (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>effective december 18, 2014, ncd 160.6 is ..."
+      },
+      {
+        "source": "NCD_237",
+        "title": "Electronic Speech Aids",
+        "condition": [],
+        "procedure": [
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>electronic speech aids are covered under part b as prosthetic devices when the patient has had a laryngectomy or his larynx is permanently inoperative.</p>"
+      },
+      {
+        "source": "NCD_238",
+        "title": "Cardiac Pacemakers",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p>rev. 161, issued: 02-06-14, effective: 08-13-13, implementation: 07-07-14)<p>"
+      },
+      {
+        "source": "NCD_239",
+        "title": "Intraocular Lenses (IOLs)",
+        "condition": [],
+        "procedure": [
+          "surgery",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>intraocular lens implantation services, as well as the lens itself, may be covered if reasonable and necessary for the individual. implantation services may include hospital, surgical, and other me..."
+      },
+      {
+        "source": "NCD_240",
+        "title": "Electrical Nerve Stimulators",
+        "condition": [
+          "stroke",
+          "pain"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>two general classifications of electrical nerve stimulators are employed to treat chronic intractable pain: peripheral nerve stimulators and central nervous system stimulators.</p>\r\n\r\n<strong><p>a...."
+      },
+      {
+        "source": "NCD_241",
+        "title": "Incontinence Control Devices",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "injection",
+          "device"
+        ],
+        "notes": "<strong><p>a. mechanical/hydraulic incontinence control devices</p></strong>\r\n\r\n<p> mechanical/hydraulic incontinence control devices are accepted as safe and effective in the management of urinary in..."
+      },
+      {
+        "source": "NCD_242",
+        "title": "Enteral and Parenteral Nutritional Therapy - RETIRED",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p><strong>180.2 - enteral and parenteral nutritional therapy (retired)<br>\n<em>(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p></em>\n<p>effective january 1, ..."
+      },
+      {
+        "source": "NCD_244",
+        "title": "Phrenic Nerve Stimulator",
+        "condition": [
+          "lung"
+        ],
+        "procedure": [
+          "imaging",
+          "device"
+        ],
+        "notes": "<p> the implantation of a phrenic nerve stimulator is covered for selected patients with partial or complete respiratory insufficiency.</p>"
+      },
+      {
+        "source": "NCD_245",
+        "title": "Cochlear Implantation",
+        "condition": [
+          "infection"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</strong></p>\n\n<p>effective for services performed on or after september 26, 2022, cochlear implantation may be covered for treatment of bilateral pre- or p..."
+      },
+      {
+        "source": "NCD_246",
+        "title": "Artificial Hearts and Related Devices - RETIRED",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "imaging",
+          "device"
+        ],
+        "notes": "<p><strong>20.9  artificial hearts and related devices (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong><br>\nthis section has been removed from the ..."
+      },
+      {
+        "source": "NCD_248",
+        "title": "Urinary Drainage Bags",
+        "condition": [],
+        "procedure": [
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>  urinary collection and retention system are covered as prosthetic devices that replace bladder function in the case of permanent urinary incontinence.&#160; there is insufficient evidence to supp..."
+      },
+      {
+        "source": "NCD_249",
+        "title": "Sacral Nerve Stimulation For Urinary Incontinence",
+        "condition": [
+          "diabetes"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>   effective january 1, 2002, sacral nerve stimulation is covered for the treatment of urinary urge incontinence, urgency-frequency syndrome, and urinary retention. sacral nerve stimulation involve..."
+      },
+      {
+        "source": "NCD_250",
+        "title": "Institutional and Home Care Patient Education Programs",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "injection"
+        ],
+        "notes": "<p> while the act does not specifically identify patient education programs as covered services, reimbursement may be made under medicare for such programs furnished by providers of services (i.e., ho..."
+      },
+      {
+        "source": "NCD_251",
+        "title": "Diabetes Outpatient Self-Management Training",
+        "condition": [
+          "diabetes"
+        ],
+        "procedure": [],
+        "notes": "<p>     please refer to <a href=\"https://www.ecfr.gov/cgi-bin/text-idx?node=sp42.2.410.h&rgn=div6#se42.2.410_1141\">42&#160;cfr&#160;410.140 - 410.146</a> for conditions that must be met for medicare c..."
+      },
+      {
+        "source": "NCD_252",
+        "title": "Medical Nutrition Therapy",
+        "condition": [
+          "diabetes",
+          "kidney"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p><strong>b. nationally covered</p></strong>\n\n<p>effective january 1, 2022, basic coverage of mnt, for the first year a beneficiary receives mnt, with either a diagnosis of renal disease or diabetes ..."
+      },
+      {
+        "source": "NCD_254",
+        "title": "Ambulatory Blood Pressure Monitoring",
+        "condition": [
+          "hypertension"
+        ],
+        "procedure": [
+          "screening",
+          "imaging",
+          "device",
+          "monitoring"
+        ],
+        "notes": "<br><p><strong>b. nationally covered indications</p></strong>\r\n\r\n<p>for dates of service on and after july 2, 2019, the centers for medicare & medicaid services (cms) believes that the evidence is suf..."
+      },
+      {
+        "source": "NCD_256",
+        "title": "Bone (Mineral) Density Studies",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p> conditions for coverage of bone mass measurements are now contained in <a href=\"https://www.cms.gov/regulations-and-guidance/guidance/transmittals/downloads/r70bp.pdf\">chapter 15, section 80.5 of ..."
+      },
+      {
+        "source": "NCD_257",
+        "title": "Lymphocyte Mitogen Response Assays",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p> it is a covered test under medicare when it is medically necessary to assess lymphocytic function in diagnosed immunodeficiency diseases and to monitor immunotherapy.</p>\r\n\r\n<p> it is not covered ..."
+      },
+      {
+        "source": "NCD_262",
+        "title": "Displacement Cardiography",
+        "condition": [
+          "pain"
+        ],
+        "procedure": [
+          "screening",
+          "imaging"
+        ],
+        "notes": "<strong><p>a. cardiokymography</p></strong>\r\n\r\n<p>cardiokymography is covered for services rendered on or after october 12, 1988.</p>\r\n\r\n<p>cardiokymography is a covered service only when it is used a..."
+      },
+      {
+        "source": "NCD_263",
+        "title": "Ultrasound Diagnostic Procedures",
+        "condition": [
+          "cancer",
+          "heart",
+          "kidney",
+          "pregnancy"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "device",
+          "biopsy",
+          "monitoring"
+        ],
+        "notes": "<p>    <strong>       b. nationally covered indications</strong></p>\r\n\r\n<p>    category i - (clinically effective, usually part of initial patient evaluation, may be an adjunct to radiologic and nucle..."
+      },
+      {
+        "source": "NCD_264",
+        "title": "Diagnostic Breath Analyses",
+        "condition": [],
+        "procedure": [
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p> the following breath test is covered:</p>\r\n\r\n<ul> \r\n<li> lactose breath hydrogen to detect lactose malabsorption.</li>\r\n</ul>\r\n\r\n<p> the following breath tests are excluded from coverage:</p>\r\n\r\n<..."
+      },
+      {
+        "source": "NCD_265",
+        "title": "Serologic Testing for Acquired Immunodeficiency Syndrome (AIDS)",
+        "condition": [],
+        "procedure": [
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p> these tests may be covered when performed to help determine a diagnosis for symptomatic patients. they are not covered when furnished as part of a screening program for asymptomatic persons.</p>\n\n..."
+      },
+      {
+        "source": "NCD_267",
+        "title": "Cardiac Output Monitoring by Thoracic Electrical Bioimpedance (TEB)",
+        "condition": [
+          "heart",
+          "lung",
+          "hypertension"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "device",
+          "transplant",
+          "biopsy",
+          "monitoring"
+        ],
+        "notes": "<p>  <strong>  b. nationally covered indications</strong></p>   \n   \n<p>  effective for services performed on and after january 23, 2004, teb is covered for the following uses:</p>   \n   \n<ol start=\"1..."
+      },
+      {
+        "source": "NCD_268",
+        "title": "Prostate Cancer Screening Tests",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p><strong>cim 50-55</strong></p>\n\n<p>covered</p>\n\n<p><strong>a. general</strong></p>\n\n<p>section 4103 of the balanced budget act of 1997 provides for coverage of certain prostate cancer screening tes..."
+      },
+      {
+        "source": "NCD_269",
+        "title": "Home Prothrombin Time/International Normalized Ratio (PT/INR) Monitoring for Anticoagulation Management",
+        "condition": [
+          "heart",
+          "lung"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "device",
+          "monitoring"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</strong></p> \n \n<p>for services furnished on or after march 19, 2008, medicare will cover for the use of home pt/inr monitoring forchronic, oral anticoagul..."
+      },
+      {
+        "source": "NCD_274",
+        "title": "Speech Generating Devices",
+        "condition": [],
+        "procedure": [
+          "imaging",
+          "device"
+        ],
+        "notes": "<strong><p>b. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nationally covered indications</p></strong>  \n  \n<p>n/a</p> \n  \n<strong><p>c. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nationally non-covered indications</p></strong> ..."
+      },
+      {
+        "source": "NCD_279",
+        "title": "Deep Brain Stimulation for Essential Tremor and Parkinsons Disease",
+        "condition": [
+          "cancer",
+          "heart",
+          "stroke",
+          "arthritis",
+          "mental health"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging",
+          "injection",
+          "device"
+        ],
+        "notes": "<p>    effective for services furnished on or after april 1, 2003, medicare will cover unilateral or bilateral thalamic ventralis intermedius nucleus (vim) deep brain stimulation (dbs) for the treatme..."
+      },
+      {
+        "source": "NCD_280",
+        "title": "Intestinal and Multi-Visceral Transplantation",
+        "condition": [
+          "kidney",
+          "lung",
+          "stroke",
+          "infection"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "injection",
+          "transplant"
+        ],
+        "notes": "<p>   <strong> b. nationally covered indications</strong></p>\n\n<p>   effective for services performed on or after april 1, 2001, this procedure is covered only when performed for patients who have fai..."
+      },
+      {
+        "source": "NCD_281",
+        "title": "Colorectal Cancer Screening Tests",
+        "condition": [
+          "cancer",
+          "wound",
+          "pain"
+        ],
+        "procedure": [
+          "screening",
+          "imaging",
+          "device",
+          "biopsy"
+        ],
+        "notes": "<p><strong></p>b. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nationally covered indications</strong></p>\n\n<p><strong>1. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fecal occult blood tests (fobt) (effective january 1, 2004)</p>..."
+      },
+      {
+        "source": "NCD_286",
+        "title": "Islet Cell Transplantation in the Context of a Clinical Trial",
+        "condition": [],
+        "procedure": [
+          "imaging",
+          "transplant"
+        ],
+        "notes": "<strong><p>  b. nationally covered indications</p></strong>\n\n<p>  medicare will pay for the routine costs, as well as transplantation and appropriate related items and services, for medicare beneficia..."
+      },
+      {
+        "source": "NCD_288",
+        "title": "FDG PET for Dementia and Neurodegenerative Diseases",
+        "condition": [
+          "stroke"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "injection"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</strong></p> \r\n<ol> \r\n<li> <p><strong>fdg pet requirements for coverage in the differential diagnosis of ad and ftd</strong></p> \r\n \r\n<p>an  fdg pet scan i..."
+      },
+      {
+        "source": "NCD_292",
+        "title": "PET for Perfusion of the Heart",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "surgery",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p> <strong> 1. rubidium 82 (effective march 14, 1995)</strong></p>\n\n<p>effective for services performed on or after march 14, 1995, pet scans performed at rest or with pharmacological stress used for..."
+      },
+      {
+        "source": "NCD_293",
+        "title": "FDG PET for Esophageal Cancer (Replaced with Section 220.6.17) - RETIRED",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>220.6.3 - fdg pet for esophageal cancer (retired)<br>\n(rev.11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>please note section 220.6.3 has been remov..."
+      },
+      {
+        "source": "NCD_294",
+        "title": "FDG PET for Refractory Seizures",
+        "condition": [],
+        "procedure": [
+          "surgery",
+          "imaging"
+        ],
+        "notes": "<p>beginning july 1, 2001, medicare covers fdg-pet for pre-surgical evaluation for the purpose of localization of a focus of refractory seizure activity.</p>\r\n\r\n<p>limitations: covered only for pre-su..."
+      },
+      {
+        "source": "NCD_295",
+        "title": "FDG PET for Brain, Cervical, Ovarian, Pancreatic, Small Cell Lung, and Testicular Cancers (Replaced with Section 220.6.17) - RETIRED",
+        "condition": [
+          "cancer",
+          "lung",
+          "stroke"
+        ],
+        "procedure": [
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p><strong>220.6.14 - fdg pet for brain, cervical, ovarian, pancreatic, small cell lung, and testicular cancers (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-..."
+      },
+      {
+        "source": "NCD_296",
+        "title": "FDG PET for All Other Cancer Indications Not Previously Specified (Replaced with Section 220.6.17) - RETIRED",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>220.6.15 - fdg pet for all other cancer indications not previously specified (retired)<br>\n(rev.11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>pleas..."
+      },
+      {
+        "source": "NCD_297",
+        "title": "FDG PET for Breast Cancer (Replaced with Section 220.6.17) - RETIRED",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>220.6.10 - fdg pet for breast cancer (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>please note section 220.6.10 has been remove..."
+      },
+      {
+        "source": "NCD_298",
+        "title": "FDG PET for Myocardial Viability",
+        "condition": [],
+        "procedure": [
+          "screening",
+          "imaging"
+        ],
+        "notes": "<ol>\r\n\t<li>fdg pet is covered for the determination of myocardial viability following an inconclusive single photon emission computed tomography (spect) test from july 1, 2001, through september 30, 2..."
+      },
+      {
+        "source": "NCD_299",
+        "title": "FDG PET for Colorectal Cancer (Replaced with Section 220.6.17) - RETIRED",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>220.6.4- fdg pet for colorectal cancer (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>please note section 220.6.4 has been remov..."
+      },
+      {
+        "source": "NCD_300",
+        "title": "FDG PET for Lymphoma (Replaced with Section 220.6.17) - RETIRED",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>220.6.5 - fdg pet for lymphoma (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>please note section 220.6.5 has been removed from ..."
+      },
+      {
+        "source": "NCD_301",
+        "title": "FDG PET for Lung Cancer (Replaced with Section 220.6.17) - RETIRED",
+        "condition": [
+          "cancer",
+          "lung"
+        ],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>220.6.2 - fdg pet for lung cancer (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>please note section 220.6.2 has been removed fr..."
+      },
+      {
+        "source": "NCD_302",
+        "title": "FDG PET for Thyroid Cancer (Replaced with Section 220.6.17) - RETIRED",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>220.6.11 - fdg pet for thyroid cancer (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>please note section 220.6.11 has been remov..."
+      },
+      {
+        "source": "NCD_303",
+        "title": "FDG PET for Soft Tissue Sarcoma (Replaced with Section 220.6.17) - RETIRED",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>220.6.12 - fdg pet for soft tissue sarcoma (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>please note section 220.6.12 has been ..."
+      },
+      {
+        "source": "NCD_304",
+        "title": "FDG PET for Melanoma (Replaced with Section 220.6.17) - RETIRED",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>220.6.6 - fdg pet for melanoma (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>please note section 220.6.6 has been removed from ..."
+      },
+      {
+        "source": "NCD_305",
+        "title": "FDG PET for Head and Neck Cancers (Replaced with Section 220.6.17) - RETIRED",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>220.6.7 - fdg pet for head and neck cancers (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>please note section 220.6.7 has been ..."
+      },
+      {
+        "source": "NCD_306",
+        "title": "Abarelix for the Treatment of Prostate Cancer - RETIRED",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p><strong>110.19 - abarelix for the treatment of prostate cancer (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>effective january 1, 2021,..."
+      },
+      {
+        "source": "NCD_308",
+        "title": "Smoking and Tobacco-Use Cessation Counseling - RETIRED",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>210.4- smoking and tobacco-use cessation counseling (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>effective september 30, 2015 ..."
+      },
+      {
+        "source": "NCD_309",
+        "title": "Aprepitant for Chemotherapy-Induced Emesis",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<br><p><strong>b. nationally covered indications</strong></p>   \n<p>effective for services performed between april 4, 2005, and may 28, 2013, the centers for medicare & medicaid services makes the fol..."
+      },
+      {
+        "source": "NCD_310",
+        "title": "Microvolt T-Wave Alternans (MTWA)",
+        "condition": [],
+        "procedure": [
+          "screening",
+          "imaging"
+        ],
+        "notes": "<strong><p>b. &nbsp;&nbsp;&nbsp;nationally covered indications</p></strong> \n \n<p>effective for dates of service on and after march 21, 2006, mtwa diagnostic testing is covered for the evaluation of p..."
+      },
+      {
+        "source": "NCD_311",
+        "title": "Nesiritide for Treatment of Heart Failure Patients",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<strong><p>b. nationally covered indications</p></strong>\r\n<p>n/a</p>\r\n<strong><p>c. nationally non-covered indications</p></strong>\r\n<p>effective for dates of service on or after march 2, 2006, the c..."
+      },
+      {
+        "source": "NCD_312",
+        "title": "Home Use of Oxygen in Approved Clinical Trials",
+        "condition": [
+          "heart",
+          "lung"
+        ],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</strong></p>\r\n\r\n<p>effective for services performed on or after march 20, 2006 the home use of oxygen is covered for those beneficiaries with arterial oxyg..."
+      },
+      {
+        "source": "NCD_313",
+        "title": "Lumbar Artificial Disc Replacement (LADR)",
+        "condition": [],
+        "procedure": [
+          "imaging",
+          "device"
+        ],
+        "notes": "<strong><p>b. nationally covered indications</p></strong>\n<p>n/a</p>\n<strong><p>c. nationally non-covered indications</p></strong>\n<p>effective for services performed from may 16, 2006 through august ..."
+      },
+      {
+        "source": "NCD_317",
+        "title": "INDEPENDENCE iBOT 4000 Mobility System",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p>     <strong>         b. nationally covered indications</strong></p>\r\n\r\n<p>         effective for services performed on and after july 27, 2006, the centers for medicare &amp; medicaid services (cm..."
+      },
+      {
+        "source": "NCD_320",
+        "title": "Pulmonary Rehabilitation Services",
+        "condition": [
+          "lung"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>  <strong>   b. nationally covered indications</strong></p>\r\n\r\n<p>   n/a</p>\r\n\r\n<p>  <strong>   c. nationally non-covered indications</strong></p>\r\n\r\n<p>   n/a</p>\r\n\r\n<p>  <strong>   d. other</stro..."
+      },
+      {
+        "source": "NCD_321",
+        "title": "Nebulized Beta Adrenergic Agonist Therapy for Lung Diseases",
+        "condition": [
+          "lung"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<strong><p>b. nationally covered indications</p></strong>\r\n<p>n/a</p>\r\n<strong><p>c. nationally non-covered indications</p></strong>\r\n<p>n/a</p>\r\n<strong><p>d. other</p></strong>\r\n\r\n<p>after examining..."
+      },
+      {
+        "source": "NCD_322",
+        "title": "Erythropoiesis Stimulating Agents (ESAs) in Cancer and Related Neoplastic Conditions",
+        "condition": [
+          "cancer",
+          "kidney",
+          "hypertension"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<strong><p>b. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nationally covered indications</p></strong>  \n\n<p>esa treatment for the anemia secondary to myelosuppressive anticancer chemotherapy in solid tumors, multip..."
+      },
+      {
+        "source": "NCD_323",
+        "title": "FDG PET for Infection and Inflammation - RETIRED",
+        "condition": [
+          "infection"
+        ],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>220.6.16 - fdg pet for infection and inflammation (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>effective january 1, 2021, the ..."
+      },
+      {
+        "source": "NCD_326",
+        "title": "Surgery for Diabetes - RETIRED",
+        "condition": [
+          "diabetes"
+        ],
+        "procedure": [
+          "surgery",
+          "imaging"
+        ],
+        "notes": "<p><strong>100.14  surgery for diabetes (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>please note section 100.14 has been removed from th..."
+      },
+      {
+        "source": "NCD_331",
+        "title": "Positron Emission Tomography (FDG) for Oncologic Conditions",
+        "condition": [
+          "cancer",
+          "lung",
+          "stroke"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "monitoring"
+        ],
+        "notes": "<p>b.1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; initial anti-tumor treatment strategy nationally covered indications</p>   \n   \n<ol start=\"1\" type=\"a\">   \n\t<li>cms continues to nationally cover fdg pet imaging ..."
+      },
+      {
+        "source": "NCD_333",
+        "title": "Pharmacogenomic Testing for Warfarin Response",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p>   <strong>  nationally covered indications</strong></p> \r\n \r\n<p>   effective august 3, 2009, the centers for medicare &amp; medicaid services (cms) believes that the available evidence supports th..."
+      },
+      {
+        "source": "NCD_335",
+        "title": "Screening for the Human Immunodeficiency Virus (HIV) Infection",
+        "condition": [
+          "infection",
+          "pregnancy"
+        ],
+        "procedure": [
+          "screening",
+          "imaging",
+          "injection",
+          "dialysis"
+        ],
+        "notes": "<strong><p>b. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nationally covered indications</p></strong> \n \n<p>effective for claims with dates of service on and after april 13, 2015, cms has determined that the eviden..."
+      },
+      {
+        "source": "NCD_336",
+        "title": "Positron Emission Tomography (NaF-18) to Identify Bone Metastasis of Cancer",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</p></strong>\n<p>the confirmatory analyses were not published during the 24-month time period. therefore, effective december 15, 2017, cms determines that t..."
+      },
+      {
+        "source": "NCD_339",
+        "title": "Intensive Cardiac Rehabilitation (ICR) Programs",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "therapy"
+        ],
+        "notes": "&#160;"
+      },
+      {
+        "source": "NCD_343",
+        "title": "Home Oxygen Use to Treat Cluster Headache (CH) - RETIRED",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>240.2.2 - home oxygen use to treat cluster headache (ch) (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>effective september 27, ..."
+      },
+      {
+        "source": "NCD_346",
+        "title": "Screening for Depression in Adults",
+        "condition": [
+          "mental health"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p>  <strong>  b. nationally covered indications</strong></p>\r\n\r\n<p>  effective for claims with dates of service on or after october 14, 2011, cms will cover annual screening up to 15 minutes for medi..."
+      },
+      {
+        "source": "NCD_347",
+        "title": "Screening and Behavioral Counseling Interventions in Primary Care to Reduce Alcohol Misuse",
+        "condition": [],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p> <strong> b. nationally covered indications</strong></p> \n \n<p> effective for claims with dates of service on or after october 14, 2011, cms will cover annual alcohol screening, and for those that ..."
+      },
+      {
+        "source": "NCD_348",
+        "title": "Intensive Behavioral Therapy for Cardiovascular Disease",
+        "condition": [
+          "heart",
+          "hypertension"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p> <strong> b. nationally covered indications</strong></p>\n\n<p> effective for claims with dates of service on or after november 8, 2011, cms covers intensive behavioral therapy for cvd (referred to b..."
+      },
+      {
+        "source": "NCD_349",
+        "title": "Ocular Photodynamic Therapy (OPT)",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<strong><p>b. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nationally covered indications</p></strong>    \n    \n<p>effective april 1, 2004, opt with verteporfin continues to be approved for a diagnosis of neovascula..."
+      },
+      {
+        "source": "NCD_350",
+        "title": "Verteporfin",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<strong><p>b. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nationally covered indications   </p></strong>\n\n<p>effective april 1, 2004, opt with verteporfin is covered for patients with a diagnosis of neovascular age..."
+      },
+      {
+        "source": "NCD_351",
+        "title": "Diagnostic Pap Smears - RETIRED",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>230.11 - diagnostic pap smears (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>  the guide in <a href=\"https://www.cms.gov/medica..."
+      },
+      {
+        "source": "NCD_354",
+        "title": "Transcutaneous Electrical Nerve Stimulation (TENS) for Chronic Low Back Pain (CLBP)",
+        "condition": [
+          "pain"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p>b. nationally covered indications</p>\n\n<p>effective june 8, 2012, the centers for medicare & medicaid services (cms) will allow coverage for transcutaneous electrical nerve stimulation (tens) for c..."
+      },
+      {
+        "source": "NCD_355",
+        "title": "Transcatheter Aortic Valve Replacement (TAVR)",
+        "condition": [
+          "heart",
+          "kidney",
+          "stroke",
+          "arthritis"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</strong></p>\r\n\r\n<p>the centers for medicare & medicaid services (cms) covers transcatheter aortic valve replacement (tavr) under coverage with evidence dev..."
+      },
+      {
+        "source": "NCD_356",
+        "title": "Beta Amyloid Positron Tomography in Dementia and Neurodegenerative Disease (RETIRED)",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<strong>(rev. 12364; issued:11-16-23; effective:10-13-23; implementation:12-19-23)</strong>\n<p>effective october 13, 2023, cms removed ncd 220.6.20, ending ced for pet beta amyloid imaging and permitt..."
+      },
+      {
+        "source": "NCD_357",
+        "title": "Single Chamber and Dual Chamber Permanent Cardiac Pacemakers",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "injection",
+          "device"
+        ],
+        "notes": "<strong><p>b.&nbsp;&nbsp;nationally covered indications</p></strong>   \n<p>the following indications are covered for implanted permanent single chamber or dual chamber cardiac pacemakers:</p>   \n   \n<..."
+      },
+      {
+        "source": "NCD_358",
+        "title": "Percutaneous Image-Guided Lumbar Decompression for Lumbar Spinal Stenosis",
+        "condition": [
+          "pain"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "injection",
+          "device"
+        ],
+        "notes": "<strong><p>b. &nbsp; nationally covered indications</p></strong>\n\n<p>effective for dates of service specified below, the centers for medicare & medicaid services (cms) has determined that pild will be..."
+      },
+      {
+        "source": "NCD_359",
+        "title": "Cardiac Rehabilitation Programs for Chronic Heart Failure",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<strong><p>b. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nationally covered indications</p></strong>\r\n<p>effective for dates of service on and after february 18, 2014, cms has determined that the evidence is suffi..."
+      },
+      {
+        "source": "NCD_360",
+        "title": "Ventricular Assist Devices",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging",
+          "device",
+          "transplant"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</strong></p>\n<p> 1. post-cardiotomy (effective for services performed on or after october 18, 1993)</p>\n<p>post-cardiotomy is the period following open-hea..."
+      },
+      {
+        "source": "NCD_361",
+        "title": "Screening for Hepatitis C Virus (HCV) in Adults",
+        "condition": [
+          "infection"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "injection",
+          "dialysis"
+        ],
+        "notes": "<p>b. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nationally covered indications</p>\n\n<p>effective for services performed on or after june 2, 2014, cms has determined the following:</p>\n\n<p>the evidence is adequate..."
+      },
+      {
+        "source": "NCD_363",
+        "title": "Transcatheter Edge-to-Edge Repair (TEER) for Mitral Valve Regurgitation",
+        "condition": [
+          "heart",
+          "kidney",
+          "stroke",
+          "arthritis"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</strong></p>\n\t\n<p>the centers for medicare & medicaid services (cms) covers teer of the mitral valve under coverage with evidence development (ced) with th..."
+      },
+      {
+        "source": "NCD_364",
+        "title": "Lung Cancer Screening with Low Dose Computed Tomography (LDCT)",
+        "condition": [
+          "cancer",
+          "lung"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</p></strong>\n\n<p>effective for claims with dates of service on or after february 10, 2022, cms has determined that the evidence is sufficient to cover, und..."
+      },
+      {
+        "source": "NCD_365",
+        "title": "Screening for Cervical Cancer with Human Papillomavirus (HPV)",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "screening",
+          "imaging"
+        ],
+        "notes": "<strong><p>b.&nbsp; nationally covered indications</p></strong>     \r\n     \r\n<p>effective for services performed on or after july 9, 2015, cms has determined that the evidence is sufficient to add hum..."
+      },
+      {
+        "source": "NCD_366",
+        "title": "Stem Cell Transplantation (Formerly 110.8.1)",
+        "condition": [
+          "cancer",
+          "heart",
+          "kidney",
+          "lung"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "transplant"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</strong></p>\n\n<p><strong>i. allogeneic hematopoietic stem cell transplantation (hsct)</strong></p>\n\n<ol type=\"a\">\n<li>effective for services performed on o..."
+      },
+      {
+        "source": "NCD_367",
+        "title": "Percutaneous Left Atrial Appendage Closure (LAAC)",
+        "condition": [
+          "diabetes",
+          "heart",
+          "stroke",
+          "hypertension"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p><strong>b. &nbsp;&nbsp;&nbsp;    nationally covered indications</strong></p>   \n   \n<p>the centers for medicare & medicaid services (cms) covers percutaneous laac for non-valvular atrial fibrillati..."
+      },
+      {
+        "source": "NCD_370",
+        "title": "Leadless Pacemakers",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "device"
+        ],
+        "notes": "<strong><p>b. nationally covered indications</p></strong>\r\n\r\n<p>effective january 18, 2017, the centers for medicare & medicaid services (cms) covers leadless pacemakers through coverage with evidence..."
+      },
+      {
+        "source": "NCD_372",
+        "title": "Next Generation Sequencing (NGS)",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p><strong>b. &nbsp;&nbsp;&nbsp;nationally covered indications</p></strong>\n\n<p>1. &nbsp;&nbsp;&nbsp;<u>somatic (acquired) cancer</u></p>\n\n<p>effective for services performed on or after march 16, 201..."
+      },
+      {
+        "source": "NCD_375",
+        "title": "Monoclonal Antibodies Directed Against Amyloid for the Treatment of Alzheimer's Disease (AD)",
+        "condition": [
+          "stroke"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "monitoring"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</p></strong>\n<p>effective april 7, 2022, the centers for medicare & medicaid services (cms) covers food and drug administration (fda) approved monoclonal a..."
+      }
+    ],
+    "excluded": [
+      {
+        "source": "NCD_2",
+        "title": "Colonic Irrigation",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p> there are no conditions for which colonic irrigation is medically indicated and no evidence of therapeutic value. accordingly, colonic irrigation cannot be considered reasonable and necessary with..."
+      },
+      {
+        "source": "NCD_4",
+        "title": "Heat Treatment, Including the Use of Diathermy and Ultra-Sound for Pulmonary Conditions",
+        "condition": [
+          "lung"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>  there is no physiological rationale or valid scientific documentation of effectiveness of diathermy or ultrasound heat treatments for asthma, bronchitis, or any other pulmonary condition and for ..."
+      },
+      {
+        "source": "NCD_5",
+        "title": "Ultrasonic Surgery",
+        "condition": [],
+        "procedure": [
+          "surgery"
+        ],
+        "notes": ""
+      },
+      {
+        "source": "NCD_6",
+        "title": "Cellular Therapy",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p> accordingly, cellular therapy is not considered reasonable and necessary within the meaning of section 1862(a)(1) of the act.</p>"
+      },
+      {
+        "source": "NCD_7",
+        "title": "Thermogenic Therapy",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p> regardless of the medium by which the fever is induced, this modality is not scientifically accepted for the treatment of any specific disease. since the advent of potent antibiotics, the procedur..."
+      },
+      {
+        "source": "NCD_11",
+        "title": "Acupuncture",
+        "condition": [
+          "pain"
+        ],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<br><p><strong>b. nationally covered indications</p></strong>\r\n<p>effective for claims with dates of service on and after january 21, 2020, acupuncture is only covered for chronic low back pain under ..."
+      },
+      {
+        "source": "NCD_14",
+        "title": "Plastic Surgery to Correct \"Moon Face\"",
+        "condition": [],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>  the cosmetic surgery exclusion precludes payment for any surgical procedure directed at improving appearance. the condition giving rise to the patient's preoperative appearance is generally not a..."
+      },
+      {
+        "source": "NCD_15",
+        "title": "Prolotherapy, Joint Sclerotherapy, and Ligamentous Injections with Sclerosing Agents",
+        "condition": [
+          "arthritis"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "injection"
+        ],
+        "notes": "<p> the medical effectiveness of the above therapies has not been verified by scientifically controlled studies. accordingly, reimbursement for these modalities should be denied on the ground that the..."
+      },
+      {
+        "source": "NCD_20",
+        "title": "Electrosleep Therapy - RETIRED",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p><strong>30.4 - electrosleep therapy (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>effective january 1, 2021, the centers for medicare &..."
+      },
+      {
+        "source": "NCD_21",
+        "title": "Intravenous Histamine Therapy",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p> however, there is no scientifically valid clinical evidence that histamine therapy is effective for any condition regardless of the method of administration, nor is it accepted or widely used by t..."
+      },
+      {
+        "source": "NCD_22",
+        "title": "Treatment of Motor Function Disorders with Electric Nerve Stimulation",
+        "condition": [
+          "stroke"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>    where electric nerve stimulation is employed to treat motor function disorders, no reimbursement may be made for the stimulator or for the services related to its implantation since this treatm..."
+      },
+      {
+        "source": "NCD_31",
+        "title": "Electrical Aversion Therapy for Treatment of Alcoholism",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>  electrical aversion therapy has not been shown to be safe and effective and therefore is excluded from coverage.</p>"
+      },
+      {
+        "source": "NCD_43",
+        "title": "Oxygen Treatment of Inner Ear/Carbon Therapy",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>   oxygen (95 percent) and carbon dioxide (5 percent) inhalation therapy for inner ear disease, such as endolymphatic hydrops and fluctuant hearing loss, is not reasonable and necessary. the therap..."
+      },
+      {
+        "source": "NCD_50",
+        "title": "Intestinal Bypass Surgery - RETIRED",
+        "condition": [],
+        "procedure": [
+          "surgery",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p><strong>100.8 - intestinal bypass surgery (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</p></strong>\n<p>please note section 100.8 has been removed from..."
+      },
+      {
+        "source": "NCD_51",
+        "title": "Fabric Wrapping of Abdominal Aneurysms",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>fabric wrapping of abdominal aneurysms is not a covered medicare procedure. this is a treatment for abdominal aneurysms which involves wrapping aneurysms with cellophane or fascia lata. this proced..."
+      },
+      {
+        "source": "NCD_67",
+        "title": "Cochleostomy with Neurovascular Transplant for Meniere's Disease",
+        "condition": [],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging",
+          "transplant"
+        ],
+        "notes": "<p> while there are two recognized surgical procedures used in treating meniere's disease (decompression of the endolymphatic hydrops and labyrinthectomy), there is no scientific evidence supporting t..."
+      },
+      {
+        "source": "NCD_68",
+        "title": "Hemodialysis for Treatment of Schizophrenia",
+        "condition": [
+          "kidney"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "dialysis"
+        ],
+        "notes": "<p>  scientific evidence supporting use of hemodialysis as a safe and effective means of treatment for schizophrenia is inconclusive at this time. accordingly, medicare does not cover hemodialysis for..."
+      },
+      {
+        "source": "NCD_72",
+        "title": "Refractive Keratoplasty",
+        "condition": [],
+        "procedure": [
+          "surgery",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p> the correction of common refractive errors by eyeglasses, contact lenses or other prosthetic devices is specifically excluded from coverage. the use of radial keratotomy and/or keratoplasty for th..."
+      },
+      {
+        "source": "NCD_78",
+        "title": "Electronecephalographic (EEG) Monitoring During Open-Heart Surgery - RETIRED",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "surgery",
+          "imaging",
+          "monitoring"
+        ],
+        "notes": "<p><strong>160.9  electroencephalographic (eeg) monitoring during open-heart surgery (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>effect..."
+      },
+      {
+        "source": "NCD_85",
+        "title": "Tinnitus Masking - RETIRED",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>50.6 - tinnitus masking (retired)<br> \n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation:04-10-23)</strong></p> <p>this section of the ncd manual was retired december 18, 2..."
+      },
+      {
+        "source": "NCD_86",
+        "title": "Chelation Therapy for Treatment of Atherosclerosis",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p> the application of chelation therapy using ethylenediamine-tetra-acetic acid (edta) for the treatment and prevention of atherosclerosis is controversial. there is no widely accepted rationale to e..."
+      },
+      {
+        "source": "NCD_87",
+        "title": "Gastric Freezing",
+        "condition": [],
+        "procedure": [],
+        "notes": "<p>  since the procedure is now considered obsolete, it is not covered.</p>"
+      },
+      {
+        "source": "NCD_94",
+        "title": "Electrotherapy for Treatment of Facial Nerve Paralysis (Bell's Palsy)",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p> electrotherapy for the treatment of facial nerve paralysis, commonly known as bell's palsy, is not covered under medicare because its clinical effectiveness has not been established.</p>"
+      },
+      {
+        "source": "NCD_109",
+        "title": "Stereotactic Cingulotomy as a Means of Psychosurgery - RETIRED",
+        "condition": [],
+        "procedure": [
+          "surgery",
+          "imaging"
+        ],
+        "notes": "<p><strong>160.4  stereotactic cingulotomy as a means of psychosurgery (retired)<br>\n<em>(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p></em>\n<p>effective d..."
+      },
+      {
+        "source": "NCD_111",
+        "title": "Gastric Balloon for Treatment of Obesity - RETIRED",
+        "condition": [
+          "obesity"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p><strong>100.11  gastric balloon for treatment of obesity (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>please note section 100.11 has ..."
+      },
+      {
+        "source": "NCD_117",
+        "title": "Transcendental Meditation",
+        "condition": [
+          "hypertension"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>   after review of this issue, cms has concluded that the evidence concerning the medical efficacy of tm is incomplete at best and does not demonstrate effectiveness and that a professional level o..."
+      },
+      {
+        "source": "NCD_122",
+        "title": "Partial Ventriculectomy",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p> since the mortality rate is high and there are no published scientific articles or clinical studies regarding partial ventriculectomy, this procedure cannot be considered reasonable and necessary ..."
+      },
+      {
+        "source": "NCD_123",
+        "title": "Cryosurgery of Prostate",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy"
+        ],
+        "notes": "<p>cryosurgery of the prostate as a salvage therapy is not covered for any services performed prior to june 30, 2001.</p>  \r\n  \r\n<p>   salvage cryosurgery of prostate after radiation failure. salvage ..."
+      },
+      {
+        "source": "NCD_124",
+        "title": "Vertebral Axial Decompression (VAX-D)",
+        "condition": [],
+        "procedure": [],
+        "notes": "<p> there is insufficient scientific data to support the benefits of this technique. therefore, vax-d is not covered by medicare.</p>"
+      },
+      {
+        "source": "NCD_135",
+        "title": "Vitamin B12 Injections to Strengthen Tendons, Ligaments, etc., of the Foot",
+        "condition": [],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging",
+          "injection"
+        ],
+        "notes": "<p> vitamin b12 injections to strengthen tendons, ligaments, etc., of the foot are not covered under medicare because (1) there is no evidence that vitamin b12 injections are effective for the purpose..."
+      },
+      {
+        "source": "NCD_137",
+        "title": "Laetrile and Related Substances",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p> the fda has determined that neither laetrile nor any other drug called by the various terms mentioned above, nor any other product which might be characterized as a \"nitriloside\" is generally reco..."
+      },
+      {
+        "source": "NCD_143",
+        "title": "Transfer Factor for Treatment of Multiple Sclerosis",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>  transfer factor is the dialysate of an extract from sensitized leukocytes which increases cellular immune activity in the recipient. it is not covered as a treatment for multiple sclerosis becaus..."
+      },
+      {
+        "source": "NCD_146",
+        "title": "Ethylenediamine-Tetra-Acetic (EDTA) Chelation Therapy for Treatment of Atherosclerosis",
+        "condition": [],
+        "procedure": [
+          "therapy"
+        ],
+        "notes": "<p> the use of edta as a chelating agent to treat atherosclerosis, arteriosclerosis, calcinosis, or similar generalized condition not listed by the fda as an approved use is not covered. any such use ..."
+      },
+      {
+        "source": "NCD_155",
+        "title": "Antigens Prepared for Sublingual Administration",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "injection"
+        ],
+        "notes": "<p>  for antigens provided to patients on or after november 17, 1996, medicare does not cover such antigens if they are to be administered sublingually, i.e., by placing drops under the patient's tong..."
+      },
+      {
+        "source": "NCD_161",
+        "title": "Cytotoxic Food Tests",
+        "condition": [],
+        "procedure": [
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p> prior to august 5, l985, medicare covered cytotoxic food tests as an adjunct to in vivo clinical allergy tests in complex food allergy problems. effective august 5, l985, cytotoxic leukocyte tests..."
+      },
+      {
+        "source": "NCD_164",
+        "title": "Thermography",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p> thermography for any indication (including breast lesions which were excluded from medicare coverage on july 20, 1984) is excluded from medicare coverage because the available evidence does not su..."
+      },
+      {
+        "source": "NCD_168",
+        "title": "White Cane for Use by a Blind Person",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "device"
+        ],
+        "notes": "<p> a white cane for use by a blind person is more an identifying and self-help device rather than an item which makes a meaningful contribution in the treatment of an illness or injury.</p>"
+      },
+      {
+        "source": "NCD_189",
+        "title": "Hair Analysis",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p> hair analysis to detect mineral traces as an aid in diagnosing human disease is not a covered service under medicare.</p>\r\n\r\n<p> the correlation of hair analysis to the chemical state of the whole..."
+      },
+      {
+        "source": "NCD_197",
+        "title": "Peridex CAPD Filter Set",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p> based upon advice of our medical consultants, we have determined that the peridex capd filter set cannot be covered at this time by medicare because it has not yet been shown to be safe and effect..."
+      },
+      {
+        "source": "NCD_217",
+        "title": "Blood-Derived Products for Chronic Non-Healing Wounds",
+        "condition": [
+          "diabetes",
+          "wound"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</strong></p>\n\t\n<p>effective for services performed on or after april 13, 2021, the centers for medicare & medicaid services (cms) will cover autologous prp..."
+      },
+      {
+        "source": "NCD_229",
+        "title": "Intrapulmonary Percussive Ventilator (IPV)",
+        "condition": [
+          "lung"
+        ],
+        "procedure": [
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>studies do not demonstrate any advantage of ipv over that achieved with good pulmonary care in the hospital environment and there are no studies in the home setting. there are no data to support th..."
+      },
+      {
+        "source": "NCD_232",
+        "title": "Noncontact Normothermic Wound Therapy (NNWT)",
+        "condition": [
+          "wound"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p>there is insufficient scientific or clinical evidence to consider this device as reasonable and necessary for the treatment of wounds within the meaning of &#167;1862(a)(1)(a) of the social securit..."
+      },
+      {
+        "source": "NCD_234",
+        "title": "Electrical Continence Aid",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>not covered</p>\r\n\r\n<p>electrical continence aids are in the experimental stage of development and there is no valid scientific documentation of their effectiveness and safety. therefore, they are n..."
+      },
+      {
+        "source": "NCD_243",
+        "title": "Bladder Stimulators (Pacemakers)",
+        "condition": [],
+        "procedure": [
+          "imaging",
+          "device"
+        ],
+        "notes": "<p> the use of spinal cord electrical stimulators, rectal electrical stimulators, and bladder wall stimulators is not considered reasonable and necessary. therefore, no program payment may be made for..."
+      },
+      {
+        "source": "NCD_253",
+        "title": "Human Tumor Stem Cell Drug Sensitivity Assays",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [
+          "screening"
+        ],
+        "notes": "<p> human tumor drug sensitivity assays are considered experimental, and therefore, not covered under medicare at this time.</p>\n\n<p> the clinical application of the assay, based on testing in tumor m..."
+      },
+      {
+        "source": "NCD_258",
+        "title": "Transillumination Light Scanning or Diaphanography",
+        "condition": [
+          "cancer"
+        ],
+        "procedure": [],
+        "notes": "<p> further study of this technology is needed to determine its role in breast cancer diagnosis. program payment may not be made for this procedure at this time.</p>"
+      },
+      {
+        "source": "NCD_259",
+        "title": "Cardiointegram (CIG) as an Alternative to Stress Test or Thallium Stress Test",
+        "condition": [],
+        "procedure": [
+          "screening",
+          "device"
+        ],
+        "notes": "<p> because this device is still considered investigational pending additional data on its clinical efficacy/sensitivity and value as a diagnostic tool, program payment may not be made for its use at ..."
+      },
+      {
+        "source": "NCD_266",
+        "title": "Food Allergy Testing and Treatment",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p> effective october 31, 1988, sublingual intracutaneous and subcutaneous provocative and neutralization testing and neutralization therapy for food allergies are excluded from medicare coverage beca..."
+      },
+      {
+        "source": "NCD_270",
+        "title": "Sensory Nerve Conduction Threshold Tests (sNCTs)",
+        "condition": [],
+        "procedure": [
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</strong></p>\r\n\r\n<p>not applicable.</p>\r\n\r\n<p><strong>c. nationally noncovered indications</strong></p>\r\n       \r\n<p>all uses of snct to diagnose sensory ne..."
+      },
+      {
+        "source": "NCD_278",
+        "title": "Multiple Electroconvulsive Therapy (MECT)",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>   the clinical effectiveness of the multiple-seizure electroconvulsive therapy has not been verified by scientifically controlled studies. in addition, studies have demonstrated an increased risk ..."
+      },
+      {
+        "source": "NCD_283",
+        "title": "Acupuncture for Fibromyalgia",
+        "condition": [
+          "pain"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<br><p><strong>b. nationally covered indications</p></strong>\r\n<p>n/a for acupuncture for fibromyalgia.</p>\r\n<p><strong>c. nationally non-covered indications</p></strong>\r\n<p>effective for claims with..."
+      },
+      {
+        "source": "NCD_284",
+        "title": "Acupuncture for Osteoarthritis",
+        "condition": [
+          "arthritis",
+          "pain"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<br><p><strong>b. nationally covered indications</p></strong>\r\n<p>n/a for acupuncture for osteoarthritis.</p>\r\n<p><strong>c. nationally non-covered indications</p></strong>\r\n<p>effective for claims wi..."
+      },
+      {
+        "source": "NCD_285",
+        "title": "Arthroscopic Lavage and Arthroscopic Debridement for the Osteoarthritic Knee",
+        "condition": [
+          "arthritis",
+          "pain"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<br><p><strong>a.   nationally covered indications</strong></p>\r\n\r\n<p>not applicable.</p>\r\n\r\n<p><strong>b.   nationally noncovered indications</strong></p>\r\n\r\n<p>the clinical effectiveness of arthrosc..."
+      },
+      {
+        "source": "NCD_287",
+        "title": "Magnetic Resonance Spectroscopy - RETIRED",
+        "condition": [],
+        "procedure": [
+          "imaging"
+        ],
+        "notes": "<p><strong>220.2.1 - magnetic resonance spectroscopy (retired)<br>\n(rev. 11892; issued: 03-09-23; effective: 04-10-23; implementation: 04-10-23)</strong></p>\n<p>effective january 1, 2021, the centers ..."
+      },
+      {
+        "source": "NCD_314",
+        "title": "Cavernous Nerves by Electrical Stimulation with Penile Plethsmography",
+        "condition": [],
+        "procedure": [
+          "surgery",
+          "screening",
+          "imaging"
+        ],
+        "notes": "<p> <strong> b. nationally covered indications</strong></p>\n\n<p> not applicable.</p>\n\n<p> <strong> c. nationally non-covered indications</strong></p>\n\n<p> effective august 24, 2006, cavernous nerves e..."
+      },
+      {
+        "source": "NCD_315",
+        "title": "Infrared Therapy Devices",
+        "condition": [
+          "diabetes",
+          "wound",
+          "pain"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p> <strong> b. nationally covered indications</strong></p>  \n  \n<p>  n/a</p>  \n  \n<p>    <strong>   c. nationally non-covered indications</strong></p>  \n  \n<p>   effective for services performed on a..."
+      },
+      {
+        "source": "NCD_319",
+        "title": "Blood Brain Barrier Osmotic Disruption for Treatment of Brain Tumors",
+        "condition": [
+          "cancer",
+          "stroke"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p>   <strong> b. nationally covered indications</strong></p>\r\n\r\n<p>    n/a</p>\r\n\r\n<p>  <strong>  c. nationally non-covered indications</strong></p>\r\n\r\n<p>  effective for services performed on and aft..."
+      },
+      {
+        "source": "NCD_324",
+        "title": "Thermal Intradiscal Procedures (TIPs)",
+        "condition": [
+          "pain"
+        ],
+        "procedure": [
+          "therapy",
+          "imaging"
+        ],
+        "notes": "<p><strong>b. nationally covered indications</strong></p>\r\n\r\n<p>n/a</p>\r\n\r\n<p><strong>c. nationally non-covered indications</strong></p>\r\n\r\n<p>effective for services performed on or after september 29..."
+      },
+      {
+        "source": "NCD_325",
+        "title": "Heartsbreath Test for Heart Transplant Rejection",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "screening",
+          "imaging",
+          "transplant"
+        ],
+        "notes": "<p>   <strong>     b. nationally covered indications</strong></p>\r\n\r\n<p>     n/a</p>\r\n\r\n<p>   <strong>     c. nationally non-covered indications</strong></p>\r\n\r\n<p>     effective for services performe..."
+      },
+      {
+        "source": "NCD_327",
+        "title": "Wrong Surgical or Other Invasive Procedure Performed on a Patient",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "transplant",
+          "biopsy"
+        ],
+        "notes": "<p><strong>   b. nationally covered indications</strong></p>\r\n<p> n/a</p>\r\n\r\n<p><strong>   c. nationally non-covered indications</strong></p>\r\n<p> the cms does not cover a particular surgical or other..."
+      },
+      {
+        "source": "NCD_328",
+        "title": "Surgical or Other Invasive Procedure Performed on the Wrong Body Part",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "transplant",
+          "biopsy"
+        ],
+        "notes": "<p>     <strong>   b. nationally covered indications</strong></p>\n\n<p>     n/a</p>\n\n<p>     <strong>   c. nationally non-covered indications</strong><br></p>\n\n<p>     the cms does not cover a particul..."
+      },
+      {
+        "source": "NCD_329",
+        "title": "Surgical or Other Invasive Procedure Performed on the Wrong Patient",
+        "condition": [
+          "heart"
+        ],
+        "procedure": [
+          "surgery",
+          "therapy",
+          "screening",
+          "imaging",
+          "transplant",
+          "biopsy"
+        ],
+        "notes": "<p>     <strong>   b. nationally covered indications</strong></p>\r\n\r\n<p>     n/a</p>\r\n\r\n<p>     <strong>   c. nationally non-covered indications</strong></p>\r\n\r\n<p>     the cms does not cover a partic..."
+      },
+      {
+        "source": "NCD_334",
+        "title": "Outpatient Intravenous Insulin Treatment",
+        "condition": [
+          "diabetes"
+        ],
+        "procedure": [
+          "therapy",
+          "screening",
+          "imaging",
+          "injection",
+          "device"
+        ],
+        "notes": "<p>  <strong> b. nationally covered indications</strong></p>\r\n\r\n<p> <strong> n/a</strong></p>\r\n\r\n<p>  <strong> c. nationally non-covered indications</strong></p>\r\n\r\n<p> effective for claims with dates..."
+      },
+      {
+        "source": "NCD_337",
+        "title": "Collagen Meniscus Implant",
+        "condition": [],
+        "procedure": [
+          "therapy",
+          "imaging",
+          "device"
+        ],
+        "notes": "<p> <strong>    b. nationally covered indications</strong></p>\n\n<p>  n/a</p>\n\n<p>   <strong>    c. nationally non-covered indications</strong></p>\n\n<p>    effective for claims with dates of service pe..."
+      }
+    ],
+    "limits": {
+      "annual_deductible": 1600,
+      "coinsurance_rate": 0.2,
+      "max_therapy_visits": {
+        "physical_therapy": 36,
+        "occupational_therapy": 36,
+        "speech_therapy": 36
+      },
+      "dme_rental_periods": {
+        "wheelchair": 13,
+        "hospital_bed": 13,
+        "oxygen": 36
+      },
+      "geographic_variations": {
+        "rural_bonus": 1.1,
+        "metropolitan_standard": 1.0,
+        "frontier_bonus": 1.05
+      }
+    },
+    "requirements": {
+      "prior_authorization": [
+        "expensive imaging (>$1000)",
+        "experimental procedures",
+        "cosmetic surgery",
+        "certain durable medical equipment"
+      ],
+      "physician_certification": [
+        "home health services",
+        "hospice care",
+        "skilled nursing facility",
+        "durable medical equipment"
+      ],
+      "documentation_required": [
+        "medical necessity justification",
+        "treatment plan",
+        "progress notes",
+        "diagnostic reports"
+      ],
+      "frequency_limits": {
+        "routine_screening": "annual",
+        "diagnostic_imaging": "as medically necessary",
+        "preventive_services": "per Medicare guidelines"
+      }
+    },
+    "geographic": {}
+  },
+  "audit_rules": {
+    "coverage_matrix": {
+      "always_covered": [
+        {
+          "conditions": [
+            "emergency",
+            "life-threatening"
+          ],
+          "max_cost": null,
+          "requirements": [
+            "physician_certification"
+          ]
+        },
+        {
+          "conditions": [
+            "preventive_care",
+            "screening"
+          ],
+          "max_cost": 500,
+          "requirements": [
+            "age_appropriate",
+            "frequency_limits"
+          ]
+        }
+      ],
+      "conditionally_covered": [
+        {
+          "conditions": [
+            "experimental_treatment"
+          ],
+          "max_cost": 10000,
+          "requirements": [
+            "clinical_trial",
+            "informed_consent"
+          ]
+        },
+        {
+          "conditions": [
+            "elective_surgery"
+          ],
+          "max_cost": 25000,
+          "requirements": [
+            "prior_authorization",
+            "medical_necessity"
+          ]
+        }
+      ],
+      "never_covered": [
+        {
+          "conditions": [
+            "cosmetic_surgery"
+          ],
+          "exceptions": [
+            "reconstructive_after_accident",
+            "congenital_defect"
+          ]
+        },
+        {
+          "conditions": [
+            "alternative_medicine"
+          ],
+          "exceptions": [
+            "acupuncture_for_chronic_pain"
+          ]
+        }
+      ]
+    },
+    "risk_assessment": {
+      "high_risk_indicators": [
+        "cost > $50000",
+        "experimental_procedure",
+        "multiple_providers",
+        "frequent_claims_same_patient"
+      ],
+      "medium_risk_indicators": [
+        "cost > $10000",
+        "elective_procedure",
+        "out_of_network_provider"
+      ],
+      "low_risk_indicators": [
+        "routine_care",
+        "preventive_services",
+        "established_provider"
+      ]
+    },
+    "approval_thresholds": {
+      "auto_approve": {
+        "max_cost": 1000,
+        "conditions": [
+          "routine",
+          "preventive"
+        ]
+      },
+      "manual_review": {
+        "max_cost": 10000,
+        "conditions": [
+          "complex",
+          "high_cost"
+        ]
+      },
+      "committee_review": {
+        "max_cost": null,
+        "conditions": [
+          "experimental",
+          "very_high_cost"
+        ]
+      }
+    }
+  },
+  "benefit_categories": {
+    "0": "No Benefit Category",
+    "1": "Ambulance Services",
+    "2": "Ambulatory Surgical Center Facility Services",
+    "3": "Antigens",
+    "4": "Artificial Legs, Arms, and Eyes",
+    "5": "Audiology Services",
+    "6": "Blood Clotting Factors for Hemophilia Patients",
+    "7": "Bone Mass Measurement",
+    "8": "Certified Nurse-Midwife Services",
+    "9": "Certified Registered Nurse Anesthetist Services",
+    "10": "Chiropractor Services",
+    "11": "Clinical Nurse Specialist Services",
+    "12": "Clinical Social Worker Services",
+    "13": "Colorectal Cancer Screening Tests",
+    "14": "Comprehensive Outpatient Rehabilitation Facility (CORF) Services",
+    "15": "Critical Access Hospital Services",
+    "16": "Dentist Services",
+    "17": "Diabetes Outpatient Self-Management Training",
+    "18": "Diagnostic Laboratory Tests",
+    "19": "Diagnostic Services in Outpatient Hospital",
+    "20": "Diagnostic Tests (other)",
+    "21": "Diagnostic X-Ray Tests",
+    "22": "Drugs and Biologicals",
+    "23": "Durable Medical Equipment",
+    "24": "Erythropoietin for Dialysis Patients",
+    "25": "Extended Care Services",
+    "26": "Eyeglasses After Cataract Surgery",
+    "27": "Federally Qualified Health Center Services",
+    "28": "Hepatitis B Vaccine and Administration",
+    "29": "Home Dialysis Supplies and Equipment",
+    "30": "Home Health Services",
+    "31": "Hospice Care",
+    "32": "Immunosuppressive Drugs",
+    "33": "Incident to a physician's professional Service",
+    "34": "Influenza Vaccine and Administration",
+    "35": "Inpatient Hospital Services",
+    "36": "Inpatient Psychiatric Hospital Services",
+    "37": "Institutional Dialysis Services and Supplies",
+    "38": "Leg, Arm, Back, and Neck Braces (orthotics)",
+    "39": "Medical Nutrition Therapy Services",
+    "40": "Nurse Practitioner Services",
+    "41": "Optometrist Services",
+    "42": "Oral Anticancer Drugs",
+    "43": "Oral Antiemetic Drugs",
+    "44": "Orthotics and Prosthetics",
+    "45": "Osteoporosis Drug",
+    "46": "Outpatient Hospital Services Incident to a Physician's Service",
+    "47": "Outpatient Occupational Therapy Services",
+    "48": "Outpatient Physical Therapy Services",
+    "49": "Outpatient Speech Language Pathology Services",
+    "50": "Partial Hospitalization Services",
+    "51": "Physician Assistant Services",
+    "52": "Physicians' Services",
+    "53": "Pneumococcal Vaccine and Administration",
+    "54": "Podiatrist Services",
+    "55": "Post-Hospital Extended Care Services",
+    "56": "Post-Institutional Home Health Services",
+    "57": "Prostate Cancer Screening Tests",
+    "58": "Prosthetic Devices",
+    "59": "Qualified Psychologist Services",
+    "60": "Religious NonMedical Health Care Institution",
+    "61": "Rural Health Clinic Services",
+    "62": "Screening for Glaucoma",
+    "63": "Screening Mammography",
+    "64": "Screening Pap Smear",
+    "65": "Screening Pelvic Exam",
+    "66": "Self-Care Home Dialysis Support Services",
+    "67": "Shoes for Patients with Diabetes",
+    "68": "Skilled Nursing Facility",
+    "69": "Splints, Casts, Other Devices Used for Reduction of Fractures and Dislocations",
+    "70": "Surgical Dressings",
+    "71": "Transplantation Services for ESRD-Entitled Beneficiaries",
+    "72": "X-ray, Radium, and Radioactive Isotope Therapy",
+    "73": "Additional Preventive Services",
+    "74": "Cardiac Rehabilitation Programs",
+    "75": "Pulmonary Rehabilitation Programs",
+    "76": "Intensive Cardiac Rehabilitation Program",
+    "77": "To Be Determined"
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "decision_engine": {
+    "name": "Medicare理赔智能决策引擎",
+    "version": "1.0",
+    "last_updated": "2024-12-01",
+    "description": "基于真实Medicare NCD/LCD数据的多维度决策引擎"
+  },
+  
+  "decision_weights": {
+    "description": "各维度在最终决策中的权重分配",
+    "total_weight": 1.0,
+    "weights": {
+      "coverage_status": {
+        "value": 0.40,
+        "description": "Medicare覆盖状态权重 - 基于真实NCD/LCD规则的覆盖决定"
+      },
+      "risk_level": {
+        "value": 0.25,
+        "description": "风险等级权重 - 基于费用金额和医疗复杂度的风险评估"
+      },
+      "cost_compliance": {
+        "value": 0.20,
+        "description": "费用合规权重 - 免赔额、共同保险、费用限制检查"
+      },
+      "special_requirements": {
+        "value": 0.15,
+        "description": "特殊要求权重 - 事先授权、医生认证等额外要求"
+      }
+    }
+  },
+  
+  "decision_thresholds": {
+    "description": "决策阈值设置，用于确定最终决策类型",
+    "thresholds": {
+      "auto_approve": {
+        "value": 0.80,
+        "description": "自动批准阈值 - 综合评分超过此值自动批准"
+      },
+      "manual_review": {
+        "value": 0.50,
+        "description": "人工审核阈值 - 综合评分在此值以上需要人工审核"
+      },
+      "auto_deny": {
+        "value": 0.20,
+        "description": "自动拒绝阈值 - 综合评分低于此值可能拒绝"
+      }
+    }
+  },
+  
+  "coverage_scoring": {
+    "description": "Medicare覆盖状态评分规则",
+    "scores": {
+      "COVERED": {
+        "value": 1.0,
+        "description": "明确覆盖的服务项目"
+      },
+      "CONDITIONAL": {
+        "value": 0.7,
+        "description": "有条件覆盖，需满足特定医疗条件"
+      },
+      "REQUIRES_REVIEW": {
+        "value": 0.5,
+        "description": "需要人工审核的边缘案例"
+      },
+      "EXCLUDED": {
+        "value": 0.0,
+        "description": "明确排除在Medicare覆盖范围外"
+      },
+      "UNKNOWN": {
+        "value": 0.3,
+        "description": "未找到明确覆盖决定的项目"
+      }
+    }
+  },
+  
+  "risk_scoring": {
+    "description": "风险等级评分规则",
+    "scores": {
+      "LOW": {
+        "value": 1.0,
+        "description": "低风险：常规护理，费用<$5,000"
+      },
+      "MEDIUM": {
+        "value": 0.6,
+        "description": "中等风险：中等复杂度，费用$5,000-$25,000"
+      },
+      "HIGH": {
+        "value": 0.2,
+        "description": "高风险：高复杂度或费用>$25,000"
+      }
+    }
+  },
+  
+  "cost_limits": {
+    "description": "Medicare费用相关限制和计算参数",
+    "medicare_limits": {
+      "annual_deductible": {
+        "value": 1600,
+        "currency": "USD",
+        "description": "Medicare Part B年度免赔额"
+      },
+      "coinsurance_rate": {
+        "value": 0.20,
+        "description": "标准共同保险比例（患者承担20%）"
+      },
+      "high_cost_threshold": {
+        "value": 50000,
+        "currency": "USD",
+        "description": "高费用阈值，超过此值需要特殊审核"
+      },
+      "ultra_high_cost_threshold": {
+        "value": 100000,
+        "currency": "USD",
+        "description": "超高费用阈值，需要委员会审核"
+      }
+    }
+  },
+  
+  "risk_indicators": {
+    "description": "风险评估指标和权重",
+    "high_risk_indicators": {
+      "cost_threshold": 50000,
+      "keywords": ["experimental", "investigational", "试验性"],
+      "score_impact": 3,
+      "description": "高风险指标，显著提高风险评分"
+    },
+    "medium_risk_indicators": {
+      "cost_threshold": 10000,
+      "keywords": ["elective", "选择性"],
+      "score_impact": 2,
+      "description": "中等风险指标，适度提高风险评分"
+    },
+    "low_risk_indicators": {
+      "keywords": ["routine", "preventive", "常规", "预防"],
+      "score_impact": -1,
+      "description": "低风险指标，降低风险评分"
+    }
+  },
+  
+  "processing_timeouts": {
+    "description": "系统处理时间限制",
+    "timeouts": {
+      "claim_extraction": {
+        "value": 5,
+        "unit": "seconds",
+        "description": "理赔信息提取超时时间"
+      },
+      "policy_check": {
+        "value": 10,
+        "unit": "seconds", 
+        "description": "政策检查超时时间"
+      },
+      "decision_making": {
+        "value": 3,
+        "unit": "seconds",
+        "description": "决策制定超时时间"
+      }
+    }
+  },
+  
+  "audit_settings": {
+    "description": "审计和日志设置",
+    "logging": {
+      "log_all_decisions": true,
+      "log_decision_details": true,
+      "log_confidence_scores": true,
+      "description": "记录所有决策过程和详细信息"
+    },
+    "monitoring": {
+      "track_processing_time": true,
+      "track_accuracy_metrics": true,
+      "alert_on_anomalies": true,
+      "description": "监控系统性能和准确性指标"
+    }
+  },
+  
+  "validation_rules": {
+    "description": "输入验证和数据质量规则",
+    "required_fields": ["patient", "diagnosis", "treatment", "cost"],
+    "cost_validation": {
+      "min_cost": 0,
+      "max_cost": 1000000,
+      "currency_formats": ["USD", "$"],
+      "description": "费用字段验证规则"
+    },
+    "text_validation": {
+      "min_length": 10,
+      "max_length": 1000,
+      "allowed_languages": ["en", "zh"],
+      "description": "文本字段验证规则"
+    }
+  },
+  
+  "explanation_templates": {
+    "description": "决策解释模板",
+    "approved": "根据Medicare {ncd_source} 规则，该服务在覆盖范围内。综合评分 {score:.2f}，风险等级 {risk_level}。",
+    "requires_review": "该申请需要人工审核。原因：{reason}。涉及金额 ${amount:,.2f}，风险等级 {risk_level}。",
+    "denied": "根据Medicare规则，该服务不在覆盖范围内。原因：{reason}。",
+    "confidence_explanation": "决策置信度 {confidence:.1%}，基于 {factors_count} 个评估因素。"
+  }
+} 

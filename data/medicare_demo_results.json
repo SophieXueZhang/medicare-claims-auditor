@@ -1,0 +1,167 @@
+{
+  "summary": {
+    "total_claims": 6,
+    "auto_approved_count": 2,
+    "auto_approval_rate": 33.33333333333333,
+    "manual_review_count": 4,
+    "manual_review_rate": 66.66666666666666,
+    "total_amount": 167800.5,
+    "auto_approved_amount": 6300.0,
+    "manual_review_amount": 161500.5,
+    "efficiency_gain": 33.33333333333333,
+    "time_saved_minutes": 60,
+    "timestamp": "2025-07-01T19:41:27.135896"
+  },
+  "detailed_results": [
+    {
+      "case_name": "白内障手术理赔",
+      "decision": "APPROVED",
+      "amount": 3500.0,
+      "medicare_status": "COVERED",
+      "risk_level": "LOW",
+      "confidence": 1.0,
+      "ncds": [
+        {
+          "source": "NCD_9",
+          "title": "Phaco-Emulsification Procedure - Cataract Extraction",
+          "category": "covered"
+        },
+        {
+          "source": "NCD_28",
+          "title": "Treatment of Drug Abuse (Chemical Dependency)",
+          "category": "covered"
+        },
+        {
+          "source": "NCD_30",
+          "title": "Chemical Aversion Therapy for Treatment of Alcoholism",
+          "category": "covered"
+        }
+      ]
+    },
+    {
+      "case_name": "心脏起搏器理赔",
+      "decision": "REQUIRES_REVIEW",
+      "amount": 45000.0,
+      "medicare_status": "COVERED",
+      "risk_level": "MEDIUM",
+      "confidence": 0.97,
+      "ncds": [
+        {
+          "source": "NCD_9",
+          "title": "Phaco-Emulsification Procedure - Cataract Extraction",
+          "category": "covered"
+        },
+        {
+          "source": "NCD_28",
+          "title": "Treatment of Drug Abuse (Chemical Dependency)",
+          "category": "covered"
+        },
+        {
+          "source": "NCD_30",
+          "title": "Chemical Aversion Therapy for Treatment of Alcoholism",
+          "category": "covered"
+        }
+      ]
+    },
+    {
+      "case_name": "物理治疗理赔",
+      "decision": "APPROVED",
+      "amount": 2800.0,
+      "medicare_status": "COVERED",
+      "risk_level": "LOW",
+      "confidence": 1.0,
+      "ncds": [
+        {
+          "source": "NCD_9",
+          "title": "Phaco-Emulsification Procedure - Cataract Extraction",
+          "category": "covered"
+        },
+        {
+          "source": "NCD_28",
+          "title": "Treatment of Drug Abuse (Chemical Dependency)",
+          "category": "covered"
+        },
+        {
+          "source": "NCD_29",
+          "title": "Treatment of Alcoholism and Drug Abuse in a Freestanding Clinic",
+          "category": "covered"
+        }
+      ]
+    },
+    {
+      "case_name": "美容手术理赔",
+      "decision": "REQUIRES_REVIEW",
+      "amount": 15000.0,
+      "medicare_status": "COVERED",
+      "risk_level": "MEDIUM",
+      "confidence": 0.97,
+      "ncds": [
+        {
+          "source": "NCD_9",
+          "title": "Phaco-Emulsification Procedure - Cataract Extraction",
+          "category": "covered"
+        },
+        {
+          "source": "NCD_28",
+          "title": "Treatment of Drug Abuse (Chemical Dependency)",
+          "category": "covered"
+        },
+        {
+          "source": "NCD_30",
+          "title": "Chemical Aversion Therapy for Treatment of Alcoholism",
+          "category": "covered"
+        }
+      ]
+    },
+    {
+      "case_name": "肾透析理赔",
+      "decision": "REQUIRES_REVIEW",
+      "amount": 12000.0,
+      "medicare_status": "COVERED",
+      "risk_level": "MEDIUM",
+      "confidence": 0.97,
+      "ncds": [
+        {
+          "source": "NCD_9",
+          "title": "Phaco-Emulsification Procedure - Cataract Extraction",
+          "category": "covered"
+        },
+        {
+          "source": "NCD_28",
+          "title": "Treatment of Drug Abuse (Chemical Dependency)",
+          "category": "covered"
+        },
+        {
+          "source": "NCD_30",
+          "title": "Chemical Aversion Therapy for Treatment of Alcoholism",
+          "category": "covered"
+        }
+      ]
+    },
+    {
+      "case_name": "重症监护理赔",
+      "decision": "REQUIRES_REVIEW",
+      "amount": 89500.5,
+      "medicare_status": "COVERED",
+      "risk_level": "HIGH",
+      "confidence": 0.86,
+      "ncds": [
+        {
+          "source": "NCD_9",
+          "title": "Phaco-Emulsification Procedure - Cataract Extraction",
+          "category": "covered"
+        },
+        {
+          "source": "NCD_28",
+          "title": "Treatment of Drug Abuse (Chemical Dependency)",
+          "category": "covered"
+        },
+        {
+          "source": "NCD_30",
+          "title": "Chemical Aversion Therapy for Treatment of Alcoholism",
+          "category": "covered"
+        }
+      ]
+    }
+  ]
+}
