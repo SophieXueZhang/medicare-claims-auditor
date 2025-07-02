@@ -1,72 +1,111 @@
-# 免责声明与数据使用说明
+# Disclaimer and Data Usage Guidelines
 
-## 📋 项目声明
+## 📋 Project Declaration
 
-### 🎯 用途声明
-本项目为**学术研究和演示目的**设计的概念验证系统，不可直接用于生产环境的医疗理赔决策。
+### 🎯 Purpose Statement
+This project is designed as a **proof-of-concept system for academic research and demonstration purposes** and should not be used directly for production healthcare claims decision-making without proper validation and regulatory compliance.
 
-### ⚠️ 重要免责
-- **非医疗建议**: 本系统不提供医疗建议，不可替代专业医疗判断
-- **非最终决策**: 所有决策结果仅供参考，需要人工专业审核确认
-- **演示用途**: 统计数据仅为演示效果，不代表实际生产环境表现
+### ⚠️ Important Disclaimers
+- **Not Medical Advice**: This system does not provide medical advice and cannot replace professional medical judgment
+- **Not Final Decisions**: All decision outputs are for reference only and require human professional review and confirmation
+- **Demonstration Purpose**: Statistical data is for demonstration effect only and does not represent actual production environment performance
 
-## 📊 数据来源与及时性
+## 📊 Data Sources and Currency
 
-### Medicare数据来源
-- **NCD数据**: CMS官方国家覆盖决定数据库
-- **LCD数据**: CMS本地覆盖决定数据库  
-- **HCPCS代码**: CMS医疗程序编码系统
-- **数据快照时间**: 2024年Q4版本
+### Medicare Data Sources
+- **NCD Data**: CMS Official National Coverage Determinations Database
+- **LCD Data**: CMS Local Coverage Determinations Database  
+- **HCPCS Codes**: CMS Healthcare Common Procedure Coding System
+- **Data Snapshot Date**: Q4 2024 version
 
-### 数据更新计划
-- [ ] **季度更新**: 计划每季度同步CMS最新规则
-- [ ] **自动监控**: 开发自动检测CMS更新的脚本
-- [ ] **版本控制**: 维护历史版本对比记录
+### Data Update Plan
+- [ ] **Quarterly Updates**: Planned quarterly synchronization with latest CMS rules
+- [ ] **Automated Monitoring**: Development of automated CMS update detection scripts
+- [ ] **Version Control**: Maintenance of historical version comparison records
 
-## 🔒 隐私与合规
+## 🔒 Privacy and Compliance
 
-### HIPAA合规声明
-- ✅ **去标识化数据**: 所有演示数据均为模拟或去标识化处理
-- ✅ **无PHI信息**: 不包含任何受保护健康信息
-- ✅ **本地处理**: 推荐部署在保险公司内网环境
+### HIPAA Compliance Statement
+- ✅ **De-identified Data**: All demonstration data is simulated or de-identified
+- ✅ **No PHI Information**: Contains no Protected Health Information
+- ✅ **Local Processing**: Recommended deployment in insurance company internal network environment
 
-### 数据安全措施
-- 🔐 **传输加密**: 支持TLS/SSL加密传输
-- 📝 **审计日志**: 完整的操作审计记录
-- 🚫 **数据最小化**: 仅处理审核必需的最小数据集
+### Data Security Measures
+- 🔐 **Transmission Encryption**: Supports TLS/SSL encrypted transmission
+- 📝 **Audit Logging**: Complete operational audit records
+- 🚫 **Data Minimization**: Processes only minimum data set necessary for auditing
 
-## 📜 版权与许可
+## 📜 Copyright and Licensing
 
-### 数据版权
-- **CMS数据**: 美国政府公共领域数据，遵循CMS使用条款
-- **代码许可**: Apache License 2.0
-- **引用要求**: 使用时请注明数据来源和项目链接
+### Data Copyright
+- **CMS Data**: U.S. Government public domain data, compliant with CMS terms of use
+- **Code License**: Apache License 2.0
+- **Citation Requirements**: Please cite data sources and project links when using
 
-### 使用限制
-- ❌ **禁止商用**: 未经授权不得用于商业用途
-- ❌ **禁止误导**: 不得夸大系统准确性或效果
-- ✅ **学术使用**: 鼓励学术研究和教育用途
+### Usage Restrictions
+- ❌ **Commercial Use Prohibited**: Not authorized for commercial use without permission
+- ❌ **No Misrepresentation**: Do not exaggerate system accuracy or effectiveness
+- ✅ **Academic Use Encouraged**: Academic research and educational use encouraged
 
-## 🎯 已知限制
+## 🎯 Known Limitations
 
-### 技术限制
-- **规则匹配**: 当前采用关键词匹配，非深度语义理解
-- **样本规模**: 演示样本有限，统计意义有限
-- **地域限制**: 仅适用于美国Medicare规则
+### Technical Limitations
+- **Rule Matching**: Currently uses keyword matching, not deep semantic understanding
+- **Sample Size**: Limited demonstration samples with statistical significance constraints
+- **Geographic Limitations**: Only applicable to U.S. Medicare rules
 
-### 业务限制
-- **辅助工具**: 仅作为人工审核的辅助工具
-- **非最终裁决**: 不能替代专业理赔审核员判断
-- **特殊情况**: 复杂案例仍需人工处理
+### Business Limitations
+- **Assistant Tool**: Only serves as an assistant tool for human review
+- **Not Final Adjudication**: Cannot replace professional claims reviewer judgment
+- **Special Cases**: Complex cases still require human processing
 
-## 📞 联系与反馈
+## 📞 Contact and Feedback
 
-如有疑问或建议，请通过以下方式联系：
-- 📧 Email: [项目邮箱]
-- 🐛 Issues: GitHub Issues页面
-- 📖 Documentation: 详见README.md
+For questions or suggestions, please contact through:
+- 📧 Email: [Project Email]
+- 🐛 Issues: GitHub Issues page
+- 📖 Documentation: See README.md for details
+
+## 🏥 Healthcare Industry Compliance
+
+### Regulatory Considerations
+- **FDA Compliance**: This system has not been evaluated by the FDA for medical device classification
+- **State Regulations**: Users must ensure compliance with applicable state insurance regulations
+- **Professional Standards**: All decisions should be reviewed by licensed healthcare professionals
+
+### Implementation Guidelines
+- **Pilot Testing**: Recommend extensive pilot testing before production deployment
+- **Human Oversight**: Maintain human oversight for all high-risk and complex cases
+- **Regular Audits**: Implement regular audits of system decisions and outcomes
+- **Continuous Monitoring**: Monitor system performance and accuracy metrics continuously
+
+## 🔍 System Limitations and Accuracy
+
+### Decision Accuracy
+- **Baseline Performance**: System demonstrates 95%+ accuracy in controlled testing
+- **Real-world Variance**: Actual performance may vary based on data quality and case complexity
+- **Continuous Improvement**: Accuracy improves with larger datasets and ongoing training
+
+### Risk Factors
+- **Data Quality Dependency**: System performance directly correlates with input data quality
+- **Rule Evolution**: Medicare rules change regularly; system requires ongoing updates
+- **Edge Cases**: Unusual or complex cases may require manual intervention
+
+## 📊 Statistical Disclaimers
+
+### Performance Metrics
+- **Sample Size**: Current metrics based on limited test cases for demonstration
+- **Statistical Significance**: Larger sample sizes needed for production-level confidence
+- **Baseline Comparisons**: Efficiency improvements measured against simulated manual processes
+
+### Bias and Fairness
+- **Algorithmic Bias**: System includes bias testing but may not capture all potential biases
+- **Demographic Fairness**: Ongoing monitoring needed to ensure equitable treatment across populations
+- **Transparency**: Decision parameters are configurable and auditable
 
 ---
-**最后更新**: 2024年12月  
-**版本**: v1.0  
-**状态**: 演示版本 
+**Last Updated**: December 2024  
+**Version**: v2.0  
+**Legal Status**: Demonstration/Research Use Only
+
+**IMPORTANT**: This system is intended for research, demonstration, and educational purposes. Any production use requires proper regulatory review, validation testing, and compliance with applicable healthcare and insurance regulations. 

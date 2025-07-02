@@ -1,6 +1,6 @@
 """
-基于真实Medicare NCD/LCD数据的理赔审核系统演示
-展示多智能体协作处理各种类型的医疗理赔申请
+Medicare Claims Auditing System Demo based on Real NCD/LCD Data
+Demonstrates multi-agent collaboration processing various types of medical claims
 """
 
 import sys
@@ -8,57 +8,57 @@ import os
 import json
 from datetime import datetime
 
-# 添加项目根目录到Python路径
+# Add project root directory to Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from agents.lead_agent import LeadAgent
 
 def main():
-    """运行Medicare理赔审核演示"""
+    """Run Medicare Claims Audit Demo"""
     
-    print("🏥 Medicare理赔智能审核系统演示")
+    print("🏥 Medicare Claims Intelligent Auditing System Demo")
     print("=" * 50)
-    print("基于真实NCD/LCD数据的多智能体协作系统")
+    print("Multi-agent collaborative system based on real NCD/LCD data")
     print()
     
-    # 初始化Lead Agent
+    # Initialize Lead Agent
     lead_agent = LeadAgent()
     
-    # 测试案例：各种Medicare常见理赔情况
+    # Test cases: Various common Medicare claims scenarios
     test_claims = [
-        # 1. 白内障手术 - 应该覆盖
+        # 1. Cataract surgery - Should be covered
         {
-            "name": "白内障手术理赔",
+            "name": "Cataract Surgery Claim",
             "text": "Patient: John Smith, Diagnosis: Cataract, Treatment: Phaco-emulsification procedure, Cost: $3500"
         },
         
-        # 2. 心脏起搏器 - 高费用但覆盖
+        # 2. Pacemaker - High cost but covered
         {
-            "name": "心脏起搏器理赔", 
+            "name": "Pacemaker Implantation Claim", 
             "text": "Patient: Mary Johnson, Diagnosis: Cardiac arrhythmia, Treatment: Pacemaker implantation, Cost: $45000"
         },
         
-        # 3. 物理治疗 - 有条件覆盖
+        # 3. Physical therapy - Conditionally covered
         {
-            "name": "物理治疗理赔",
+            "name": "Physical Therapy Claim",
             "text": "Patient: Robert Chen, Diagnosis: Lower back pain, Treatment: Physical therapy, Cost: $2800"
         },
         
-        # 4. 美容手术 - 应该排除
+        # 4. Cosmetic surgery - Should be excluded
         {
-            "name": "美容手术理赔",
-            "text": "患者：李小红，诊断：外貌不满，治疗：美容整形手术，费用：15000元"
+            "name": "Cosmetic Surgery Claim",
+            "text": "Patient: Lisa Wang, Diagnosis: Aesthetic concerns, Treatment: Cosmetic plastic surgery, Cost: $15000"
         },
         
-        # 5. 肾透析 - 明确覆盖
+        # 5. Kidney dialysis - Clearly covered
         {
-            "name": "肾透析理赔",
+            "name": "Kidney Dialysis Claim",
             "text": "Patient: David Wilson, Diagnosis: End-stage renal disease, Treatment: Hemodialysis, Cost: $12000"
         },
         
-        # 6. JSON格式理赔（MIMIC数据）
+        # 6. JSON format claim (MIMIC data)
         {
-            "name": "重症监护理赔",
+            "name": "ICU Care Claim",
             "text": json.dumps({
                 "patient": "ICU_Patient_001",
                 "diagnosis": "Severe sepsis with organ failure",
@@ -68,7 +68,7 @@ def main():
         }
     ]
     
-    # 处理所有测试案例
+    # Process all test cases
     results = []
     total_claims = len(test_claims)
     approved_count = 0
@@ -76,25 +76,25 @@ def main():
     approved_amount = 0
     
     for i, claim in enumerate(test_claims, 1):
-        print(f"\n🔍 处理理赔案例 {i}/{total_claims}: {claim['name']}")
+        print(f"\n🔍 Processing Claims Case {i}/{total_claims}: {claim['name']}")
         print("-" * 40)
-        print(f"理赔内容: {claim['text']}")
+        print(f"Claim Content: {claim['text']}")
         print()
         
         try:
-            # 使用Lead Agent处理理赔
+            # Use Lead Agent to process claim
             result = lead_agent.process_claim(claim['text'])
             
-            # 统计结果
+            # Collect statistics
             claim_amount = result['claim_info'].get('cost', 0)
             total_amount += claim_amount
             
             decision = result['final_decision']['decision']
             if decision == "APPROVED":
                 approved_count += 1
-                approved_amount += claim_amount  # 使用实际理赔申请金额
+                approved_amount += claim_amount  # Use actual claim request amount
             
-            # 保存结果
+            # Save results
             results.append({
                 "case_name": claim['name'],
                 "decision": decision,
@@ -105,16 +105,16 @@ def main():
                 "ncds": result['policy_compliance']['applicable_ncds']
             })
             
-            # 显示关键结果
-            print(f"✅ 处理完成:")
-            print(f"   决策: {decision}")
-            print(f"   理由: {result['final_decision']['reason']}")
-            print(f"   置信度: {result['final_decision']['confidence']:.2f}")
-            print(f"   Medicare状态: {result['policy_compliance']['coverage_status']['status']}")
-            print(f"   风险等级: {result['policy_compliance']['risk_level']['level']}")
+            # Display key results
+            print(f"✅ Processing Completed:")
+            print(f"   Decision: {decision}")
+            print(f"   Reason: {result['final_decision']['reason']}")
+            print(f"   Confidence: {result['final_decision']['confidence']:.2f}")
+            print(f"   Medicare Status: {result['policy_compliance']['coverage_status']['status']}")
+            print(f"   Risk Level: {result['policy_compliance']['risk_level']['level']}")
             
         except Exception as e:
-            print(f"❌ 处理失败: {e}")
+            print(f"❌ Processing Failed: {e}")
             results.append({
                 "case_name": claim['name'],
                 "decision": "ERROR",
@@ -122,45 +122,45 @@ def main():
                 "error": str(e)
             })
     
-    # 生成总结报告
+    # Generate summary report
     print("\n" + "=" * 60)
-    print("📊 Medicare理赔审核总结报告")
+    print("📊 Medicare Claims Audit Summary Report")
     print("=" * 60)
     
-    print(f"总理赔案例数: {total_claims}")
-    print(f"自动批准案例: {approved_count} ({(approved_count/total_claims)*100:.1f}%)")
-    print(f"需要人工审核: {total_claims - approved_count} ({((total_claims - approved_count)/total_claims)*100:.1f}%)")
-    print(f"总理赔金额: ${total_amount:,.2f}")
-    print(f"自动批准金额: ${approved_amount:,.2f}")
-    print(f"需要人工审核金额: ${total_amount - approved_amount:,.2f}")
+    print(f"Total Claims Cases: {total_claims}")
+    print(f"Auto-Approved Cases: {approved_count} ({(approved_count/total_claims)*100:.1f}%)")
+    print(f"Requires Manual Review: {total_claims - approved_count} ({((total_claims - approved_count)/total_claims)*100:.1f}%)")
+    print(f"Total Claim Amount: ${total_amount:,.2f}")
+    print(f"Auto-Approved Amount: ${approved_amount:,.2f}")
+    print(f"Manual Review Amount: ${total_amount - approved_amount:,.2f}")
     
-    # 计算效率提升
-    traditional_time = total_claims * 30  # 假设传统方式每案例30分钟
-    ai_time = (total_claims - approved_count) * 30  # 只需人工审核部分
+    # Calculate efficiency improvement
+    traditional_time = total_claims * 30  # Assume 30 minutes per case traditionally
+    ai_time = (total_claims - approved_count) * 30  # Only manual review portion
     time_saved = traditional_time - ai_time
     efficiency_gain = (time_saved / traditional_time) * 100
     
-    print(f"\n🚀 效率提升分析:")
-    print(f"传统人工审核时间: {traditional_time}分钟")
-    print(f"AI辅助后审核时间: {ai_time}分钟") 
-    print(f"节省审核时间: {time_saved}分钟")
-    print(f"效率提升: {efficiency_gain:.1f}%")
-    print(f"风险案例识别: {((total_claims - approved_count)/total_claims)*100:.1f}% (高金额案例全部被正确标记)")
+    print(f"\n🚀 Efficiency Improvement Analysis:")
+    print(f"Traditional Manual Review Time: {traditional_time} minutes")
+    print(f"AI-Assisted Review Time: {ai_time} minutes") 
+    print(f"Audit Time Saved: {time_saved} minutes")
+    print(f"Efficiency Improvement: {efficiency_gain:.1f}%")
+    print(f"Risk Case Identification: {((total_claims - approved_count)/total_claims)*100:.1f}% (All high-amount cases correctly flagged)")
     
-    print("\n📋 详细结果:")
+    print("\n📋 Detailed Results:")
     print("-" * 60)
     for result in results:
         status_emoji = "✅" if result['decision'] == "APPROVED" else "❌" if result['decision'] == "DENIED" else "⏳"
         print(f"{status_emoji} {result['case_name']}")
-        print(f"   决策: {result['decision']}")
-        print(f"   金额: ${result.get('amount', 0):,.2f}")
-        print(f"   Medicare状态: {result.get('medicare_status', 'N/A')}")
-        print(f"   风险等级: {result.get('risk_level', 'N/A')}")
+        print(f"   Decision: {result['decision']}")
+        print(f"   Amount: ${result.get('amount', 0):,.2f}")
+        print(f"   Medicare Status: {result.get('medicare_status', 'N/A')}")
+        print(f"   Risk Level: {result.get('risk_level', 'N/A')}")
         if result.get('ncds'):
-            print(f"   适用NCD: {len(result['ncds'])}个")
+            print(f"   Applicable NCDs: {len(result['ncds'])} rules")
         print()
     
-    # 保存详细结果到文件
+    # Save detailed results to file
     output_file = "data/medicare_demo_results.json"
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump({
@@ -180,8 +180,8 @@ def main():
             "detailed_results": results
         }, f, indent=2, ensure_ascii=False)
     
-    print(f"💾 详细结果已保存到: {output_file}")
-    print("\n🎉 Medicare理赔审核演示完成！")
+    print(f"💾 Detailed results saved to: {output_file}")
+    print("\n🎉 Medicare Claims Audit Demo Completed!")
 
 if __name__ == "__main__":
     main() 

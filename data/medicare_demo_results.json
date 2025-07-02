@@ -10,11 +10,11 @@
     "manual_review_amount": 161500.5,
     "efficiency_gain": 33.33333333333333,
     "time_saved_minutes": 60,
-    "timestamp": "2025-07-01T19:41:27.135896"
+    "timestamp": "2025-07-01T19:53:50.970161"
   },
   "detailed_results": [
     {
-      "case_name": "白内障手术理赔",
+      "case_name": "Cataract Surgery Claim",
       "decision": "APPROVED",
       "amount": 3500.0,
       "medicare_status": "COVERED",
@@ -39,7 +39,7 @@
       ]
     },
     {
-      "case_name": "心脏起搏器理赔",
+      "case_name": "Pacemaker Implantation Claim",
       "decision": "REQUIRES_REVIEW",
       "amount": 45000.0,
       "medicare_status": "COVERED",
@@ -64,7 +64,7 @@
       ]
     },
     {
-      "case_name": "物理治疗理赔",
+      "case_name": "Physical Therapy Claim",
       "decision": "APPROVED",
       "amount": 2800.0,
       "medicare_status": "COVERED",
@@ -89,7 +89,7 @@
       ]
     },
     {
-      "case_name": "美容手术理赔",
+      "case_name": "Cosmetic Surgery Claim",
       "decision": "REQUIRES_REVIEW",
       "amount": 15000.0,
       "medicare_status": "COVERED",
@@ -114,7 +114,7 @@
       ]
     },
     {
-      "case_name": "肾透析理赔",
+      "case_name": "Kidney Dialysis Claim",
       "decision": "REQUIRES_REVIEW",
       "amount": 12000.0,
       "medicare_status": "COVERED",
@@ -139,7 +139,7 @@
       ]
     },
     {
-      "case_name": "重症监护理赔",
+      "case_name": "ICU Care Claim",
       "decision": "REQUIRES_REVIEW",
       "amount": 89500.5,
       "medicare_status": "COVERED",

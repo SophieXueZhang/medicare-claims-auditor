@@ -1,195 +1,219 @@
-# 医疗保险理赔智能审核系统 🏥
+# Medicare Claims Intelligent Auditing System 🏥
 
-一个基于真实Medicare NCD/LCD数据的多智能体协作医疗保险理赔审核系统，采用Claude的Lead Agent + Subagents架构模式。
+An AI-powered multi-agent Medicare claims auditing system built on real NCD/LCD data, utilizing Claude's Lead Agent + Subagents architecture pattern for automated healthcare insurance claim processing.
 
-## 🎯 核心特性
+## 🎯 Key Features
 
-- **真实Medicare数据**: 基于352条NCD国家覆盖决定 + 1,767条HCPCS医疗程序代码
-- **多智能体协作**: Lead Agent协调4个专业智能体协同工作
-- **智能决策引擎**: 综合覆盖状态、风险评估、费用合规等多维度因素
-- **双语支持**: 支持中英文理赔申请处理
-- **智能效率**: 33.3%自动化处理率，智能识别高风险案例
+- **Real Medicare Data**: Built on 352 NCD National Coverage Determinations + 1,767 HCPCS medical procedure codes
+- **Multi-Agent Collaboration**: Lead Agent orchestrates 4 specialized AI agents working in concert
+- **Intelligent Decision Engine**: Multi-dimensional analysis including coverage status, risk assessment, cost compliance
+- **Bilingual Support**: Processes claims in both English and Chinese
+- **Smart Automation**: 33.3% automation rate with intelligent high-risk case identification
 
-## 🧠 智能体架构
-
-```
-Lead Agent (主导智能体)
-├── Claim Extractor (信息提取智能体) - 支持中英文+JSON
-├── Policy Checker (条款检查智能体) - 基于真实Medicare规则
-└── Decision Maker (决策制定智能体) - 智能风险评估
-```
-
-### 各智能体职责
-
-1. **Lead Agent**: 协调完整审核流程，管理智能体间协作
-2. **Claim Extractor**: 从多格式文本中提取患者信息、诊断、治疗、费用
-3. **Policy Checker**: 基于真实Medicare NCD/LCD规则进行合规性检查
-4. **Decision Maker**: 综合多维度信息制定最终审核决策
-
-## 📁 项目结构
+## 🧠 AI Agent Architecture
 
 ```
-healthcare-project/
-├── agents/                          # 智能体核心模块
+Lead Agent (Orchestrator)
+├── Claim Extractor (Information Extraction) - Multi-format & bilingual
+├── Policy Checker (Compliance Verification) - Real Medicare rules
+└── Decision Maker (Final Determination) - Intelligent risk assessment
+```
+
+### Agent Responsibilities
+
+1. **Lead Agent**: Orchestrates the complete audit workflow and manages inter-agent collaboration
+2. **Claim Extractor**: Extracts patient information, diagnosis, treatment, and costs from multi-format submissions
+3. **Policy Checker**: Validates compliance against real Medicare NCD/LCD rules and regulations
+4. **Decision Maker**: Makes final audit decisions based on comprehensive multi-dimensional analysis
+
+## 📁 Project Structure
+
+```
+medicare-claims-auditor/
+├── agents/                          # Core AI agent modules
 │   ├── __init__.py
-│   ├── lead_agent.py               # 主导智能体
-│   ├── claim_extractor.py          # 信息提取（支持多格式）
-│   ├── policy_checker.py           # Medicare规则检查
-│   └── decision_maker.py           # 智能决策制定
-├── data/                           # 数据处理与规则
-│   ├── insurance_policy_generator.py   # Medicare政策生成器
-│   ├── real_mimic_processor.py         # MIMIC数据处理器
-│   ├── medicare_audit_rules.json      # 真实Medicare规则库
-│   ├── medicare_demo_results.json     # 最新演示结果
-│   ├── sample_claims.txt              # 真实医疗理赔案例
-│   └── medicare_rules_summary.txt     # Medicare规则总结
-├── scripts/                        # 演示脚本
-│   └── run_medicare_claims_demo.py    # 完整系统演示
-├── insurance policy/               # 真实Medicare NCD/LCD数据
-│   ├── ncd/                        # 国家覆盖决定
-│   └── current_lcd/                # 本地覆盖决定
-├── requirements.txt                # 项目依赖
-└── README.md                       # 项目说明
+│   ├── lead_agent.py               # Lead orchestrator agent
+│   ├── claim_extractor.py          # Multi-format information extraction
+│   ├── policy_checker.py           # Medicare rules compliance
+│   └── decision_maker.py           # Intelligent decision engine
+├── data/                           # Data processing & rules
+│   ├── insurance_policy_generator.py   # Medicare policy generator
+│   ├── medicare_audit_rules.json      # Real Medicare rules database
+│   ├── medicare_demo_results.json     # Latest demo results
+│   ├── sample_claims.txt              # Real medical claim examples
+│   └── medicare_rules_summary.txt     # Medicare rules summary
+├── scripts/                        # Demo & testing scripts
+│   ├── run_medicare_claims_demo.py    # Complete system demo
+│   └── generate_extended_test_cases.py # Test case generator
+├── config/                         # Configuration files
+│   └── decision_config.json           # Transparent decision parameters
+├── insurance policy/               # Real Medicare NCD/LCD data
+│   ├── ncd/                        # National Coverage Determinations
+│   └── current_lcd/                # Local Coverage Determinations
+├── requirements.txt                # Project dependencies
+└── README.md                       # Project documentation
 ```
 
-## 🛠️ 快速开始
+## 🛠️ Quick Start
 
-### 1. 安装依赖
+### 1. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. 运行完整演示
+### 2. Run Complete Demo
 
 ```bash
 python scripts/run_medicare_claims_demo.py
 ```
 
-### 3. 生成Medicare审核规则
+### 3. Generate Medicare Audit Rules
 
 ```bash
 python data/insurance_policy_generator.py
 ```
 
-## 📊 真实Medicare数据支持
+## 📊 Real Medicare Data Foundation
 
-### 国家覆盖决定 (NCD)
-- **352条NCD规则**: 涵盖各类医疗服务覆盖决定
-- **79个完全覆盖项目**: 如白内障手术、心脏起搏器等
-- **209个有条件覆盖项目**: 需满足特定医疗条件
-- **64个明确排除项目**: 不在Medicare覆盖范围
+### National Coverage Determinations (NCD)
+- **352 NCD Rules**: Comprehensive coverage decisions for medical services
+- **79 Fully Covered Items**: Including cataract surgery, pacemaker implantation, etc.
+- **209 Conditionally Covered Items**: Requiring specific medical conditions
+- **64 Explicitly Excluded Items**: Not covered under Medicare
 
-### HCPCS医疗程序代码
-- **1,767条医疗程序**: 涵盖诊断、治疗、设备等
-- **78个福利类别**: 包括住院服务、门诊治疗、医疗设备等
-- **智能代码匹配**: 自动匹配理赔申请与适用程序代码
+### HCPCS Medical Procedure Codes
+- **1,767 Medical Procedures**: Covering diagnostics, treatments, equipment, etc.
+- **78 Benefit Categories**: Including inpatient services, outpatient treatments, medical devices
+- **Intelligent Code Matching**: Automatic matching of claims to applicable procedure codes
 
-## 📈 系统演示结果
+## 📈 System Performance Results
 
-最新基于6个核心演示案例的测试（另有78个扩展测试案例）：
+Latest testing based on 6 core demo cases (plus 78 extended test cases):
 
-| 指标 | 结果 |
-|------|------|
-| 核心演示案例 | 6个（涵盖各风险等级）|
-| 扩展测试案例 | 78个（60个多样化+18个偏见测试）|
-| 自动批准率 | 33.3% (2个低风险案例) |
-| 人工审核率 | 66.7% (4个中高风险案例) |
-| 总申请金额 | $167,800.50 |
-| 自动批准金额 | $6,300.00 |
-| 效率提升 | **33.3%** (节省审核时间) |
+| Metric | Result |
+|--------|--------|
+| Core Demo Cases | 6 cases (covering all risk levels) |
+| Extended Test Suite | 78 cases (60 diverse + 18 bias tests) |
+| Auto-Approval Rate | 33.3% (2 low-risk cases) |
+| Manual Review Rate | 66.7% (4 medium/high-risk cases) |
+| Total Claim Amount | $167,800.50 |
+| Auto-Approved Amount | $6,300.00 |
+| Efficiency Improvement | **33.3%** (audit time savings) |
 
-### 处理的理赔类型
-- ✅ **白内障手术** - 自动批准（基于NCD_9规则）
-- ⏳ **心脏起搏器** - 人工审核（高费用但覆盖）
-- ✅ **物理治疗** - 自动批准（低风险项目）
-- ⏳ **美容手术** - 人工审核（风险评估）
-- ⏳ **肾透析** - 人工审核（中等风险）
-- ⏳ **重症监护** - 人工审核（高风险高费用）
+### Processed Claim Types
+- ✅ **Cataract Surgery** - Auto-approved (based on NCD_9 rules)
+- ⏳ **Pacemaker Implantation** - Manual review (high-cost but covered)
+- ✅ **Physical Therapy** - Auto-approved (low-risk item)
+- ⏳ **Cosmetic Surgery** - Manual review (risk assessment required)
+- ⏳ **Kidney Dialysis** - Manual review (medium risk)
+- ⏳ **ICU Care** - Manual review (high-risk, high-cost)
 
-## 🎯 智能决策引擎
+## 🎯 Intelligent Decision Engine
 
-### 多维度评估体系
-- **覆盖状态权重 (40%)**: Medicare规则匹配
-- **风险等级权重 (25%)**: 基于费用和医疗复杂度
-- **费用合规权重 (20%)**: 免赔额、共同保险计算
-- **特殊要求权重 (15%)**: 事先授权、医生认证等
+### Multi-Dimensional Assessment Framework
+- **Coverage Status Weight (40%)**: Medicare rule matching
+- **Risk Level Weight (25%)**: Based on cost and medical complexity
+- **Cost Compliance Weight (20%)**: Deductible, coinsurance calculations
+- **Special Requirements Weight (15%)**: Prior authorization, physician certification
 
-### 风险等级分类
-- **LOW**: 常规护理，费用<$5,000
-- **MEDIUM**: 中等复杂度，费用$5,000-$25,000
-- **HIGH**: 高复杂度或费用>$25,000
+### Risk Level Classification
+- **LOW**: Routine care, cost < $5,000
+- **MEDIUM**: Moderate complexity, cost $5,000-$25,000
+- **HIGH**: High complexity or cost > $25,000
 
-### 决策类型
-- **APPROVED**: 自动批准（低风险+明确覆盖）
-- **REQUIRES_REVIEW**: 人工审核（中高风险）
-- **DENIED**: 自动拒绝（明确排除项目）
+### Decision Types
+- **APPROVED**: Auto-approval (low risk + clear coverage)
+- **REQUIRES_REVIEW**: Manual review (medium/high risk)
+- **DENIED**: Auto-denial (explicitly excluded items)
 
-## 🔧 技术特性
+## 🔧 Technical Features
 
-- ✅ **真实Medicare规则引擎**: 基于官方NCD/LCD数据
-- ✅ **多格式数据支持**: 文本、JSON、中英文双语
-- ✅ **智能风险评估**: 基于医疗复杂度和费用的多维评估
-- ✅ **详细审核报告**: 包含决策理由、置信度、适用规则
-- ✅ **财务影响分析**: 自动计算患者责任和保险支付
-- ✅ **可扩展架构**: 模块化设计，易于添加新规则
+- ✅ **Real Medicare Rules Engine**: Based on official NCD/LCD data
+- ✅ **Multi-Format Data Support**: Text, JSON, bilingual processing
+- ✅ **Intelligent Risk Assessment**: Multi-dimensional complexity and cost evaluation
+- ✅ **Detailed Audit Reports**: Including decision rationale, confidence scores, applicable rules
+- ✅ **Financial Impact Analysis**: Automatic calculation of patient responsibility and insurance payment
+- ✅ **Scalable Architecture**: Modular design for easy feature expansion
 
-## 🏥 Medicare规则覆盖
+## 🏥 Medicare Rules Coverage
 
-### 支持的医疗服务类别
-- **住院医疗服务**: 手术、重症监护、专科治疗
-- **门诊医疗服务**: 诊断检查、物理治疗、门诊手术
-- **医疗设备**: 耐用医疗设备、植入设备
-- **药物和生物制品**: 医院用药、注射药物
-- **诊断服务**: 影像检查、实验室检测
+### Supported Medical Service Categories
+- **Inpatient Medical Services**: Surgery, ICU care, specialty treatments
+- **Outpatient Medical Services**: Diagnostic tests, physical therapy, outpatient procedures
+- **Medical Equipment**: Durable medical equipment, implantable devices
+- **Pharmaceuticals**: Hospital medications, injectable drugs
+- **Diagnostic Services**: Imaging studies, laboratory tests
 
-### 典型覆盖决定示例
-- **NCD_9**: 白内障超声乳化术 - 完全覆盖
-- **NCD_104**: 心脏电生理诊断 - 有条件覆盖
-- **NCD_120**: 经心肌血管重建术 - 严格条件下覆盖
+### Typical Coverage Decision Examples
+- **NCD_9**: Cataract phacoemulsification - Full coverage
+- **NCD_104**: Cardiac electrophysiology diagnostics - Conditional coverage
+- **NCD_120**: Transmyocardial revascularization - Strict conditional coverage
 
-## 🚀 部署与扩展
+## 🚀 Deployment & Scaling
 
-### 即时部署
+### Instant Deployment
 ```bash
-# 克隆项目
-git clone https://github.com/your-repo/medicare-claims-auditor
+# Clone repository
+git clone https://github.com/SophieXueZhang/medicare-claims-auditor
 cd medicare-claims-auditor
 
-# 运行演示
+# Run demo
 python scripts/run_medicare_claims_demo.py
 ```
 
-### 定制化扩展
-- 📋 **添加新保险产品**: 扩展PolicyChecker规则库
-- 🧠 **增强AI能力**: 集成大语言模型进行复杂案例分析
-- 🔗 **系统集成**: 连接现有HIS/保险核心系统
-- 📊 **数据源扩展**: 支持更多医疗数据标准（HL7、FHIR）
+### Customization & Extension
+- 📋 **Add New Insurance Products**: Extend PolicyChecker rules database
+- 🧠 **Enhance AI Capabilities**: Integrate large language models for complex case analysis
+- 🔗 **System Integration**: Connect to existing HIS/insurance core systems
+- 📊 **Data Source Expansion**: Support additional medical data standards (HL7, FHIR)
 
-## 📊 性能指标
+## 📊 Performance Benchmarks
 
-| 指标 | 表现 |
-|------|------|
-| 处理速度 | < 3秒/案例 |
-| 决策准确率 | 95%+ |
-| Medicare规则覆盖 | 352条NCD + 1,767条HCPCS |
-| 风险识别能力 | 智能分级（LOW/MEDIUM/HIGH）|
-| 效率提升潜力 | 33-50% (审核时间节约) |
+| Metric | Performance |
+|--------|-------------|
+| Processing Speed | < 3 seconds/case |
+| Decision Accuracy | 95%+ |
+| Medicare Rules Coverage | 352 NCDs + 1,767 HCPCS |
+| Risk Identification | Intelligent tiered classification (LOW/MEDIUM/HIGH) |
+| Efficiency Improvement Potential | 33-50% (audit time savings) |
 
-## 🔮 未来规划
+## 🔮 Future Roadmap
 
-- [ ] **机器学习增强**: 基于历史数据训练决策模型
-- [ ] **实时API服务**: 提供RESTful API接口
-- [ ] **Web管理界面**: 可视化规则配置和审核监控
-- [ ] **多保险公司支持**: 扩展到其他保险产品和公司规则
-- [ ] **欺诈检测**: 集成反欺诈算法和异常检测
+- [ ] **Machine Learning Enhancement**: Train decision models on historical data
+- [ ] **Real-time API Service**: Provide RESTful API interfaces
+- [ ] **Web Management Interface**: Visual rule configuration and audit monitoring
+- [ ] **Multi-Insurer Support**: Extend to other insurance company rules and products
+- [ ] **Fraud Detection**: Integrate anti-fraud algorithms and anomaly detection
 
-## 📝 系统价值
+## 📝 Business Value
 
-1. **智能分流**: 自动处理33%+的低风险理赔案例
-2. **效率提升**: 减少人工审核时间，提高处理速度
-3. **增强准确性**: 基于官方Medicare规则，减少人为错误  
-4. **风险控制**: 智能识别高风险案例，确保专业审核
-5. **合规保证**: 严格遵循Medicare官方覆盖决定
+1. **Intelligent Triage**: Automatically process 33%+ of low-risk claims
+2. **Efficiency Enhancement**: Reduce manual review time, increase processing speed
+3. **Accuracy Improvement**: Based on official Medicare rules, reduce human error
+4. **Risk Control**: Intelligent identification of high-risk cases for professional review
+5. **Compliance Assurance**: Strict adherence to official Medicare coverage determinations
 
-这是一个**生产就绪**的医疗保险理赔智能审核系统，集成了真实Medicare数据，具备实际商业应用价值。🏆 
+This is a **production-ready** Medicare claims intelligent auditing system, integrating real Medicare data with practical commercial application value. 🏆
+
+## 📄 Documentation
+
+- [Project Summary](PROJECT_SUMMARY.md) - Comprehensive project overview
+- [Disclaimer](DISCLAIMER.md) - Data usage and compliance information
+- [Configuration Guide](config/decision_config.json) - Transparent decision parameters
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read our contributing guidelines and submit pull requests for any improvements.
+
+## 📞 Support
+
+For questions, issues, or suggestions:
+- 📧 Email: [Contact Email]
+- 🐛 Issues: GitHub Issues page
+- 📖 Documentation: See project documentation files
+
+---
+**Last Updated**: December 2024  
+**Version**: v2.0  
+**Status**: Production Ready 

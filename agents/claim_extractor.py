@@ -1,5 +1,5 @@
 """
-Claim Extractor Agent - 负责从理赔申请文本中提取关键信息
+Claim Extractor Agent - 负责从claims申请文本中提取关键信息
 支持多种格式：中文、英文、JSON等
 """
 import re
@@ -7,15 +7,15 @@ import json
 from typing import Dict, Any
 
 class ClaimExtractor:
-    """理赔信息提取智能体"""
+    """claims信息提取agent"""
     
     def __init__(self):
         # 中文模式
         self.chinese_patterns = {
-            'patient_name': r'患者[：:]?\s*([A-Za-z\u4e00-\u9fa5]+)',
-            'diagnosis': r'诊断[：:]?\s*([A-Za-z\u4e00-\u9fa5\s]+)',
-            'procedure': r'治疗[：:]?\s*([A-Za-z\u4e00-\u9fa5\s]+)',
-            'amount': r'费用[：:]?\s*(\d+\.?\d*)'
+            'patient_name': r'patient[：:]?\s*([A-Za-z\u4e00-\u9fa5]+)',
+            'diagnosis': r'diagnosis[：:]?\s*([A-Za-z\u4e00-\u9fa5\s]+)',
+            'procedure': r'treatment[：:]?\s*([A-Za-z\u4e00-\u9fa5\s]+)',
+            'amount': r'cost[：:]?\s*(\d+\.?\d*)'
         }
         
         # 英文模式
@@ -28,11 +28,11 @@ class ClaimExtractor:
     
     def extract(self, text: str) -> Dict[str, Any]:
         """
-        从文本中提取理赔相关信息
+        从文本中提取claims相关信息
         自动检测格式并提取信息
         
         Args:
-            text: 理赔申请文本（支持中文、英文、JSON格式）
+            text: claims申请文本（支持中文、英文、JSON格式）
             
         Returns:
             提取的关键信息字典
@@ -63,7 +63,7 @@ class ClaimExtractor:
         # 标准化数据格式
         extracted_info = self._normalize_data(extracted_info)
         
-        # 添加风险评估
+        # 添加riskEvaluating
         extracted_info["risk_level"] = self._assess_risk(extracted_info)
         
         return extracted_info
@@ -95,7 +95,7 @@ class ClaimExtractor:
     
     def _normalize_data(self, data: Dict[str, Any]) -> Dict[str, Any]:
         """标准化数据格式"""
-        # 清理金额数据
+        # 清理Amount数据
         if 'amount' in data:
             amount_str = str(data['amount'])
             # 移除货币符号和逗号
@@ -110,45 +110,45 @@ class ClaimExtractor:
         return data
     
     def _assess_risk(self, info: Dict[str, Any]) -> str:
-        """风险评估（支持中英文）"""
+        """riskEvaluating（支持中英文）"""
         try:
             amount = float(info.get('amount', 0))
         except (ValueError, TypeError):
             amount = 0
         
-        # 获取诊断和治疗信息进行风险评估
+        # 获取diagnosis和treatment信息进行riskEvaluating
         diagnosis = info.get('diagnosis', '').lower()
         procedure = info.get('procedure', '').lower()
         
-        # 高风险条件
+        # 高risk条件
         high_risk_keywords = [
             'sepsis', 'septicemia', 'cardiac', 'heart', 'brain', 'tumor', 
             'cancer', 'surgery', 'ventilation', 'intensive', 'icu',
             '脓毒症', '心脏', '脑', '肿瘤', '癌症', '手术', '重症'
         ]
         
-        # 检查高风险关键词
+        # Checking高risk关键词
         is_high_risk_condition = any(
             keyword in diagnosis or keyword in procedure 
             for keyword in high_risk_keywords
         )
         
         if amount > 100000 or is_high_risk_condition:
-            return "High Risk" if not self._is_chinese_text(diagnosis + procedure) else "高风险"
+            return "High Risk" if not self._is_chinese_text(diagnosis + procedure) else "高risk"
         elif amount > 50000:
-            return "Medium Risk" if not self._is_chinese_text(diagnosis + procedure) else "中风险"
+            return "Medium Risk" if not self._is_chinese_text(diagnosis + procedure) else "中risk"
         else:
-            return "Low Risk" if not self._is_chinese_text(diagnosis + procedure) else "低风险"
+            return "Low Risk" if not self._is_chinese_text(diagnosis + procedure) else "低risk"
     
     def extract_claim_info(self, text: str) -> Dict[str, Any]:
         """
-        提取理赔信息的主要方法（与新系统兼容）
+        提取claims信息的主要方法（与新系统兼容）
         
         Args:
-            text: 理赔申请文本
+            text: claims申请文本
             
         Returns:
-            标准化的理赔信息字典
+            标准化的claims信息字典
         """
         # 使用现有的extract方法
         raw_info = self.extract(text)
@@ -165,7 +165,7 @@ class ClaimExtractor:
         return standardized_info
     
     def _parse_cost(self, amount_str: str) -> float:
-        """解析费用字符串为浮点数"""
+        """解析cost字符串为浮点数"""
         try:
             # 移除货币符号和逗号
             cleaned_amount = re.sub(r'[,$￥元]', '', str(amount_str))

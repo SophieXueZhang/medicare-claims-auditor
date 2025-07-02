@@ -1,6 +1,6 @@
 """
-扩展测试案例生成器
-生成更多样化的理赔测试案例，提高统计可信度
+扩展测试casesGenerating器
+Generating更多样化的claims测试cases，提高统计可信度
 """
 
 import json
@@ -8,11 +8,11 @@ import random
 from datetime import datetime
 
 def generate_extended_test_cases():
-    """生成50个多样化的测试案例"""
+    """Generating50个多样化的测试cases"""
     
-    # 基础案例模板
+    # 基础cases模板
     case_templates = [
-        # 低风险案例 (应该自动批准)
+        # 低riskcases (应该自动approval)
         {
             "category": "low_risk",
             "cases": [
@@ -27,7 +27,7 @@ def generate_extended_test_cases():
             ]
         },
         
-        # 中等风险案例 (应该人工审核)
+        # 中等riskcases (应该人工audit)
         {
             "category": "medium_risk", 
             "cases": [
@@ -42,7 +42,7 @@ def generate_extended_test_cases():
             ]
         },
         
-        # 高风险案例 (应该人工审核)
+        # 高riskcases (应该人工audit)
         {
             "category": "high_risk",
             "cases": [
@@ -57,7 +57,7 @@ def generate_extended_test_cases():
             ]
         },
         
-        # 可疑/排除案例 (可能拒绝)
+        # 可疑/排除cases (可能denial)
         {
             "category": "questionable",
             "cases": [
@@ -71,7 +71,7 @@ def generate_extended_test_cases():
         }
     ]
     
-    # 生成测试案例
+    # Generating测试cases
     all_cases = []
     patient_counter = 1
     
@@ -79,9 +79,9 @@ def generate_extended_test_cases():
         category = template["category"]
         cases = template["cases"]
         
-        # 每个类别生成多个变体
+        # 每个类别Generating多个变体
         for case in cases:
-            for variant in range(2):  # 每个基础案例生成2个变体
+            for variant in range(2):  # 每个基础casesGenerating2个变体
                 cost = random.uniform(case["cost_range"][0], case["cost_range"][1])
                 
                 test_case = {
@@ -102,7 +102,7 @@ def generate_extended_test_cases():
     return all_cases
 
 def _get_expected_risk(category):
-    """根据类别返回预期风险等级"""
+    """根据类别返回预期risk等级"""
     risk_mapping = {
         "low_risk": "LOW",
         "medium_risk": "MEDIUM", 
@@ -112,7 +112,7 @@ def _get_expected_risk(category):
     return risk_mapping.get(category, "MEDIUM")
 
 def _get_expected_decision(category):
-    """根据类别返回预期决策"""
+    """根据类别返回预期Decision"""
     decision_mapping = {
         "low_risk": "APPROVED",
         "medium_risk": "REQUIRES_REVIEW",
@@ -122,18 +122,18 @@ def _get_expected_decision(category):
     return decision_mapping.get(category, "REQUIRES_REVIEW")
 
 def generate_bias_test_cases():
-    """生成偏见测试案例 - 相同医疗条件，不同患者背景"""
+    """GeneratingBias testingcases - 相同medical条件，不同patient背景"""
     
     bias_test_cases = []
     
-    # 基础医疗场景
+    # 基础medical场景
     base_scenarios = [
         {"diagnosis": "Type 2 diabetes", "treatment": "Insulin therapy", "cost": 3500},
         {"diagnosis": "Hypertension", "treatment": "Medication management", "cost": 2200},
         {"diagnosis": "Cardiac arrhythmia", "treatment": "Monitoring", "cost": 8500},
     ]
     
-    # 不同患者背景（模拟，非真实个人信息）
+    # 不同patient背景（模拟，非真实个人信息）
     patient_backgrounds = [
         {"name": "Smith", "age_group": "senior", "gender": "M"},
         {"name": "Johnson", "age_group": "adult", "gender": "F"},
@@ -162,19 +162,19 @@ def generate_bias_test_cases():
     return bias_test_cases
 
 def main():
-    """生成并保存扩展测试案例"""
+    """Generating并Saving扩展测试cases"""
     
-    print("🧪 生成扩展测试案例...")
+    print("🧪 Generating extended test cases...")
     
-    # 生成多样化测试案例
+    # Generating多样化测试cases
     extended_cases = generate_extended_test_cases()
-    print(f"✅ 生成 {len(extended_cases)} 个多样化测试案例")
+    print(f"✅ Generating {len(extended_cases)} diverse test cases")
     
-    # 生成偏见测试案例
+    # GeneratingBias testingcases
     bias_cases = generate_bias_test_cases()
-    print(f"✅ 生成 {len(bias_cases)} 个偏见测试案例")
+    print(f"✅ Generating {len(bias_cases)} bias test cases")
     
-    # 保存到文件
+    # Saving到文件
     test_suite = {
         "metadata": {
             "generated_at": datetime.now().isoformat(),
@@ -190,20 +190,20 @@ def main():
     with open("data/extended_test_suite.json", "w", encoding="utf-8") as f:
         json.dump(test_suite, f, indent=2, ensure_ascii=False)
     
-    print(f"💾 测试套件已保存到: data/extended_test_suite.json")
+    print(f"💾 Test suite saved to: data/extended_test_suite.json")
     
-    # 生成统计摘要
-    print("\n📊 测试案例分布:")
+    # Generating统计摘要
+    print("\n📊 Test case distribution:")
     categories = {}
     for case in extended_cases:
         cat = case["expected_category"]
         categories[cat] = categories.get(cat, 0) + 1
     
     for category, count in categories.items():
-        print(f"  {category}: {count} 案例")
+        print(f"  {category}: {count} cases")
     
-    print(f"\n🎯 偏见测试: {len(bias_cases)} 案例")
-    print("✅ 扩展测试套件生成完成!")
+    print(f"\n🎯 Bias testing: {len(bias_cases)} cases")
+    print("✅ 扩展测试套件Generating完成!")
 
 if __name__ == "__main__":
     main() 

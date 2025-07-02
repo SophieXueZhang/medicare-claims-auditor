@@ -1,7 +1,7 @@
 """
-Medicare保险政策审核规则生成器
+MedicareinsurancepolicyauditrulesGenerating器
 基于真实的NCD (National Coverage Determinations) 和 LCD (Local Coverage Determinations) 数据
-生成智能审核规则供多智能体理赔系统使用
+Generating智能auditrules供多agentclaims系统使用
 """
 
 import pandas as pd
@@ -11,7 +11,7 @@ from typing import Dict, List, Any, Optional
 from pathlib import Path
 
 class MedicareQueuePolicyGenerator:
-    """Medicare保险政策规则生成器"""
+    """MedicareinsurancepolicyrulesGenerating器"""
     
     def __init__(self, policy_data_path: str = "data/insurance policy"):
         self.policy_path = Path(policy_data_path)
@@ -20,16 +20,16 @@ class MedicareQueuePolicyGenerator:
         self.coverage_categories = {}
         self.hcpcs_codes = {}
         self.coverage_rules = {
-            "covered": [],          # 覆盖项目
-            "conditional": [],      # 有条件覆盖
+            "covered": [],          # coverage项目
+            "conditional": [],      # 有条件coverage
             "excluded": [],         # 排除项目
-            "limits": {},          # 费用限制
+            "limits": {},          # cost限制
             "requirements": {},    # 特殊要求
             "geographic": {}       # 地理限制
         }
         
     def load_ncd_data(self):
-        """加载国家覆盖决定数据"""
+        """Loading国家coverage决定数据"""
         ncd_file = self.policy_path / "ncd" / "ncd_csv" / "ncd_trkg.csv"
         if ncd_file.exists():
             try:
@@ -40,13 +40,13 @@ class MedicareQueuePolicyGenerator:
                 for encoding in encodings:
                     try:
                         ncd_df = pd.read_csv(ncd_file, encoding=encoding)
-                        print(f"成功使用 {encoding} 编码加载NCD数据")
+                        print(f"成功使用 {encoding} 编码LoadingNCD数据")
                         break
                     except UnicodeDecodeError:
                         continue
                 
                 if ncd_df is None:
-                    print("无法以任何编码格式加载NCD数据")
+                    print("无法以任何编码格式LoadingNCD数据")
                     return
                 
                 for _, row in ncd_df.iterrows():
@@ -55,12 +55,12 @@ class MedicareQueuePolicyGenerator:
                     title = str(row.get('NCD_mnl_sect_title', '')).strip()
                     indication = str(row.get('indctn_lmtn', '')).strip()
                     
-                    # 解析覆盖级别
-                    if coverage_level == 1:  # 覆盖
+                    # 解析coverage级别
+                    if coverage_level == 1:  # coverage
                         coverage_type = "covered"
-                    elif coverage_level == 2:  # 有条件覆盖
+                    elif coverage_level == 2:  # 有条件coverage
                         coverage_type = "conditional"
-                    elif coverage_level == 3:  # 不覆盖
+                    elif coverage_level == 3:  # 不coverage
                         coverage_type = "excluded"
                     else:
                         coverage_type = "unknown"
@@ -72,12 +72,12 @@ class MedicareQueuePolicyGenerator:
                         "description": str(row.get('itm_srvc_desc', '')),
                     }
                     
-                print(f"已加载 {len(self.ncd_rules)} 条NCD规则")
+                print(f"已Loading {len(self.ncd_rules)} 条NCDrules")
             except Exception as e:
-                print(f"加载NCD数据时出错: {e}")
+                print(f"LoadingNCD数据时出错: {e}")
     
     def load_lcd_data(self):
-        """加载本地覆盖决定数据"""
+        """Loading本地coverage决定数据"""
         lcd_codes_file = self.policy_path / "current_lcd" / "current_lcd_csv" / "lcd_x_hcpc_code.csv"
         if lcd_codes_file.exists():
             try:
@@ -88,13 +88,13 @@ class MedicareQueuePolicyGenerator:
                 for encoding in encodings:
                     try:
                         lcd_df = pd.read_csv(lcd_codes_file, encoding=encoding)
-                        print(f"成功使用 {encoding} 编码加载LCD数据")
+                        print(f"成功使用 {encoding} 编码LoadingLCD数据")
                         break
                     except UnicodeDecodeError:
                         continue
                 
                 if lcd_df is None:
-                    print("无法以任何编码格式加载LCD数据")
+                    print("无法以任何编码格式LoadingLCD数据")
                     return
                 
                 # 打印列名以调试
@@ -115,28 +115,28 @@ class MedicareQueuePolicyGenerator:
                         "group": str(row.get('hcpc_code_group', ''))
                     }
                     
-                print(f"已加载 {len(self.hcpcs_codes)} 条HCPCS代码")
+                print(f"已Loading {len(self.hcpcs_codes)} 条HCPCS代码")
             except Exception as e:
-                print(f"加载LCD数据时出错: {e}")
+                print(f"LoadingLCD数据时出错: {e}")
                 import traceback
                 traceback.print_exc()
     
     def load_benefit_categories(self):
-        """加载福利类别数据"""
+        """Loading福利类别数据"""
         benefit_file = self.policy_path / "ncd" / "ncd_csv" / "ncd_bnft_ctgry_ref.csv"
         if benefit_file.exists():
             try:
                 benefit_df = pd.read_csv(benefit_file)
                 for _, row in benefit_df.iterrows():
                     self.coverage_categories[row['bnft_ctgry_cd']] = row['bnft_ctgry_desc']
-                print(f"已加载 {len(self.coverage_categories)} 个福利类别")
+                print(f"已Loading {len(self.coverage_categories)} 个福利类别")
             except Exception as e:
-                print(f"加载福利类别数据时出错: {e}")
+                print(f"Loading福利类别数据时出错: {e}")
     
     def generate_coverage_rules(self):
-        """基于真实Medicare数据生成覆盖规则"""
+        """基于真实Medicare数据Generatingcoveragerules"""
         
-        # 从NCD数据生成规则
+        # 从NCD数据Generatingrules
         for ncd_id, ncd_data in self.ncd_rules.items():
             title = ncd_data['title'].lower()
             coverage_type = ncd_data['coverage_type']
@@ -157,21 +157,21 @@ class MedicareQueuePolicyGenerator:
             elif coverage_type == "excluded":
                 self.coverage_rules["excluded"].append(rule)
         
-        # 从HCPCS代码生成规则
+        # 从HCPCS代码Generatingrules
         self._generate_hcpcs_rules()
         
-        # 生成费用限制规则
+        # Generatingcost限制rules
         self._generate_cost_limits()
         
-        # 生成特殊要求规则
+        # Generating特殊要求rules
         self._generate_special_requirements()
     
     def _extract_medical_conditions(self, title: str, indication: str) -> List[str]:
-        """从标题和适应症中提取医疗条件"""
+        """从标题和适应症中提取medical条件"""
         conditions = []
         text = f"{title} {indication}".lower()
         
-        # 定义医疗条件关键词
+        # 定义medical条件关键词
         condition_patterns = [
             r'cancer|tumor|carcinoma|malignancy',
             r'diabetes|diabetic',
@@ -197,11 +197,11 @@ class MedicareQueuePolicyGenerator:
         return conditions
     
     def _extract_procedures(self, title: str, indication: str) -> List[str]:
-        """从标题和适应症中提取医疗程序"""
+        """从标题和适应症中提取medical程序"""
         procedures = []
         text = f"{title} {indication}".lower()
         
-        # 定义医疗程序关键词
+        # 定义medical程序关键词
         procedure_patterns = [
             r'surgery|surgical|operation',
             r'therapy|treatment|rehabilitation',
@@ -222,9 +222,9 @@ class MedicareQueuePolicyGenerator:
         return procedures
     
     def _generate_hcpcs_rules(self):
-        """从HCPCS代码生成具体的程序规则"""
-        # 根据HCPCS代码类别生成规则
-        dme_codes = {k: v for k, v in self.hcpcs_codes.items() if k.startswith('E')}  # 耐用医疗设备
+        """从HCPCS代码Generating具体的程序rules"""
+        # 根据HCPCS代码类别Generatingrules
+        dme_codes = {k: v for k, v in self.hcpcs_codes.items() if k.startswith('E')}  # 耐用medical设备
         drug_codes = {k: v for k, v in self.hcpcs_codes.items() if k.startswith('J')}  # 药物
         orthotic_codes = {k: v for k, v in self.hcpcs_codes.items() if k.startswith('L')}  # 矫形器具
         
@@ -248,10 +248,10 @@ class MedicareQueuePolicyGenerator:
         ])
     
     def _generate_cost_limits(self):
-        """生成费用限制规则"""
+        """Generatingcost限制rules"""
         self.coverage_rules["limits"] = {
             "annual_deductible": 1600,  # 2024年Medicare Part B免赔额
-            "coinsurance_rate": 0.20,   # 20%共同保险
+            "coinsurance_rate": 0.20,   # 20%共同insurance
             "max_therapy_visits": {
                 "physical_therapy": 36,
                 "occupational_therapy": 36,
@@ -270,7 +270,7 @@ class MedicareQueuePolicyGenerator:
         }
     
     def _generate_special_requirements(self):
-        """生成特殊要求规则"""
+        """Generating特殊要求rules"""
         self.coverage_rules["requirements"] = {
             "prior_authorization": [
                 "expensive imaging (>$1000)",
@@ -298,7 +298,7 @@ class MedicareQueuePolicyGenerator:
         }
     
     def create_audit_rules(self) -> Dict[str, Any]:
-        """创建用于理赔审核的规则"""
+        """创建用于claimsaudit的rules"""
         return {
             "coverage_matrix": {
                 "always_covered": [
@@ -362,10 +362,10 @@ class MedicareQueuePolicyGenerator:
         }
     
     def save_rules(self, output_file: str = "data/medicare_audit_rules.json"):
-        """保存生成的审核规则"""
+        """SavingGenerating的auditrules"""
         audit_rules = self.create_audit_rules()
         
-        # 合并所有规则
+        # 合并所有rules
         complete_rules = {
             "metadata": {
                 "source": "Medicare NCD/LCD Database",
@@ -382,27 +382,27 @@ class MedicareQueuePolicyGenerator:
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(complete_rules, f, ensure_ascii=False, indent=2)
         
-        print(f"审核规则已保存到: {output_file}")
+        print(f"auditrules已Saving到: {output_file}")
         return complete_rules
     
     def generate_summary_report(self):
-        """生成规则总结报告"""
+        """Generatingrules总结报告"""
         covered_count = len(self.coverage_rules["covered"])
         conditional_count = len(self.coverage_rules["conditional"])
         excluded_count = len(self.coverage_rules["excluded"])
         
         report = f"""
-Medicare保险政策审核规则生成报告
+MedicareinsurancepolicyauditrulesGenerating报告
 =====================================
 
 数据源统计:
-- NCD规则数量: {len(self.ncd_rules)}
+- NCDrules数量: {len(self.ncd_rules)}
 - HCPCS代码数量: {len(self.hcpcs_codes)}
 - 福利类别数量: {len(self.coverage_categories)}
 
-覆盖规则统计:
-- 完全覆盖项目: {covered_count}
-- 有条件覆盖项目: {conditional_count}
+coveragerules统计:
+- 完全coverage项目: {covered_count}
+- 有条件coverage项目: {conditional_count}
 - 排除项目: {excluded_count}
 
 主要福利类别:
@@ -412,10 +412,10 @@ Medicare保险政策审核规则生成报告
             report += f"- {desc}\n"
         
         report += f"""
-费用限制规则:
+cost限制rules:
 - 年度免赔额: ${self.coverage_rules['limits']['annual_deductible']}
-- 共同保险率: {self.coverage_rules['limits']['coinsurance_rate']*100}%
-- 物理治疗年限制: {self.coverage_rules['limits']['max_therapy_visits']['physical_therapy']}次
+- 共同insurance率: {self.coverage_rules['limits']['coinsurance_rate']*100}%
+- 物理treatment年限制: {self.coverage_rules['limits']['max_therapy_visits']['physical_therapy']}次
 
 特殊要求:
 - 需要事先授权的项目: {len(self.coverage_rules['requirements']['prior_authorization'])}项
@@ -425,25 +425,25 @@ Medicare保险政策审核规则生成报告
         return report
 
 def main():
-    """主函数：生成完整的Medicare审核规则"""
+    """主函数：Generating完整的Medicareauditrules"""
     generator = MedicareQueuePolicyGenerator()
     
-    print("正在加载Medicare保险政策数据...")
+    print("正在LoadingMedicareinsurancepolicy数据...")
     generator.load_ncd_data()
     generator.load_lcd_data()
     generator.load_benefit_categories()
     
-    print("正在生成覆盖规则...")
+    print("正在Generatingcoveragerules...")
     generator.generate_coverage_rules()
     
-    print("正在保存审核规则...")
+    print("正在Savingauditrules...")
     rules = generator.save_rules()
     
-    print("生成规则总结报告...")
+    print("Generatingrules总结报告...")
     report = generator.generate_summary_report()
     print(report)
     
-    # 保存报告
+    # Saving报告
     with open("data/medicare_rules_summary.txt", "w", encoding="utf-8") as f:
         f.write(report)
     

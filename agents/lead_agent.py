@@ -1,67 +1,55 @@
 """
-Lead Agent - 负责调度任务、调用子agent、整合结果
+Lead Agent - Orchestrates the complete Medicare claims audit workflow
+Coordinates collaboration between specialized agents for intelligent claims processing
 """
+
 from typing import Dict, Any
-from datetime import datetime
+from .claim_extractor import ClaimExtractor
+from .policy_checker import PolicyChecker
+from .decision_maker import DecisionMaker
 
 class LeadAgent:
-    """主导智能体，协调整个理赔审核流程"""
+    """
+    Lead Agent - Main orchestrator for Medicare claims audit workflow
+    Manages the complete process from claim extraction to final decision
+    """
     
     def __init__(self):
-        # 延迟导入避免循环依赖
-        from agents.claim_extractor import ClaimExtractor
-        from agents.policy_checker import PolicyChecker
-        from agents.decision_maker import DecisionMaker
-        
+        # Initialize specialized agents
         self.claim_extractor = ClaimExtractor()
         self.policy_checker = PolicyChecker()
         self.decision_maker = DecisionMaker()
-        
+    
     def process_claim(self, claim_text: str) -> Dict[str, Any]:
         """
-        处理理赔申请的完整流程
-        基于真实Medicare NCD/LCD数据进行智能审核
+        Process a complete claims audit workflow
         
         Args:
-            claim_text: 理赔申请文本（中英文都支持）
+            claim_text: Raw claim text (supports multiple formats)
             
         Returns:
-            完整的审核结果
+            Complete audit results including final decision
         """
-        print("=== 开始理赔申请处理 ===")
+        print("=== Starting Claims Application Processing ===")
         
-        # Step 1: 信息提取
-        print("1. 提取理赔信息...")
-        extracted_info = self.claim_extractor.extract_claim_info(claim_text)
-        print(f"提取结果: {extracted_info}")
+        # Step 1: Extract claims information
+        print("1. Extracting Claims Information...")
+        claim_info = self.claim_extractor.extract_claim_info(claim_text)
+        print(f"Extraction Result: {claim_info}")
         
-        # Step 2: 保险条款检查 (使用真实Medicare规则)
-        print("\n2. 检查保险条款合规性...")
-        policy_result = self.policy_checker.check_policy_compliance(extracted_info)
-        print(f"条款检查结果: {policy_result['final_decision']}")
+        # Step 2: Check insurance policy compliance
+        print("2. Checking Insurance Policy Compliance...")
+        policy_result = self.policy_checker.check_policy_compliance(claim_info)
+        print(f"Policy Check Result: {policy_result}")
         
-        # Step 3: 决策制定
-        print("\n3. 制定最终决策...")
-        final_decision = self.decision_maker.make_decision(extracted_info, policy_result)
-        print(f"最终决策: {final_decision['decision']}")
+        # Step 3: Make final decision
+        print("3. Making Final Decision...")
+        final_decision = self.decision_maker.make_decision(claim_info, policy_result)
+        print(f"Final Decision: {final_decision['decision']}")
+        print("=== Claims Processing Completed ===")
         
-        # Step 4: 整合所有结果
-        complete_result = {
-            "claim_info": extracted_info,
+        return {
+            "claim_info": claim_info,
             "policy_compliance": policy_result,
-            "final_decision": final_decision,
-            "processing_summary": {
-                "total_cost": extracted_info.get('cost', 0),
-                "patient_responsibility": policy_result['cost_compliance']['patient_responsibility'],
-                "insurance_payment": policy_result['cost_compliance']['insurance_payment'],
-                "medicare_coverage_status": policy_result['coverage_status']['status'],
-                "applicable_ncds": policy_result['applicable_ncds'],
-                "benefit_category": policy_result['benefit_category'],
-                "risk_level": policy_result['risk_level']['level'],
-                "requires_manual_review": policy_result['risk_level']['requires_manual_review'],
-                "processing_timestamp": datetime.now().isoformat()
-            }
-        }
-        
-        print("=== 理赔处理完成 ===")
-        return complete_result 
+            "final_decision": final_decision
+        } 
